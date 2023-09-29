@@ -1,0 +1,94 @@
+.carousel-control-prev,.carousel-control-next{
+    width: 10%;
+}
+#MAIN{
+    margin-top: 42px;
+}
+#FOOTER p{
+    margin-bottom: 0px;
+}
+#FOOTER3 p{
+    text-align: center;
+    margin-bottom: 0px;
+}
+#LOGOFOOTER{
+    max-width: 120px;
+    min-width: 120px;
+}
+
+.imagesinsection img{
+    max-width: 100%;
+    height: auto;
+}
+
+.col-lg-4{
+    /* width: 50vw; */
+    flex-basis: fit-content; 
+    /* max-content; */
+    flex: 1; /* or any other appropriate flex value */
+    min-height: fit-content;
+    flex-grow: 1;
+    text-align: center;
+}
+.dropdown-item:hover{
+    /* make it custom for each part */
+    background-color: #811d1d;
+    color: aqua;
+}
+
+.nav-item{
+    font-weight: 600;
+}
+.not_a_table_center{
+    justify-content: center;
+    align-items: center;
+}
+#ROZVRHHODIN{
+    min-width: 650px;
+}
+/* .navbar-toggler{
+    margin-right: 1rem;
+} */
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+@media only screen and (max-width: 450px) {
+    #LOGOMAIN
+    {
+        width: 65vw;
+    }
+    #FOOTER p{
+        text-align: left;
+        padding-left: 75px;
+        margin-bottom: 0px;
+    }
+    #LOGOFOOTER{
+        max-width: 60px;
+        min-width: 60px;
+    }
+    #MAIN{
+        margin-top: 27px;
+    }
+    #MAINVYTAJTE{
+        text-align: center;
+    }
+    #HOTSIDENAWBARCOONAS{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #MAINVYTAJTE{
+        text-align: center;
+    }
+    #HOTSIDENAWBARCOONAS{
+        font-size: 2rem;
+    }
+} 
+
+
