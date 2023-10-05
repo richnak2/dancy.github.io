@@ -26,7 +26,7 @@
         <a class="navbar-brand" href="#"> 
           <img id='LOGOMAIN' src="images/LOGO/logo1.png" alt="Brand Name">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navbarClicktotogleof" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -42,7 +42,7 @@
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasHistoria')"> Hystoria </a></li>
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasCoTancujem')"> Co tancujeme</a></li>
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasTrenery')"> Trenery</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="openLocation('onasTreningy')"> treningy </a></li>
+                  <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onasTreningy')"> treningy </a></li> -->
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasUdalosty')"> udalosty </a></li>
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onas2Percenta')"> 2% s dany </a></li>
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasPartneri')"> partneri</a></li>
@@ -67,15 +67,22 @@
             </li>
             <li class="nav-item dropdown">
               <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
-                <a class="nav-link "  data-bs-toggle="dropdown" href="#">Treningy</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"> typ 1</a></li>
-                  <li><a class="dropdown-item" href="#"> dsad 2 </a></li>
-                  <li><a class="dropdown-item" href="#"> dasdsads 3 </a></li>
+              <a class="nav-link "  data-bs-toggle="dropdown" href="#" onclick="openLocation('treningi')">Treningy</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mini Dancy 3-4</a></li>
+                  <li><a class="dropdown-item" href="#">Mini Dancy 5-6</a></li>
+                  <li><a class="dropdown-item" href="#">HIP HOP</a></li>
+                  <li><a class="dropdown-item" href="#">Teens</a></li>
+                  <li><a class="dropdown-item" href="#">Teens individualne</a></li>
+                  <li><a class="dropdown-item" href="#">Teens skupiny</a></li>
+                  <li><a class="dropdown-item" href="#">Kids A</a></li>
+                  <li><a class="dropdown-item" href="#">Kids B</a></li>
+                  <li><a class="dropdown-item" href="#">Gymnastika 4-7</a></li>
+                  <li><a class="dropdown-item" href="#">Gymnastika 7-11</a></li>
                 </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">kontakt </a>
+              <a class="nav-link" href="#" onclick="openLocation('kontakt')">kontakt </a>
             </li>
 
           </ul>
@@ -302,6 +309,7 @@
                 <h3><a href="#myCarousel">Heading</a></h3>
               </div>
             </div>
+            
             
             <div  class="row" >
               <div id="TRENERYKONKRETNE" class="col-md-9  px-0 imagesinsection ">
@@ -545,13 +553,14 @@
             <div class="">
               <div class="row">
                 <h3 class="display-6 font-italic">Pomáda</h3>
-                <ul>
-                  <p>
+                <div class="col-md-12">
+                  <ul>
                     <li>Veselá choreografia na hudbu z rovnomenného česko-slovenského muzikálu</li>
-                  </p>
-                  <p>                <li>Počet tanečníkov: 4, 6 alebo 8</li></p>
-                  <p><li>Minutáž: 1:4</li></p>
-                </ul>
+                    <li>Počet tanečníkov: 4, 6 alebo 8</li>
+                    <li>Minutáž: 1:4</li>
+                  </ul>
+                </div>
+                
               </div>
               <div class="d-flex row">
                 <div class="col-md-3">
@@ -572,7 +581,35 @@
 
           </div>
             
-          
+           <div id="KONTAKT" class="col-md-8  px-0 imagesinsection d-none">
+            <h1 class="display-4 font-italic">KONTAKT</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="font-italic">Tanečné štúdio Dancy<br> 
+                  Vajnorská 44<br>
+                  831 03 Bratislava</p>
+                  
+                <p><a href="info@dancy.sk">info@dancy.sk</a></p>
+              </div>
+            </div>
+            <h3 class="display-6 font-italic">Tréningy máme tu:</h3>
+              <div class=" row">
+                
+                <div class="col-md-4 container">
+                  <a href="#" onclick="showMap('ZSMEDZILABORECKA')" >ZŠ MEDZILABORECKÁ</a>
+                  <iframe class="d-none" id="ZSMEDZILABORECKA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4 container">
+                  <a href="#" onclick="showMap('ZSDRIENOVA')">ZŠ DRIEŇOVÁ</a>
+                  <iframe class="d-none" id="ZSDRIENOVA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4 container">
+                  <a href="#" onclick="showMap('BALANCEDOM')">BALANCE DOM</a>
+                  <iframe class="d-none" id="BALANCEDOM" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+              </div>
+          </div>
           
 
           <div id="HOTSIDENAWBARCOONAS" class="col-md-3  px-0 w100 text-center d-none">
@@ -580,7 +617,7 @@
             <p class="lead my-3"><a href='#' onclick="openLocation('onasHistoria')">História</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onasCoTancujem')">Čo tancujeme?</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onasTrenery')">Tréneri</a></p>
-            <p class="lead my-3"><a href='#' onclick="openLocation('onasTreningy')">Tréningy</a></p>
+            <!-- <p class="lead my-3"><a href='#' onclick="openLocation('onasTreningy')">Tréningy</a></p> -->
             <p class="lead my-3"><a href='#' onclick="openLocation('onasUdalosty')">Udalosti</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onas2Percenta')">2% z daní</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onasPartneri')">Partneri</a></p>
@@ -592,6 +629,30 @@
             <p class="lead my-3"><a href='#'>b</a></p>
             <p class="lead my-3"><a href='#'>c</a></p>
             <p class="lead my-3"><a href='#'>d</a></p>
+          </div>
+
+          <div id="HOTSIDENAWBARTRENINGI" class="col-md-3  px-0 w100 text-center d-none">
+            <h3 class="display-4 font-italic">Treningy</h3>
+            <p class="lead my-3"><a href='#'>Mini Dancy 3-4</a></p>
+            <p class="lead my-3"><a href='#'>Mini Dancy 5-6</a></p>
+            <p class="lead my-3"><a href='#'>HIP HOP</a></p>
+            <p class="lead my-3"><a href='#'>Teens</a></p>
+            <p class="lead my-3"><a href='#'>Teens individualne</a></p>
+            <p class="lead my-3"><a href='#'>Teens skupiny</a></p>
+            <p class="lead my-3"><a href='#'>Kids A</a></p>
+            <p class="lead my-3"><a href='#'>Kids B</a></p>
+            <p class="lead my-3"><a href='#'>Gymnastika 4-7</a></p>
+            <p class="lead my-3"><a href='#'>Gymnastika 7-11</a></p>
+
+          </div>
+
+          <div id="HOTSIDENAWBARKONTAKT" class="col-md-3  px-0 w100 text-center d-none">
+            <p><strong>informácie o tréningoch: </strong>0903 838 651</p>
+            <p><strong>ostatné informácie: </strong>0903 308 981</p>
+            <p><strong> číslo účtu:  </strong>292 886 7217/1100</p>
+            <p><strong>IBAN: </strong>SK69 1100 0000 0029 2886 7217</p>
+            <p><strong>IČO: </strong>42 18 12 08</p>
+
           </div>
 
 

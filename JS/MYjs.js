@@ -48,16 +48,16 @@ function selectGroup(id, innertext){
         alltrainings.forEach(elment => {
             console.log(elment.className.toString().includes(id))
             if (elment.className.toString().includes(id)) {
-                elment.style.display = 'revert' 
+                elment.style.display = 'revert' ;
                 // ('display','revert')   
             }else{
                 
-                elment.style.display = 'none' 
+                elment.style.display = 'none' ;
                 // elment.setAttribute('display','none')
             }
         });
         
-    }
+    };
 }
 
 
@@ -67,11 +67,13 @@ const dict = {
     "onasHistoria" : ["HISTORY", "HOTSIDENAWBARCOONAS"],
     "onasCoTancujem" : ["COTANCUJEME", "HOTSIDENAWBARCOONAS"],
     "onasTrenery" : [ "TRENERYKONKRETNEMAINHOLDER", "HOTSIDENAWBARCOONAS"],
-    "onasTreningy" : ["TRENINGYHODINI", "HOTSIDENAWBARCOONAS"],
+    // "onasTreningy" : ["TRENINGYHODINI", "HOTSIDENAWBARCOONAS"],
     "onasUdalosty" : [ "HOTSIDENAWBARCOONAS"],
     "onas2Percenta" : ["2PDANE", "HOTSIDENAWBARCOONAS"],
     "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
-    "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"]
+    "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"],
+    "treningi" : ["TRENINGYHODINI", "HOTSIDENAWBARTRENINGI"],
+    "kontakt" : ["KONTAKT", "HOTSIDENAWBARKONTAKT"]
     
 }
 
@@ -81,22 +83,49 @@ function openLocation(targetLocation){
     console.log(dict[targetLocation])
     dict[targetLocation].forEach(targrtL => {
         document.getElementById(targrtL).classList.remove("d-none")
-        // document.getElementById(targrtL).style.display = "revert";
     });
 }
+
+
+const navbarCOLAPS = document.getElementById('navbarCollapse')
+// const collapseElement = document.getElementById('navbarClicktotogleof')
 
 function hide(){
     
     for (const key in dict) {
         if (dict.hasOwnProperty(key)) {
-        //   const value = myObject[key];
-        //   console.log(`${key}: ${value}`);
             dict[key].forEach(targrtL => {
                 document.getElementById(targrtL).classList.add("d-none")
             });
-        //   document.getElementById(value).style.display = "revert"
         }
     }  
+
+    if (window.matchMedia('(max-width: 600px)').matches) {
+        // console.log(navbarCOLAPS.collapse)
+        // console.log(collapseElement.collapse)
+
+        // collapseElement.collapse('hide');
+        // navbarCOLAPS.click();
+
+        if (navbarCOLAPS.classList.contains('show')) {
+            navbarCOLAPS.classList.remove('show');
+            // console.log('som tuna hides')
+        } else {
+            // navbarCOLAPS.collapse('show');
+            // console.log('som tuna show')
+        }
+    }
+    
+}
+
+
+function showMap(map){
+    ['ZSMEDZILABORECKA','ZSDRIENOVA','BALANCEDOM'].forEach((e) => {
+        if (!document.getElementById(e).classList.contains('d-none')) {
+            document.getElementById(e).classList.add('d-none')
+        }
+    });
+    document.getElementById(map).classList.remove('d-none')
 }
 
 // window.addEventListener("resize", function() {
