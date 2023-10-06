@@ -73,7 +73,8 @@ const dict = {
     "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
     "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"],
     "treningi" : ["TRENINGYHODINI", "HOTSIDENAWBARTRENINGI"],
-    "kontakt" : ["KONTAKT", "HOTSIDENAWBARKONTAKT"]
+    "kontakt" : ["KONTAKT", "HOTSIDENAWBARKONTAKT","MAPY"],
+    "galeria" : ["ALBUMFOTO"]
     
 }
 
