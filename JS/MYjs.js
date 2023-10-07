@@ -73,23 +73,45 @@ const dict = {
     "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
     "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"],
     "treningi" : ["TRENINGYHODINI", "HOTSIDENAWBARTRENINGI"],
-    "kontakt" : ["KONTAKT", "HOTSIDENAWBARKONTAKT","MAPY"],
-    "galeria" : ["ALBUMFOTO"]
+    "kontakt" : ["KONTAKT","MAPY"], //"HOTSIDENAWBARKONTAKT"
+    "galeria" : ["ALBUMFOTO"],
+    "galeriafoto" : ["ALBUMFOTO"],
+    "galeriavideo" : ["VYDEOALBUM"]
+    
     
 }
 
+const listOfNotValidTargets = ["galeria","onas","treningi","ponuka"]
+
+const navbarCOLAPS = document.getElementById('navbarCollapse')
+const collapseElement = document.getElementsByClassName('dropdown-menu')
+
+
 function openLocation(targetLocation){
-    hide();
-    console.log(targetLocation)
-    console.log(dict[targetLocation])
-    dict[targetLocation].forEach(targrtL => {
-        document.getElementById(targrtL).classList.remove("d-none")
-    });
+    // console.log(listOfNotValidTargets.contains(targetLocation))
+    if (window.matchMedia('(max-width: 765px)').matches && !listOfNotValidTargets.includes(targetLocation) ) {
+        let json = [];
+        [...collapseElement].forEach((e) =>  {json.push(e.classList) });
+        json = json.map((e) => {return [...e]})
+        json = [].concat(...json)
+        // console.log()
+
+        // console.log(navbarCOLAPS.collapse)
+        // console.log(collapseElement.collapse)
+
+        // collapseElement.collapse('hide');
+        // navbarCOLAPS.click();
+        // console.log(json)
+        showHide(targetLocation)
+        navbarCOLAPS.classList.remove('show');
+        
+    }else{
+        showHide(targetLocation)
+    }
+
 }
 
 
-const navbarCOLAPS = document.getElementById('navbarCollapse')
-// const collapseElement = document.getElementById('navbarClicktotogleof')
 
 function hide(){
     
@@ -101,22 +123,30 @@ function hide(){
         }
     }  
 
-    if (window.matchMedia('(max-width: 600px)').matches) {
-        // console.log(navbarCOLAPS.collapse)
-        // console.log(collapseElement.collapse)
+    // if (window.matchMedia('(max-width: 600px)').matches) {
+    //     // console.log(navbarCOLAPS.collapse)
+    //     // console.log(collapseElement.collapse)
 
-        // collapseElement.collapse('hide');
-        // navbarCOLAPS.click();
+    //     // collapseElement.collapse('hide');
+    //     // navbarCOLAPS.click();
 
-        if (navbarCOLAPS.classList.contains('show')) {
-            navbarCOLAPS.classList.remove('show');
-            // console.log('som tuna hides')
-        } else {
-            // navbarCOLAPS.collapse('show');
-            // console.log('som tuna show')
-        }
-    }
+    //     if (navbarCOLAPS.classList.contains('show')) {
+    //         navbarCOLAPS.classList.remove('show');
+    //         // console.log('som tuna hides')
+    //     } else {
+    //         // navbarCOLAPS.collapse('show');
+    //         // console.log('som tuna show')
+    //     }
+    // }
     
+
+}
+
+function showHide(targetLocation){
+    hide();
+    dict[targetLocation].forEach(targrtL => {
+        document.getElementById(targrtL).classList.remove("d-none")
+    });
 }
 
 

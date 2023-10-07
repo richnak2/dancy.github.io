@@ -61,8 +61,8 @@
               <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
                 <a class="nav-link "  data-bs-toggle="dropdown" href="#" onclick="openLocation('galeria')">galeria</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"> fotky</a></li>
-                  <li><a class="dropdown-item" href="#"> Vydea </a></li>
+                  <li><a class="dropdown-item" href="#" onclick="openLocation('galeriafoto')"> fotky</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="openLocation('galeriavideo')"> Vydea </a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -591,6 +591,13 @@
                   
                 <p><a href="info@dancy.sk">info@dancy.sk</a></p>
               </div>
+              <div class="col-md-6">
+                <p><strong>informácie o tréningoch: </strong>0903 838 651</p>
+                <p><strong>ostatné informácie: </strong>0903 308 981</p>
+                <p><strong> číslo účtu:  </strong>292 886 7217/1100</p>
+                <p><strong>IBAN: </strong>SK69 1100 0000 0029 2886 7217</p>
+                <p><strong>IČO: </strong>42 18 12 08</p>
+              </div>
             </div>
             <h3 class="display-6 font-italic">Tréningy máme tu:</h3>
               <!-- <div class="d-flex row">
@@ -664,14 +671,14 @@
           </div>
 
           
-          <div id="HOTSIDENAWBARKONTAKT" class="col-md-3  px-0 w100 text-center d-none">
+          <!-- <div id="HOTSIDENAWBARKONTAKT" class="col-md-3  px-0 w100 text-center d-none">
             <p><strong>informácie o tréningoch: </strong>0903 838 651</p>
             <p><strong>ostatné informácie: </strong>0903 308 981</p>
             <p><strong> číslo účtu:  </strong>292 886 7217/1100</p>
             <p><strong>IBAN: </strong>SK69 1100 0000 0029 2886 7217</p>
             <p><strong>IČO: </strong>42 18 12 08</p>
 
-          </div>
+          </div> -->
 
           <div id="MAPY" class="d-none">
             <div class="d-flex justify-content-sm-center flex-wrap  px-0 w100 text-center d-none">
@@ -696,8 +703,8 @@
             </div>
           </div>
 
-          <div id="ALBUMFOTO" class="py-5 col-md-9 d-none">
-            <h1 class="display-4 font-italic mb-4">Galeria/fotky</h1>
+          <div id="ALBUMFOTO" class="py-5 col-md-12 d-none">
+            <h1 class="display-4 font-italic mb-4 text-center">Galeria/fotky</h1>
 
             <div class="container">
     
@@ -705,117 +712,261 @@
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
                       <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
-                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="VYDEOALBUM" class="py-5 col-md-12 d-none">
+            <h1 class="display-4 font-italic mb-4 text-center">Galeria/videa</h1>
+
+            <div class="container">
+    
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top"  src="https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/356656237_9548937301815128_5943293901465309050_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=813123&_nc_ohc=cT_M20r0wpUAX9pc8Cv&_nc_ht=scontent-fra3-2.xx&oh=00_AfCDxMFoAZW1t_aRL56P_7d_KU6pHrkiju0Kvlg8xvk46w&oe=65257376" data-holder-rendered="true">
+                    <div class="card-body text-center">
+                      <p class="card-text text-dark mb-1">sutaz A</p>
+                      <p class="card-text text-secondary"> <a href="https://www.facebook.com/media/set/?set=a.9548925081816350&type=3">facebook</a></p>
                     </div>
                   </div>
                 </div>
