@@ -28,36 +28,28 @@ document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
 
 const NazovGrupy = document.getElementById('NAZOVGRUPY')
 
-let dropdownItems = document.querySelectorAll('.selectedtraining');    
-for (let i = 0; i < dropdownItems.length; i++) {
-    dropdownItems[i].onclick = () =>{ selectGroup(dropdownItems[i].id, dropdownItems[i].innerHTML); } 
-    // dropdownItems[i].removeAttribute('href');
-}
+// let dropdownItems = document.querySelectorAll('.selectedtraining');    
+// for (let i = 0; i < dropdownItems.length; i++) {
+//     dropdownItems[i].onclick = () =>{ selectGroup(dropdownItems[i].id, dropdownItems[i].innerHTML); } 
+//     // dropdownItems[i].removeAttribute('href');
+// }
 
-function selectGroup(id, innertext){
-    NazovGrupy.innerHTML = innertext;
-    console.log(id);
+function selectGroup(id, selfelement){
+    NazovGrupy.innerHTML = selfelement.innerHTML;
+    console.log(id,selfelement.innerHTML);
     let alltrainings = document.querySelectorAll('.allselected');
-    if (id === 'allselected') {
-        alltrainings.forEach(elment => {
-            // elment.setAttribute('display','revert')
-            elment.style.display = 'revert' 
-
-        });
-    }else{
-        alltrainings.forEach(elment => {
-            console.log(elment.className.toString().includes(id))
-            if (elment.className.toString().includes(id)) {
-                elment.style.display = 'revert' ;
-                // ('display','revert')   
-            }else{
-                
-                elment.style.display = 'none' ;
-                // elment.setAttribute('display','none')
-            }
-        });
+    
+    alltrainings.forEach(elment => {
+        // console.log(elment.classList.contains(id))
+        console.log(elment.className.toString().includes(id))
+        if (elment.classList.contains(id)) {
+            elment.classList.remove("d-none")
+        }else{
+            elment.classList.add("d-none")
+        }
+    });
         
-    };
+   
 }
 
 
@@ -88,20 +80,11 @@ const collapseElement = document.getElementsByClassName('dropdown-menu')
 
 
 function openLocation(targetLocation){
-    // console.log(listOfNotValidTargets.contains(targetLocation))
     if (window.matchMedia('(max-width: 765px)').matches && !listOfNotValidTargets.includes(targetLocation) ) {
         let json = [];
         [...collapseElement].forEach((e) =>  {json.push(e.classList) });
         json = json.map((e) => {return [...e]})
         json = [].concat(...json)
-        // console.log()
-
-        // console.log(navbarCOLAPS.collapse)
-        // console.log(collapseElement.collapse)
-
-        // collapseElement.collapse('hide');
-        // navbarCOLAPS.click();
-        // console.log(json)
         showHide(targetLocation)
         navbarCOLAPS.classList.remove('show');
         
@@ -122,22 +105,6 @@ function hide(){
             });
         }
     }  
-
-    // if (window.matchMedia('(max-width: 600px)').matches) {
-    //     // console.log(navbarCOLAPS.collapse)
-    //     // console.log(collapseElement.collapse)
-
-    //     // collapseElement.collapse('hide');
-    //     // navbarCOLAPS.click();
-
-    //     if (navbarCOLAPS.classList.contains('show')) {
-    //         navbarCOLAPS.classList.remove('show');
-    //         // console.log('som tuna hides')
-    //     } else {
-    //         // navbarCOLAPS.collapse('show');
-    //         // console.log('som tuna show')
-    //     }
-    // }
     
 
 }
@@ -158,58 +125,3 @@ function showMap(map){
     });
     document.getElementById(map).classList.remove('d-none')
 }
-
-// window.addEventListener("resize", function() {
-//     resize();
-// });
-
-// window.onload = () => {
-//     resize();
-//     console.log('som tunak');
-// }
-
-// function resize(){
-//     if (window.innerWidth > 0) {
-//         console.log('som tunak')
-
-        
-
-// }
-// }
-
-
-// document.addEventListener("DOMContentLoaded", function(){
-
-//     // make it as accordion for smaller screens
-//     if (window.innerWidth > 992) {
-//         console.log('som tunak')
-
-//         document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
-            
-//             everyitem.addEventListener('mouseover', function(e){
-
-//                 let el_link = this.querySelector('a[data-bs-toggle]');
-
-//                 if(el_link != null){
-//                     let nextEl = el_link.nextElementSibling;
-//                     el_link.classList.add('show');
-//                      nextEl.classList.add('show');
-//                 }
-                
-//             });
-//             everyitem.addEventListener('mouseleave', function(e){
-//                  let el_link = this.querySelector('a[data-bs-toggle]');
-                
-//                 if(el_link != null){
-//                     let nextEl = el_link.nextElementSibling;
-//                     el_link.classList.remove('show');
-//                      nextEl.classList.remove('show');
-//                 }
-                
-
-//             })
-//         });
-
-//     }
-//     // end if innerWidth
-// }); 

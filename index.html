@@ -67,18 +67,23 @@
             </li>
             <li class="nav-item dropdown">
               <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
-              <a class="nav-link "  data-bs-toggle="dropdown" href="#" onclick="openLocation('treningi')">Treningy</a>
+              <a class="nav-link "  data-bs-toggle="dropdown" href="#" onclick="openLocation('treningi');selectGroup('all',this)">Treningy</a>
               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Mini Dancy 3-4</a></li>
-                  <li><a class="dropdown-item" href="#">Mini Dancy 5-6</a></li>
-                  <li><a class="dropdown-item" href="#">HIP HOP</a></li>
-                  <li><a class="dropdown-item" href="#">Teens</a></li>
-                  <li><a class="dropdown-item" href="#">Teens individualne</a></li>
-                  <li><a class="dropdown-item" href="#">Teens skupiny</a></li>
-                  <li><a class="dropdown-item" href="#">Kids A</a></li>
-                  <li><a class="dropdown-item" href="#">Kids B</a></li>
-                  <li><a class="dropdown-item" href="#">Gymnastika 4-7</a></li>
-                  <li><a class="dropdown-item" href="#">Gymnastika 7-11</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("all",this)'>ALL</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("kids",this)'>Kids</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("mini",this)'>Mini Dancy</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("hiphop",this)'>HIP HOP</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("gymnastika",this)'>Gymnastika</a></li>
+
+                <!-- <li><a class="dropdown-item" href="#">Mini Dancy 3-4</a></li>
+                <li><a class="dropdown-item" href="#">Mini Dancy 5-6</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Teens individualne</a></li>
+                  <li><a class="dropdown-item" href="#">Teens skupiny</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Kids A</a></li>
+                  <li><a class="dropdown-item" href="#">Kids B</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Gymnastika 4-7</a></li>
+                  <li><a class="dropdown-item" href="#">Gymnastika 7-11</a></li> -->
                 </ul>
             </li>
             <li class="nav-item">
@@ -376,35 +381,63 @@
           </div>
             
 
-          <div id="TRENINGYHODINI" class="col-md-9 table-responsive d-none">
+          <div id="TRENINGYHODINI" class="col-md-9 d-none">
             <div class="text-center">
-              <div class="dropdown">
+              <h1 id="NAZOVGRUPY" class="display-4 font-italic">ALL</h1>
+
+                <div  class="allselected all">
+                  <img src="images/TRENINGY/all.png">
+                </div>
+                <div  class="allselected teens d-none">
+                  <img src="images/TRENINGY/teens.png">
+                </div>
+                <div  class="allselected kids d-none">
+                  <img src="images/TRENINGY/kids.png">
+                </div>
+                <div class="allselected mini d-none">
+                  <img src="images/TRENINGY/mini.png">
+                </div>
+                <div class="allselected hiphop d-none">
+                  <img src="images/TRENINGY/hiphop.png">
+                </div>
+                <div class="allselected gymnastika d-none">
+                  <img src="images/TRENINGY/gymnastika.png">
+                </div>
+
+                <!-- <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   group?
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a id="allselected" class="dropdown-item selectedtraining">All</a>
-                  <a id="minidancy34" class="dropdown-item selectedtraining">Mini Dancy 3-4</a>
-                  <a id="minidancy56" class="dropdown-item selectedtraining">Mini Dancy 5-6</a>
-                  <a id="hiphop" class="dropdown-item selectedtraining">HIP HOP</a>
+                  <a id="all" class="dropdown-item selectedtraining">ALL</a>
+
                   <a id="teens" class="dropdown-item selectedtraining">Teens</a>
-                  <a id="teensICH" class="dropdown-item selectedtraining">Teens individualne</a>
-                  <a id="teensS" class="dropdown-item selectedtraining">Teens skupiny</a>
-                  <a id="kidsA" class="dropdown-item selectedtraining">Kids A</a>
-                  <a id="kidsB" class="dropdown-item selectedtraining">Kids B</a>
-                  <a id="gymnastika47" class="dropdown-item selectedtraining">Gymnastika 4-7</a>
-                  <a id="gymnastika711" class="dropdown-item selectedtraining">Gymnastika 7-11</a>
-                  
+                  <a id="kids" class="dropdown-item selectedtraining">Kids</a>
+                  <a id="minidancy" class="dropdown-item selectedtraining">Mini Dancy</a>
+                  <a id="hiphop" class="dropdown-item selectedtraining">HIP HOP</a>
+                  <a id="gymnastika" class="dropdown-item selectedtraining">Gymnastika</a>
+                 
                 </div>
-              </div>
+                <h1 id="NAZOVGRUPY" class="display-4 font-italic">Nazov grupy</h1>
+
+                <div>
+                  <img src="images/TRENINGY/all.png">
+                  <img src="images/TRENINGY/teens.png">
+                  <img src="images/TRENINGY/kids.png">
+                  <img src="images/TRENINGY/mini.png">
+                  <img src="images/TRENINGY/hiphop.png">
+                  <img src="images/TRENINGY/gymnastika.png">
+                </div>
+              </div> -->
              
 
 
-              <h1 id="NAZOVGRUPY" class="display-4 font-italic">Nazov grupy</h1>
             </div>
 
-            <div id="ROZVRHHODIN" class="table-responsive">  
-              <table class="table align-middle table-bordered">
+            <div id="ROZVRHHODIN" class="col-md-9">
+             
+                
+              <!-- <table class="table align-middle table-bordered">
                   <thead>
                       <tr>
                           <th class="text-center align-middle"></th>
@@ -425,91 +458,91 @@
                               <p >modrá</p>
                           </td>
                       </tr>
-                      <tr>
+                      <tr class="teens kids minidancy allselected">
                           <td class="text-center align-middle " rowspan="2">PONDELOK</td>
                           <td class="text-center align-middle ">
-                              <p class="minidancy34 allselected">MINI DANCY<br>16:00 - 16:45<br>3 - 4 roční</p>
+                              <p class="minidancy allselected">MINI DANCY<br>16:00 - 16:45<br>3 - 4 roční</p>
                           </td>
                           <td class="text-center align-middle">
                               <p class="teens allselected">TEENS<br>16:00 - 18:00</p>
                           </td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle">
-                              <p class="kidsA allselected">KIDS A<br>16:00 - 17:30</p>
+                              <p class="kids allselected">KIDS A<br>16:00 - 17:30</p>
                           </td>
                       </tr>
                       <tr>
                           <td class="text-center align-middle">
-                              <p class="minidancy56 allselected">MINI DANCY<br>16:45 - 17:30<br>5 - 6 roční</p>
+                              <p class="minidancy allselected">MINI DANCY<br>16:45 - 17:30<br>5 - 6 roční</p>
                           </td>
                           <td class="text-center align-middle">
-                              <p class="teens teensICH allselected">TEENS<br>18:00 - 19:00<br>individuálne choreo</p>
+                              <p class="teens allselected">TEENS<br>18:00 - 19:00<br>individuálne choreo</p>
                           </td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle"></td>
                       </tr>
-                      <tr>
+                      <tr class="hiphop allselected">
                           <td class="text-center align-middle" rowspan="2">UTOROK</td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle">
-                              <p class="gymnastika711 allselected">GYMNASTIKA<br>16:00 - 17:00<br>7 - 11 roční</p>
+                              <p class="gymnastika allselected">GYMNASTIKA<br>16:00 - 17:00<br>7 - 11 roční</p>
                           </td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle"></td>
                       </tr>
-                      <tr>
+                      <tr class="hiphop allselected">
                           <td class="text-center align-middle">
                               <p class="hiphop allselected">HIP HOP<br>17:00 - 18:00<br>6 - 12 roční</p>
                           </td>
                           <td class="text-center align-middle">
-                              <p class="gymnastika47 allselected">GYMNASTIKA<br>17:00 - 18:00<br>4 - 7 roční</p>
+                              <p class="gymnastika allselected">GYMNASTIKA<br>17:00 - 18:00<br>4 - 7 roční</p>
                           </td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle"></td>
                       </tr>
-                      <tr>
+                      <tr class="teens kids allselected">
                           <td class="text-center align-middle" rowspan="2">STREDA</td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle" rowspan="2">
-                              <p class="teens teensS allselected">TEENS<br>16:00 - 19:00<br>skupiny</p>
+                              <p class="teens allselected">TEENS<br>16:00 - 19:00<br>skupiny</p>
                           </td>                   
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle">
-                              <p class="kidsB allselected">KIDS B<br>16:00 - 17:30</p>
+                              <p class="kids allselected">KIDS B<br>16:00 - 17:30</p>
                           </td>
                       </tr>
-                      <tr>
+                      <tr class="teens kids hiphop allselected">
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle"></td>
                       </tr>
-                      <tr>
+                      <tr class="teens kids  minidancy hiphop allselected">
                           <td class="text-center align-middle" rowspan="2">ŠTVRTOK</td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle">
-                              <p class="kidsA kidsB allselected">KIDS A+B<br>16:00 - 17:30</p>
+                              <p class="kids allselected">KIDS A+B<br>16:00 - 17:30</p>
                           </td>
                           <td class="text-center align-middle">
                               <p class="teens allselected">TEENS<br>16:00 - 17:00</p>
                           </td>
                           <td class="text-center align-middle">
-                              <p class="minidancy56 allselected">MINI DANCY<br>16:00 - 16.45<br>5 - 6 roční</p>
+                              <p class="minidancy allselected">MINI DANCY<br>16:00 - 16.45<br>5 - 6 roční</p>
                           </td>
                       </tr>
-                      <tr>
+                      <tr class="kids  minidancy hiphop allselected">
                           <td class="text-center align-middle">
                               <p class="hiphop allselected">HIP HOP<br>17:00 - 18:00<br>6 - 12 roční</p>
                           </td>
                           <td class="text-center align-middle">
-                              <p class="kidsA allselected">KIDS A<br>17:30 - 19.00</p>
+                              <p class="kids allselected">KIDS A<br>17:30 - 19.00</p>
                           </td>
                           <td class="text-center align-middle"></td>
                           <td class="text-center align-middle">
-                              <p class="minidancy34 allselected">MINI DANCY<br>16:45 - 17:30<br>3 - 4 roční</p>
+                              <p class="minidancy allselected">MINI DANCY<br>16:45 - 17:30<br>3 - 4 roční</p>
                           </td>
                       </tr>
                   </tbody>
-              </table>
+              </table> -->
             </div>
 
           </div>
@@ -983,7 +1016,6 @@
             <p class="lead my-3"><a href='#' onclick="openLocation('onasHistoria')">História</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onasCoTancujem')">Čo tancujeme?</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onasTrenery')">Tréneri</a></p>
-            <!-- <p class="lead my-3"><a href='#' onclick="openLocation('onasTreningy')">Tréningy</a></p> -->
             <p class="lead my-3"><a href='#' onclick="openLocation('onasUdalosty')">Udalosti</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onas2Percenta')">2% z daní</a></p>
             <p class="lead my-3"><a href='#' onclick="openLocation('onasPartneri')">Partneri</a></p>
@@ -999,16 +1031,21 @@
 
           <div id="HOTSIDENAWBARTRENINGI" class="col-md-3  px-0 w100 text-center d-none">
             <h3 class="display-4 font-italic">Treningy</h3>
-            <p class="lead my-3"><a href='#'>Mini Dancy 3-4</a></p>
-            <p class="lead my-3"><a href='#'>Mini Dancy 5-6</a></p>
-            <p class="lead my-3"><a href='#'>HIP HOP</a></p>
-            <p class="lead my-3"><a href='#'>Teens</a></p>
-            <p class="lead my-3"><a href='#'>Teens individualne</a></p>
-            <p class="lead my-3"><a href='#'>Teens skupiny</a></p>
-            <p class="lead my-3"><a href='#'>Kids A</a></p>
-            <p class="lead my-3"><a href='#'>Kids B</a></p>
-            <p class="lead my-3"><a href='#'>Gymnastika 4-7</a></p>
-            <p class="lead my-3"><a href='#'>Gymnastika 7-11</a></p>
+            <!-- <p class="lead my-3"><a href='#'>Mini Dancy 3-4</a></p>
+            <p class="lead my-3"><a href='#'>Mini Dancy 5-6</a></p> -->
+            <p class="lead my-3"><a href='#' onclick='selectGroup("all",this)'>ALL</a></p>
+            <p class="lead my-3"><a href='#' onclick='selectGroup("teens",this)'>Teens</a></p>
+            <p class="lead my-3"><a href='#' onclick='selectGroup("kids",this)'>Kids</a></p>
+            <p class="lead my-3"><a href='#' onclick='selectGroup("mini",this)'>Mini Dancy</a></p>
+            <p class="lead my-3"><a href='#' onclick='selectGroup("hiphop",this)'>HIP HOP</a></p>
+            <p class="lead my-3"><a href='#' onclick='selectGroup("gymnastika",this)'>Gymnastika</a></p>
+            
+            <!-- <p class="lead my-3"><a href='#'>Teens individualne</a></p> -->
+            <!-- <p class="lead my-3"><a href='#'>Teens skupiny</a></p> -->
+            <!-- <p class="lead my-3"><a href='#'>Kids A</a></p> -->
+            <!-- <p class="lead my-3"><a href='#'>Kids B</a></p> -->
+            <!-- <p class="lead my-3"><a href='#'>Gymnastika 4-7</a></p>
+            <p class="lead my-3"><a href='#'>Gymnastika 7-11</a></p> -->
 
           </div>
 
