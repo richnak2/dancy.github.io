@@ -35,7 +35,7 @@ const NazovGrupy = document.getElementById('NAZOVGRUPY')
 // }
 
 function selectGroup(id, selfelement){
-    NazovGrupy.innerHTML = selfelement.innerHTML;
+    NazovGrupy.innerHTML = selfelement.innerHTML ? selfelement.innerHTML : selfelement;
     console.log(id,selfelement.innerHTML);
     let alltrainings = document.querySelectorAll('.allselected');
     
@@ -64,7 +64,7 @@ const dict = {
     "onas2Percenta" : ["2PDANE", "HOTSIDENAWBARCOONAS"],
     "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
     "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"],
-    "treningi" : ["TRENINGYHODINI", "HOTSIDENAWBARTRENINGI"],
+    "treningi" : ["TRENINGYHODINI",  "HOTSIDENAWBARTRENINGI"], 
     "kontakt" : ["KONTAKT","MAPY"], //"HOTSIDENAWBARKONTAKT"
     "galeria" : ["ALBUMFOTO"],
     "galeriafoto" : ["ALBUMFOTO"],

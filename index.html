@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Ondrej Richnák">
+    <meta name="google-site-verification" content="ClcHUlOWw3pwXRndoLeyUsYaTibwQEoCBKbxSRv65M8" />
     <!-- <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico"> -->
 
     <title>Dancy original webside</title>
@@ -41,7 +44,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasHistoria')"> Hystoria </a></li>
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasCoTancujem')"> Co tancujeme</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="openLocation('onasTrenery')"> Trenery</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="openLocation('onasTrenery');selectGroup('DanielaVrbova','ALL')"> Trenery</a></li>
                   <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onasTreningy')"> treningy </a></li> -->
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onasUdalosty')"> udalosty </a></li>
                   <li><a class="dropdown-item" href="#" onclick="openLocation('onas2Percenta')"> 2% s dany </a></li>
@@ -67,7 +70,7 @@
             </li>
             <li class="nav-item dropdown">
               <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
-              <a class="nav-link "  data-bs-toggle="dropdown" href="#" onclick="openLocation('treningi');selectGroup('all',this)">Treningy</a>
+              <a class="nav-link "  data-bs-toggle="dropdown" href="#" onclick="openLocation('treningi');selectGroup('all','ALL')">Treningy</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("all",this)'>ALL</a></li>
                 <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
@@ -159,41 +162,38 @@
             <div class="row">
               <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/lenka_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a  href="#myCarousel">Heading</a></h3>
-                <p>nieco malo o mne</p>
-              </div><!-- /.col-lg-4 -->
+                <h3><a  href="#myCarousel" onclick="openLocation('onasTrenery');selectGroup('LenkaSzebeniova','ALL')">Lenka Szebeniová</a></h3>
+                <!-- <p>nieco malo o mne</p> -->
+              </div>
               <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/barbora_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a  href="#myCarousel">Heading</a></h3>
-                <p>nieco malo o mne</p>
-              </div><!-- /.col-lg-4 -->
+                <h3><a  href="#myCarousel"onclick="openLocation('onasTrenery');selectGroup('BarborkaStenova','ALL')">Barborka Stenová</a></h3>
+                <!-- <p>nieco malo o mne</p> -->
+              </div>
               <div class="col-lg-4">
-                <img class="rounded-circle" src="images/TRAINERS/barborka_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a  href="#myCarousel">Heading</a></h3>
-                <p>nieco malo o mne</p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
+                <img class="rounded-circle" src="images/TRAINERS/barborka_thumb.jpg" alt="Generic placeholder image" onclick="openLocation('onasTrenery');selectGroup('BarboraBrezinova','ALL')" width="140" height="140">
+                <h3><a  href="#myCarousel" onclick="openLocation('onasTrenery');selectGroup('BarboraBrezinova','ALL')">Bc. Barbora Brezinová dis.art</a></h3>
+                <!-- <p>nieco malo o mne</p> -->
+              </div>
+              <!-- <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/dada_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h3><a  href="#myCarousel">Heading</a></h3>
                 <p>nieco malo o mne</p>
-              </div><!-- /.col-lg-4 -->
+              </div> -->
               <div class="col-lg-4">
-                <img class="rounded-circle" src="images/TRAINERS/danka_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a  href="#myCarousel">Heading</a></h3>
-                <p>nieco malo o mne</p>
-              </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-            <div class="text-center">
-              <button type="button" class="btn btn-primary">Read more about our teem</button>
+                <img class="rounded-circle" src="images/TRAINERS/danka_thumb.jpg" alt="Generic placeholder image" onclick="openLocation('onasTrenery');selectGroup('DanielaVrbova','ALL')" width="140" height="140">
+                <h3><a  href="#myCarousel" onclick="openLocation('onasTrenery');selectGroup('DanielaVrbova','ALL')">Daniela Vrbova</a></h3>
+                <!-- <p>nieco malo o mne</p> -->
+              </div>
             </div>
+            <!-- <div class="text-center">
+              <button type="button" class="btn btn-primary">Read more about our teem</button>
+            </div> -->
           </div>
           
         </div>
 
         
-
-
-
         <div class="mt-4  p-3 p-md-5 text-white  bg-dark row  mr-0 ml-0  ">
 
           
@@ -295,32 +295,31 @@
             <div class="d-flex flex-wrap ml-auto mr-auto mb-5" >
               <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/lenka_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a href="#myCarousel">Heading</a></h3>
+                <h3><a href="#"  onclick="openLocation('onasTrenery');selectGroup('LenkaSzebeniova','ALL')">Lenka Szebeniová</a></h3>
               </div>
               <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/barbora_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a href="#myCarousel">Heading</a></h3>
+                <h3><a href="#" onclick="openLocation('onasTrenery');selectGroup('BarborkaStenova','ALL')">Barborka Stenová</a></h3>
               </div>
               <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/barborka_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a href="#myCarousel">Heading</a></h3>
+                <h3><a href="#" onclick="openLocation('onasTrenery');selectGroup('BarboraBrezinova','ALL')">Bc. Barbora Brezinová dis.art</a></h3>
               </div>
-              <div class="col-lg-4">
+              <!-- <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/dada_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a href="#myCarousel">Heading</a></h3>
-              </div>
+                <h3><a href="#">Heading</a></h3>
+              </div> -->
               <div class="col-lg-4">
                 <img class="rounded-circle" src="images/TRAINERS/danka_thumb.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h3><a href="#myCarousel">Heading</a></h3>
+                <h3><a href="#" onclick="openLocation('onasTrenery');selectGroup('DanielaVrbova','ALL')">Daniela Vrbova</a></h3>
               </div>
             </div>
-            
+
             
             <div  class="row" >
-              <div id="TRENERYKONKRETNE" class="col-md-9  px-0 imagesinsection ">
+              <div class="col-md-9  px-0 imagesinsection allselected DanielaVrbova">
                 <h1 class="display-4 font-italic">Trenery</h1>
                 <h3 class="display-5 font-italic">Daniela Vrbová</h3>
-                <!-- <img class="" src="images/TRAINERS/danka.jpg" alt="Generic placeholder image" > -->
                 <p><a href="danka@dancy.sk">danka@dancy.sk</a></p>
                 <h6 class="display-6 font-italic">Manažér TŠ DANCY, trénerka juniorov</h6>
                   <p>Je trénerkou III. triedy disciplín IDO</p>
@@ -373,10 +372,86 @@
                   6. miesto na MSR v disciplíne DVK show dance skupina – 2010
                 </li>
               </div>
+              <div class="col-md-9  px-0 imagesinsection allselected LenkaSzebeniova">
+                <h1 class="display-4 font-italic">Trenery</h1>
+                <h3 class="display-5 font-italic">Lenka Szebeniováá</h3>
+                <h6 class="display-6 font-italic">Lektorka Zumby</h6>
+                
+                <p>
+                  Odmalička hopsala v obývačke malého bytu. Počas školských čias pôsobila v mimoškolských aktivitách a taktiež v centre voľného času, kde sa venovala prevažne modernému tancu. Príchodom na strednú školu podľahla latino hudbe a tiež tancom ako cha-cha, samba, salsa, merengue. Nemala však príležitosť sa im venovať na profesionálnej úrovni.
+                </p>
+                <p>
+                  Láska k latino hudbe ju doviedla na prvú Zumba hodinu na jar v roku 2011. Zumba si ju získala naplno svojou párty atmosférou a pozitívnou energiou, ktorá prenikla do špiku kosti. Rozhodnutie šíriť ďalej pozitívnu energiu a radosť z tanca bolo spečatené v januári 2016, kedy si spravila inštruktorský kurz a stala sa licencovanou Zumba inštruktorkou.
+                </p>
+              </div>
+              <div class="col-md-9  px-0 imagesinsection allselected BarborkaStenova">
+                <h1 class="display-4 font-italic">Trenery</h1>
+                <h3 class="display-5 font-italic">Barborka Stenová</h3>
+                <h6 class="display-6 font-italic">Trénerka DVK II.</h6>
+                
+                <p>
+                  Ako 3 ročná stála hanblivo a ticho na javisku, no už v piatich rokoch odvážne dupkala nožičkami v ľudovo - dramatických pásmach. V škôlke si vyskúšala aj country tance a gymnastiku. Doma neustále pochodovala a točila varechou, aby z nej bola šikovná mažoretka.
+                </p>
+                <p>
+                  V siedmich rokoch začala tancovať v TK Spektrum, kde sa venovala rôznym tanečným štýlom. Najviac si však obľúbila show dance, pretože bola rada súčasne tanečníčkou aj herečkou. Popri tanci naďalej pokračovala aj v gymnastike.
+                </p>
+                <p>
+                  Poď súťažnými reflektormi sa ocitla už ako 8 ročná. Po krásnych siedmich tanečných rokoch v klube prestúpila do TŠ Dancy k svojej obľúbenej trénerke Danke z detstva a naďalej pod jej vedením zbiera vzácne úspechy na rôznych súťažiach.
+                </p>
+                <p>
+                  Popri tanci posledné dva roky odovzdáva svoje skúsenosti deťom na tanečnom krúžku na ZŠ Medzilaborecká.
+                </p>
+                <h6 class="display-6 font-italic">Najväčšie vlastné tanečné úspechy:</h6>
+
+                 <li>
+                  5. miesto na MS v disciplíne show dance produkcia
+
+                </li>
+                <li>
+                  3. miesto na MSR v disciplíne DVK show dance skupina
+
+                </li>
+                <li>
+                  2. miesto na MSR v disciplíne DVK show dance formácia
+                </li>
+                <li>
+                  1. miesto na MSR v disciplíne JVK show dance formácia
+                </li>
+                <li>
+                  3. miesto na MSR v disciplíne JVK show dance formácia
+                </li>
+                <li>
+                  Účasť na Majstrovstvách sveta a Európy show dance
+                </li>
+                <li>
+                  1. miesto na Top Dancing v disciplíne JVK scénika
+                </li>
+
+              </div>
+              <div class="col-md-9  px-0 imagesinsection allselected BarboraBrezinova">
+                <h1 class="display-4 font-italic">Trenery</h1>
+                <h3 class="display-5 font-italic">Bc. Barbora Brezinová dis.art</h3>
+                <h6 class="display-6 font-italic">Trénerka DANCE FITNESS</h6>
+                
+
+
+                <p>
+                  Tancu sa venujem od útleho detstva. Začínala som pôsobením v Detskom baletnom štúdiu a modernou gymnastikou ako 5-ročná. Som absolventkou Tanečného konzervatória Evy Jaczovej v Bratislave. V rámci štúdia som mala možnosť účinkovať na školských koncertoch, televíznych show, taktiež prezentovať moje vlastné choreografie. Moja najväčšia túžba bola spoznať aj iné tanečné štýly, najmä moderného a súčasného tanca, ktorý je rozšírený vo svete.                </p>
+                <p>
+Túto túžbu sa mi podarilo splniť si vďaka mojej doteraz najväčšej životnej výzve a skúsenosti. Vyštudovala som 4-ročné bakalárske štúdium na ArtEZ hogeschool voor de kunsten – Dancer/maker v Holandsku. Vďaka pestrému programu inštitútu som sa stretla s tanečnými štýlmi moderného tanca: Limón, Graham, Cunningham, jazzom, ďalej technikami súčasného tanca. Absolvovala som aj hodiny kinestetic awareness, conditioning, pilates a jogu. Spolupráca so svetovými choreografmi a prezentovanie ich choreografií v rámci stáže školy ma ako tanečníčku neuveriteľne.
+                </p>
+                <p>
+                  Môj zdravotný úraz chrbta v roku 2013 vyžadoval pravidelné rehabilitačné cvičenie, ktorému sa doteraz intenzívne venujem. Odhodlanie vyliečiť sa bol pre mňa hlavný dôvod, prečo som chcela lepšie rozumieť rehabilitačným technikám a zúčastňovať sa workshopov: fyziofitness, Sm systém, Core tréning, Zdravý chrbát. Moje doterajšie poznatky sa snažím aplikovať na hodinách, ktoré učím pre verejnosť a v tanci.
+                </p>
+              </div>
     
               <div id="TERNERY IMG HOLDER" class="col-md-3  px-0 text-center">
-                <img class="" src="images/TRAINERS/danka.jpg" alt="Generic placeholder image" >
+                <img class="allselected DanielaVrbova" src="images/TRAINERS/danka.jpg" alt="Generic placeholder image" >
+                <img class="allselected LenkaSzebeniova" src="images/TRAINERS/lenka.jpg" alt="Generic placeholder image" >
+                <img class="allselected BarborkaStenova" src="images/TRAINERS/barbora.jpg" alt="Generic placeholder image" >
+                <img class="allselected BarboraBrezinova" src="images/TRAINERS/barborkaina.jpg" alt="Generic placeholder image" >
               </div>
+              
             </div>
           </div>
             
@@ -633,85 +708,9 @@
               </div>
             </div>
             <h3 class="display-6 font-italic">Tréningy máme tu:</h3>
-              <!-- <div class="d-flex row">
-                
-                <div class="col-md-4 container">
-                  <a href="#" onclick="showMap('ZSMEDZILABORECKA')" >ZŠ MEDZILABORECKÁ</a>
-                  <iframe class="d-none" id="ZSMEDZILABORECKA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-4 container">
-                  <a href="#" onclick="showMap('ZSDRIENOVA')">ZŠ DRIEŇOVÁ</a>
-                  <iframe class="d-none" id="ZSDRIENOVA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-4 container">
-                  <a href="#" onclick="showMap('BALANCEDOM')">BALANCE DOM</a>
-                  <iframe class="d-none" id="BALANCEDOM" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div> -->
-
-              <!-- <div class="d-flex    justify-content-xl-center flex-row">
-                
-                <div class="col-md-4 container ">
-                  <a href="#"  >ZŠ MEDZILABORECKÁ</a>
-                  <iframe  id="ZSMEDZILABORECKA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-4 container">
-                  <a href="#" > ZŠ DRIEŇOVÁ</a>
-                  <iframe  id="ZSDRIENOVA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-4 container">
-                  <a href="#" >BALANCE DOM</a>
-                  <iframe  id="BALANCEDOM" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div> -->
-
-              <!-- <div class="d-flex justify-content-xl-center flex-wrap">
-                <div class="col-md-4 mb-4">
-                  <div class="container">
-                    <a href="#">ZŠ MEDZILABORECKÁ</a>
-                    <iframe id="ZSMEDZILABORECKA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="container">
-                    <a href="#">ZŠ DRIEŇOVÁ</a>
-                    <iframe id="ZSDRIENOVA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="container">
-                    <a href="#">BALANCE DOM</a>
-                    <iframe id="BALANCEDOM" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-              </div> -->
-              
-
-              <!-- <div class="d-flex flex-column container align-items-center">
-                  <h5 class="display-6 font-italic"><a href="#" >ZŠ MEDZILABORECKÁ</a></h5>
-                  <iframe  id="ZSMEDZILABORECKA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              <div class="d-flex flex-column container align-items-center">
-                <h5 class="display-6 font-italic"><a href="#" >ZŠ DRIEŇOVÁ</a></h5>
-                  <iframe id="ZSDRIENOVA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              <div class="d-flex flex-column container align-items-center">
-                  <h5 class="display-6 font-italic"><a href="#" >BALANCE DOM</a></h5>
-                  <iframe id="BALANCEDOM" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div> -->
-                
-              <!-- </div> -->
           </div>
 
           
-          <!-- <div id="HOTSIDENAWBARKONTAKT" class="col-md-3  px-0 w100 text-center d-none">
-            <p><strong>informácie o tréningoch: </strong>0903 838 651</p>
-            <p><strong>ostatné informácie: </strong>0903 308 981</p>
-            <p><strong> číslo účtu:  </strong>292 886 7217/1100</p>
-            <p><strong>IBAN: </strong>SK69 1100 0000 0029 2886 7217</p>
-            <p><strong>IČO: </strong>42 18 12 08</p>
-
-          </div> -->
 
           <div id="MAPY" class="d-none">
             <div class="d-flex justify-content-sm-center flex-wrap  px-0 w100 text-center d-none">
@@ -1055,76 +1054,33 @@
 
       </div>
         
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-
-
-      </div><!-- /.container -->
 
 
       <footer id="FOOTER" class="text-center text-lg-start text-white  bg-dark" >
       
-          <!-- Section: Copyright -->
           <section class="p-3 pt-0">
             <div class="  align-items-center">
-              <!-- Grid column -->
-              <!-- <div class="col-md-7 col-lg-8 text-center text-md-start"> -->
-                <!-- Copyright -->
                 <div class="p-3 ">
-                  <!-- <img id='LOGOFOOTER' src="images/LOGO/logoBA_1 colour_centr_neg.jpg" width="70" alt="BA" class="float-left"> -->
-
                   <p>Od roku 2010 © Tanečné štúdio Dancy  </p>
                   <p>kontakt: info@dancy.sk </p>
+
                   <!-- Facebook -->
                   <a class="btn btn-outline-light btn-floating m-1" target=”_blank” href='https://www.facebook.com/tanecnestudiodancy/' role="button"><img src="images/SVG/facebook.svg"></a>
                 
                   <!-- Instagram -->
                   <a class="btn btn-outline-light btn-floating m-1"  target=”_blank” href='https://www.instagram.com/dancy_dancestudio/?hl=sk'   role="button"><img src="images/SVG/instagram.svg"></a>
-
-                  <!-- <p>S podporou hlavného mesta. </p> -->
                 </div>
-                <!-- Copyright -->
-              <!-- </div> -->
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <!-- <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end"> -->
-                <!-- Facebook -->
-                <!-- <a class="btn btn-outline-light btn-floating m-1" target=”_blank” href='https://www.facebook.com/tanecnestudiodancy/' role="button"><img src="images/SVG/facebook.svg"></a> -->
-                
-                <!-- Instagram -->
-                <!-- <a class="btn btn-outline-light btn-floating m-1"  target=”_blank” href='https://www.instagram.com/dancy_dancestudio/?hl=sk'   role="button"><img src="images/SVG/instagram.svg"></a> -->
-              <!-- </div> -->
-              <!-- Grid column -->
             </div>
           </section>
-        <!-- Grid container -->
       </footer>
-      <!-- Remove the container if you want to extend the Footer to full width. -->
-
-
-      <!-- FOOTER -->
       
     </main>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
     <script type="text/javascript" src="JS/popper.min.js.download"></script>
     <script type="text/javascript" src="JS/jquery-3.2.1.slim.min.js.download"></script>
     <script type="text/javascript" src="JS/bootstrap.min.js"></script>
     <script type="text/javascript" src="JS/holder.js"></script>
     <script type="text/javascript" src="JS/MYjs.js"></script>
-    <!-- <script type="text/javascript" src="JS/holder.min.js.download"></script> -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="./Carousel Template for Bootstrap_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./Carousel Template for Bootstrap_files/popper.min.js.download"></script>
-    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js.download"></script>
-     Just to make our placeholder images work. Don't actually copy the next line! -->
-    <!-- <script src="./Carousel Template for Bootstrap_files/holder.min.js.download"></script> -->
-  
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, openLocation Sans, sans-serif">500x500</text></svg></body></html> -->
+      
+  </body>
+</html>
