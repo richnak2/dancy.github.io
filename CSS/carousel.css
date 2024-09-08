@@ -2,6 +2,9 @@ body {
   padding-top: 3rem;
   color: #5a5a5a;
 }
+.carousel-control-prev,.carousel-control-next{
+    width: 10%;
+}
 
 .carousel {
   margin-bottom: 4rem;
