@@ -20,29 +20,78 @@
     max-width: 100%;
     height: auto;
 }
-/* .show{
-} */
-.card-img-top{
+
+
+/* .card {
+    position: relative;
+    overflow: hidden;
+  } */
+  
+/* 
+.card-img-top {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover; 
+} */
+
+
+.portfolio{
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative;
     display: block;
+    margin: 0 auto; */
 }
 
+.card-img-top {
+    /* width: 100%; */
+    /* height: auto; */
+    /* max-height: 400px; */
+    /* object-fit: cover; */
+
+    /* POKUSSS */
+    /* aspect-ratio: 16 / 9; 
+    min-width: 320px;
+    min-height: 180px; */
+
+     /* POKUSSS */
+     aspect-ratio: 4 / 3; 
+     min-width: 160px;
+     min-height: 120px;
+     border-radius: 10px 10px 0 0;
+
+}
+
+/* Fallback for older browsers that don't support aspect-ratio */
+.card-img-top::before {
+    content: "";
+    display: block;
+    padding-top: 75%; 
+}
+
+
 .col-lg-4{
-    /* width: 50vw; */
-    flex-basis: fit-content; 
-    /* max-content; */
-    flex: 1; /* or any other appropriate flex value */
+    /* flex-basis: fit-content; 
+    flex: 1; 
     min-height: fit-content;
     flex-grow: 1;
-    text-align: center;
+    text-align: center; */
+    /* max-content; */
+    /* width: 50vw; */
 }
+
+
 .dropdown-item:hover{
     /* make it custom for each part */
     background-color: #811d1d;
     color: aqua;
 }
 
+.navbar{
+    font-family: 'Arial Black' , sans-serif;
+}
 .nav-item{
     font-weight: 600;
 }
@@ -64,6 +113,7 @@
     position: relative;
 
 }
+
 .myIframe{
     width: 100%;
     height: 100%;
@@ -74,6 +124,160 @@
     right: 0;
     bottom: 0;
 }
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
+
+.card {
+    border: none;
+    color:black;
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+#KONTAKTLEFT{
+    font-size: 2rem;
+}
+
+
+
+#colorFullClose{
+    background: radial-gradient(circle, rgba(192, 63, 251, 0.5) 0%, rgba(252, 70, 107, 1) 100%);
+    color: rgb(255, 255, 255);
+}
+
+
+#colorFullClose:hover{
+    background: radial-gradient(circle, rgba(252, 70, 107, 0.5) 0%, rgba(192, 63, 251, 1) 100%);
+    color: rgb(0, 0, 0);
+}
+
+
+/* TOTO ROBY SVG plus na celu karticku alebo nie */
+.portfolio-link{
+    position: relative;
+    display: block;
+    /* margin: 0 auto; */
+}
+
+.portfolio-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(192, 63, 251, 0.5) 0%, rgba(252, 70, 107, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    border-radius: 10px;
+
+    /* z-index: 10; Ensure it overlays the image */
+  }
+  
+
+
+.card:hover .portfolio-hover {
+    opacity: 1;
+}
+  
+.portfolio-hover-content {
+    color: #fff;
+    font-size: 2rem;
+}
+  
+.fa-plus{
+    color: #fff;
+    width: 200px;
+    top: 200px;
+}
+
+.text-muted{
+    display: block;
+}
+
+.navigateTO{
+    padding-top: 6rem;
+}
+
+#ALLCONTENT{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* AAAAAAAAAAAAAAAAAAAAAAAAA */
+    /* top: 0;
+    position: absolute; */
+}
+
+#FLUIDDIVFIXED{
+    /* BLOCK !!!!! show dont show */
+    display: block; 
+    margin: 1rem;
+    overflow: auto;
+    /* max-width: 100vw; */
+}
+
+.modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.smallHeadTrainers{
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+}
+
+
+.treneri{
+    margin-bottom: 3rem;
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+    .text-muted{
+        display: none;
+    }
+    
+}
+
+
 
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
@@ -115,5 +319,4 @@
         font-size: 2rem;
     }
 } 
-
 

@@ -1,29 +1,30 @@
 
-document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
+//TOTO JE CAST PRE ZOBRAZENIE PODCSATY
+// document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
             
-    everyitem.addEventListener('mouseover', function(e){
+//     everyitem.addEventListener('mouseover', function(e){
 
-        let el_link = this.querySelector('a[data-bs-toggle]');
+//         let el_link = this.querySelector('a[data-bs-toggle]');
 
-        if(el_link != null){
-            let nextEl = el_link.nextElementSibling;
-            el_link.classList.add('show');
-            nextEl.classList.add('show');
-        }
+//         if(el_link != null){
+//             let nextEl = el_link.nextElementSibling;
+//             el_link.classList.add('show');
+//             nextEl.classList.add('show');
+//         }
         
-    });
-    everyitem.addEventListener('mouseleave', function(e){
-        let el_link = this.querySelector('a[data-bs-toggle]');
+//     });
+//     everyitem.addEventListener('mouseleave', function(e){
+//         let el_link = this.querySelector('a[data-bs-toggle]');
         
-        if(el_link != null){
-            let nextEl = el_link.nextElementSibling;
-            el_link.classList.remove('show');
-            nextEl.classList.remove('show');
-        }
+//         if(el_link != null){
+//             let nextEl = el_link.nextElementSibling;
+//             el_link.classList.remove('show');
+//             nextEl.classList.remove('show');
+//         }
         
 
-    })
-});
+//     })
+// });
 
 
 const NazovGrupy = document.getElementById('NAZOVGRUPY')
@@ -36,12 +37,10 @@ const NazovGrupy = document.getElementById('NAZOVGRUPY')
 
 function selectGroup(id, selfelement){
     NazovGrupy.innerHTML = selfelement.innerHTML ? selfelement.innerHTML : selfelement;
-    console.log(id,selfelement.innerHTML);
     let alltrainings = document.querySelectorAll('.allselected');
     
     alltrainings.forEach(elment => {
         // console.log(elment.classList.contains(id))
-        console.log(elment.className.toString().includes(id))
         if (elment.classList.contains(id)) {
             elment.classList.remove("d-none")
         }else{
@@ -55,25 +54,25 @@ function selectGroup(id, selfelement){
 
 const dict = {
     "main" : ["MAINPAGEHED", "MAINPAGE"],
-    "onas" : ["HISTORY", "HOTSIDENAWBARCOONAS"],
-    "onasHistoria" : ["HISTORY", "HOTSIDENAWBARCOONAS"],
-    "onasCoTancujem" : ["COTANCUJEME", "HOTSIDENAWBARCOONAS"],
-    "onasTrenery" : [ "TRENERYKONKRETNEMAINHOLDER", "HOTSIDENAWBARCOONAS"],
+    "onas" : ["ONAS", "HOTSIDENAWBARCOONAS"],
+    // "onasHistoria" : ["HISTORY", "HOTSIDENAWBARCOONAS"],
+    // "onasCoTancujem" : ["COTANCUJEME", "HOTSIDENAWBARCOONAS"],
+    // "onasTrenery" : [ "TRENERYKONKRETNEMAINHOLDER", "HOTSIDENAWBARCOONAS"],
     // "onasTreningy" : ["TRENINGYHODINI", "HOTSIDENAWBARCOONAS"],
-    "onasUdalosty" : [ "HOTSIDENAWBARCOONAS"],
-    "onas2Percenta" : ["2PDANE", "HOTSIDENAWBARCOONAS"],
-    "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
+    // "onasUdalosty" : [ "HOTSIDENAWBARCOONAS"],
+    // "onas2Percenta" : ["2PDANE", "HOTSIDENAWBARCOONAS"],
+    // "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
     "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"],
     "treningi" : ["TRENINGYHODINI",  "HOTSIDENAWBARTRENINGI"], 
     "kontakt" : ["KONTAKT","MAPY"], //"HOTSIDENAWBARKONTAKT"
-    "galeria" : ["ALBUMFOTO"],
-    "galeriafoto" : ["ALBUMFOTO"],
-    "galeriavideo" : ["VYDEOALBUM"]
+    // "galeria" : ["ALBUMFOTO"],
+    // "galeriafoto" : ["ALBUMFOTO"],
+    // "galeriavideo" : ["VYDEOALBUM"]
     
     
 }
 
-const listOfNotValidTargets = ["galeria","onas","treningi","ponuka"]
+const listOfNotValidTargets = ["onas","treningi","ponuka"] // 
 
 const navbarCOLAPS = document.getElementById('navbarCollapse')
 const collapseElement = document.getElementsByClassName('dropdown-menu')
@@ -110,7 +109,7 @@ function hide(){
 }
 
 function showHide(targetLocation){
-    hide();
+    hide();   
     dict[targetLocation].forEach(targrtL => {
         document.getElementById(targrtL).classList.remove("d-none")
     });
@@ -125,3 +124,75 @@ function showMap(map){
     });
     document.getElementById(map).classList.remove('d-none')
 }
+
+
+
+
+
+const zoomInPlusContiner = document.getElementById('FLUIDDIVFIXED')
+const zoomInPlusAll = [...document.getElementsByClassName('modal-body')]
+// console.log(zoomInPlusAll);
+
+function openPonukaBig(sectionId){
+    zoomInPlusAll.forEach(elem => {
+        // console.log(zoomInPlusAll);
+        elem.classList.add("d-none")
+    })
+    zoomInPlusContiner.classList.remove("d-none")
+    const sectionZoomInPlus = document.getElementById(sectionId);
+    sectionZoomInPlus.classList.remove("d-none")
+}
+
+
+function closePonukaBig(){
+    zoomInPlusContiner.classList.add("d-none")
+    zoomInPlusAll.forEach(elem => elem.classList.add("d-none"))
+}
+
+
+
+
+// let sidebar = document.getElementsByClassName("sidebar")[0];
+// let sidebar_content = document.getElementsByClassName("content-wrapper")[0];
+
+// window.onscroll = () => {
+//    let scrollTop = window.scrollY;
+//    let viewportHeight = window.innerHeight;
+//    let sidebarTop = sidebar.getBoundingClientRect().top + window.pageYOffset;
+//    let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+//    if( scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+//       sidebar_content.style.transform = `translateY(-${(contentHeight - viewportHeight + sidebarTop)}px)`;
+//       sidebar_content.style.position  = "fixed"; 
+//     }
+//     else {
+//       sidebar_content.style.transform = "";
+//       sidebar_content.style.position  = ""; 
+//     }
+// };
+
+
+// let sidebar = document.getElementById("sidebar");
+// let sidebar_content = document.getElementById("HOTSIDENAWBARCOONAS");
+
+// window.onscroll = () => {
+//    let scrollTop = window.scrollY;
+//    let viewportHeight = window.innerHeight;   
+//    let sidebarTop = sidebar.getBoundingClientRect().top + window.pageYOffset;
+//    let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+//    if( scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+//           sidebar_content.style.transform = `translateY(-${(contentHeight - viewportHeight + sidebarTop)}px)`;
+//           sidebar_content.style.position  = "fixed"; 
+//     }
+//     else {
+//       sidebar_content.style.transform = "";
+//       sidebar_content.style.position  = ""; 
+//     }
+// };
+
+
+
+
+
+
