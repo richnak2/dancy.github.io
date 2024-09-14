@@ -30,8 +30,8 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top px-5" aria-label="Eleventh navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img id='LOGOMAIN' onclick="openLocation('main')" src="images/LOGO/logo1biele.png" alt="Brand Name">
+        <a class="navbar-brand" href="javascript:void(0);">
+          <img id='LOGOMAIN' onclick="openToThisLocation('main')" src="images/LOGO/logo1biele.png" alt="Brand Name">
         </a>
         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
          aria-controls="myNavbar" aria-expanded="true" aria-label="Toggle navigation">
@@ -42,49 +42,49 @@
           <ul class="navbar-nav mr-auto ">
             <!-- mb-2 mb-lg-0 -->
             <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="#HISTORY" onclick="openLocation('onas')">O nás</a>
+              <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" onclick="openToThisLocation('onas','HISTORY')">O nás</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#COTANCUJEME" onclick="openLocation('onas')"> Čo tancujeme</a>
+                  <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME')"> Čo tancujeme</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#TRENERYKONKRETNEMAINHOLDER" onclick="openLocation('onas')"> Tréneri</a>
+                  <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','TRENERYKONKRETNEMAINHOLDER')"> Tréneri</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="#COTANCUJEME" onclick="openLocation('onas')">ponuka</a>
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" onclick="openToThisLocation('onas','COTANCUJEME')">ponuka</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#COTANCUJEME" onclick="openLocation('onas'); openPonukaBig('BABYDANCY')"> BABY DANCY</a></li>
-                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('MINIDANCY')"> MINI DANCY </a></li>
-                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('GYMNASTIKA')"> GYMNASTIKA </a></li>
-                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('TEAMKIDS')"> TEAM KIDS </a></li>
-                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('TEAMTEENS')"> TEAM TEENS </a></li>
-                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('MOMMYSHAPER')"> MOMMY SHAPER </a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('BABYDANCY')"> BABY DANCY</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('MINIDANCY')"> MINI DANCY </a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('GYMNASTIKA')"> GYMNASTIKA </a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('TEAMKIDS')"> TEAM KIDS </a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('TEAMTEENS')"> TEAM TEENS </a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('MOMMYSHAPER')"> MOMMY SHAPER </a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link " data-bs-toggle="dropdown" href="#"
-                onclick="openLocation('treningi');selectGroup('all','ALL')">Treningy</a>
+                onclick="openToThisLocation('treningi');selectGroup('all','ALL')">Treningy</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("all",this)'>ALL</a>
+                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("all",this)'>ALL</a>
                 </li>
                 <li><a class="dropdown-item" href="#"
-                    onclick='openLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
-                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("kids",this)'>Kids</a>
+                    onclick='openToThisLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("kids",this)'>Kids</a>
                 </li>
-                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("mini",this)'>Mini
+                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("mini",this)'>Mini
                     Dancy</a></li>
-                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("hiphop",this)'>HIP
+                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("hiphop",this)'>HIP
                     HOP</a></li>
                 <li><a class="dropdown-item" href="#"
-                    onclick='openLocation("treningi");selectGroup("gymnastika",this)'>Gymnastika</a>
+                    onclick='openToThisLocation("treningi");selectGroup("gymnastika",this)'>Gymnastika</a>
                 </li>
   
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="openLocation('kontakt')">kontakt </a>
+              <a class="nav-link" href="javascript:void(0);" onclick="openToThisLocation('kontakt')">kontakt </a>
             </li>
           </ul>
         </div>
@@ -93,8 +93,6 @@
   </header>
 
   <main role="main" id="MAIN">
-    <!-- zakladne info na privitanie
-      ================================================== -->
     <div id="MAINVYTAJTE">
 
 
@@ -129,14 +127,6 @@
               </div>
             </div>
           </div>
-          <!-- <button class="carousel-control-prev" href="#myCarouselMobile" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" href="#myCarouselMobile" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
 
           <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselMobile" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -192,14 +182,6 @@
               </div>
             </div>
           </div>
-          <!-- <button class="carousel-control-prev" href="#myCarouselOther" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" href="#myCarouselOther" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
 
           <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselOther" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -213,51 +195,7 @@
 
         </div>
 
-<!-- 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="images/SCROLING/konkurz2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="images/SCROLING/konkurz2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/SCROLING/konkurz2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
-
-        
-
-        
-
-        <div class="col-md-12 px-0">
+        <div class="col-md-12 p-5">
           <h1 class="display-4 font-italic">VITAJTE!</h1>
           <p class="lead my-3">Ak rád/rada tancuješ, alebo premýšľaš, že by si to chcel/a skúsiť, si na správnej
             adrese!</p>
@@ -274,27 +212,6 @@
 
         <div id="MAINPAGE" class="row px-0 imagesinsection ">
 
-          <!-- <div class="col-md-12 px-0">
-            <h1 class="display-4 font-italic">VITAJTE!</h1>
-            <p class="lead my-3">Ak rád/rada tancuješ, alebo premýšľaš, že by si to chcel/a skúsiť, si na správnej
-              adrese!</p>
-            <p class="lead my-3">Pozývame Ťa do sveta DANCY, kde máš možnosť spoznať tanec bližšie, získať nových
-              priateľov, zabaviť sa na tréningoch, vytancovať sa na vystúpeniach a súťažiach!</p>
-            <p class="lead my-3">Ak ešte váhaš, príď sa pozrieť na náš tréning.</p>
-          </div> -->
-          <!-- <div class="col-md-3 px-0">
-              <h3 class="display-4 font-italic">ponuka</h3>
-              <p class="lead my-3"><a href='#'>nazov abraka dabra</a></p>
-              <p class="lead my-3"><a href='#'>nazov abraka dabra</a></p>
-              <p class="lead my-3"><a href='#'>nazov abraka dabra</a></p>
-              <p class="lead my-3"><a href='#'>more here</a></p>
-            </div>
-            <div class="col-md-3 px-0">
-              <h3 class="display-4 font-italic">Galeria</h3>
-              <p class="lead my-3"><a href='#'>nazov abraka dabra</a></p>
-              <p class="lead my-3"><a href='#'>nazov abraka dabra</a></p>
-              <p class="lead my-3"><a href='#'>nazov abraka dabra</a></p>
-            </div> -->
         </div>
 
 
@@ -1167,37 +1084,42 @@
 
 
         <div id="MAPY" class="d-none">
-          <div class="d-flex justify-content-sm-center flex-wrap  px-0 w100 text-center">
-            <div class="col-md-3 mb-4">
+          <div class="row d-flex justify-content-sm-center flex-wrap  px-0 w100 text-center">
+            <!-- <div class="col-md-3 mb-4"> -->
+              <div class="col-lg-3 col-sm-6 mb-4">
+                
               <div class="container">
-                <h5 class="display-6 font-italic"><a href="#">ZŠ MEDZILABORECKÁ</a></h5>
+                <h5 class="display-6 font-italic wrapText"><a href="#">ZŠ MEDZILABORECKÁ</a></h5>
                 <iframe id="ZSMEDZILABORECKA"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <div class="col-md-3 mb-4">
-              <div class="container">
-                <h5 class="display-6 font-italic"><a href="#">ZŠ DRIEŇOVÁ</a></h5>
+            <!-- <div class="col-md-3 mb-4"> -->
+              <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="container">
+                <h5 class="display-6 font-italic wrapText"><a href="#">ZŠ DRIEŇOVÁ</a></h5>
                 <iframe id="ZSDRIENOVA"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <div class="col-md-3 mb-4">
-              <div class="container">
-                <h5 class="display-6 font-italic"><a href="#">BALANCE DOM</a></h5>
+            <!-- <div class="col-md-3 mb-4"> -->
+              <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="container">
+                <h5 class="display-6 font-italic wrapText"><a href="#">BALANCE DOM</a></h5>
                 <iframe id="BALANCEDOM"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <div class="col-md-3 mb-4">
-              <div class="container">
-                <h5 class="display-6 font-italic"><a href="#">STUDIO SPOT</a></h5>
+            <!-- <div class="col-md-3 mb-4"> -->
+              <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="container">
+                <h5 class="display-6 font-italic wrapText"><a href="#">STUDIO SPOT</a></h5>
                 <iframe id="STUDIOSPOT"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.0153113575536!2d17.289630265744453!3d48.148214850037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c85253bb1cf65%3A0xebc4ee847e653d09!2sBB%20Studio%20Malinovo!5e0!3m2!1ssk!2ssk!4v1724953833976!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"

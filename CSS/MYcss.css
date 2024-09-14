@@ -1,17 +1,13 @@
+body {
+    padding-top: 3rem;
+}
 
 #MAIN{
     margin-top: 58px;
 }
+
 #FOOTER p{
     margin-bottom: 0px;
-}
-#FOOTER3 p{
-    text-align: center;
-    margin-bottom: 0px;
-}
-#LOGOFOOTER{
-    max-width: 120px;
-    min-width: 120px;
 }
 
 .imagesinsection img{
@@ -20,18 +16,6 @@
 }
 
 
-/* .card {
-    position: relative;
-    overflow: hidden;
-  } */
-  
-/* 
-.card-img-top {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover; 
-} */
 
 
 .portfolio{
@@ -69,16 +53,6 @@
     padding-top: 75%; 
 }
 
-
-.col-lg-4{
-    /* flex-basis: fit-content; 
-    flex: 1; 
-    min-height: fit-content;
-    flex-grow: 1;
-    text-align: center; */
-    /* max-content; */
-    /* width: 50vw; */
-}
 
 
 .dropdown-item:hover{
@@ -287,6 +261,12 @@
     flex-direction: row-reverse;
 }
   
+
+.wrapText{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
   
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {

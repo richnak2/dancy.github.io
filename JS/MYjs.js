@@ -95,12 +95,15 @@ const navbarCOLAPS = document.getElementById('myNavbar')
 const collapseElement = document.getElementsByClassName('dropdown-menu')
 
 
-function openLocation(targetLocation){
-    console.log(window.matchMedia('(max-width: 768px)').matches, !listOfNotValidTargets.includes(targetLocation));
+function openToThisLocation(targetLocation,scrollTo){
+    // console.log(window.matchMedia('(max-width: 768px)').matches, !listOfNotValidTargets.includes(targetLocation));
     if (window.matchMedia('(max-width: 768px)').matches ){
         navbarCOLAPS.classList.remove('show');
     }
     showHide(targetLocation)
+    if (scrollTo) {
+        document.getElementById(scrollTo).scrollIntoView({ behavior: 'smooth' });
+    }
     
     // if (window.matchMedia('(max-width: 768px)').matches ) { // && !listOfNotValidTargets.includes(targetLocation)
     //     let json = [];
