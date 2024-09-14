@@ -27,6 +27,23 @@
 // });
 
 
+// const carousel = new bootstrap.Carousel('#myCarouselMobile')
+// carousel._config.pause = 'false';
+// carousel._isSliding = true;
+// console.log(carousel);
+
+
+// const myCarouselMobile = document.querySelector('#myCarouselMobile')
+
+// const carousel = new bootstrap.Carousel(myCarouselMobile, {
+//   interval: 2,
+//   touch: false,
+//   pause: false
+// })
+
+// carousel.to('2')
+
+
 const NazovGrupy = document.getElementById('NAZOVGRUPY')
 
 // let dropdownItems = document.querySelectorAll('.selectedtraining');    
@@ -74,38 +91,28 @@ const dict = {
 
 const listOfNotValidTargets = ["onas","treningi","ponuka"] // 
 
-const navbarCOLAPS = document.getElementById('navbarCollapse')
+const navbarCOLAPS = document.getElementById('myNavbar')
 const collapseElement = document.getElementsByClassName('dropdown-menu')
 
 
 function openLocation(targetLocation){
-    if (window.matchMedia('(max-width: 765px)').matches && !listOfNotValidTargets.includes(targetLocation) ) {
-        let json = [];
-        [...collapseElement].forEach((e) =>  {json.push(e.classList) });
-        json = json.map((e) => {return [...e]})
-        json = [].concat(...json)
-        showHide(targetLocation)
+    console.log(window.matchMedia('(max-width: 768px)').matches, !listOfNotValidTargets.includes(targetLocation));
+    if (window.matchMedia('(max-width: 768px)').matches ){
         navbarCOLAPS.classList.remove('show');
-        
-    }else{
-        showHide(targetLocation)
     }
-
-}
-
-
-
-function hide(){
+    showHide(targetLocation)
     
-    for (const key in dict) {
-        if (dict.hasOwnProperty(key)) {
-            dict[key].forEach(targrtL => {
-                document.getElementById(targrtL).classList.add("d-none")
-            });
-        }
-    }  
-    
-
+    // if (window.matchMedia('(max-width: 768px)').matches ) { // && !listOfNotValidTargets.includes(targetLocation)
+    //     let json = [];
+    //     [...collapseElement].forEach((e) =>  {json.push(e.classList) });
+    //     json = json.map((e) => {return [...e]})
+    //     json = [].concat(...json)
+    //     showHide(targetLocation)
+    //     navbarCOLAPS.classList.remove('show');
+        
+    // }else{
+    //     showHide(targetLocation)
+    // }
 }
 
 function showHide(targetLocation){
@@ -114,6 +121,18 @@ function showHide(targetLocation){
         document.getElementById(targrtL).classList.remove("d-none")
     });
 }
+
+
+function hide(){
+    for (const key in dict) {
+        if (dict.hasOwnProperty(key)) {
+            dict[key].forEach(targrtL => {
+                document.getElementById(targrtL).classList.add("d-none")
+            });
+        }
+    }  
+}
+
 
 
 function showMap(map){

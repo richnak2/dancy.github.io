@@ -281,35 +281,40 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+#myNavbar{
+    flex-direction: row-reverse;
+}
   
   
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
-    .dropdown-menu{
+    /* .dropdown-menu{
         display: none;
-    }
+    } */
+    /* #navNormalView{
+        display: none;
+    } */
+
+    
     .text-muted{
         display: none;
     }
-    
 }
 
 
 
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}	
 
 @media only screen and (max-width: 450px) {
     .navbar{
         padding-right: 1rem !important;
         padding-left: 1rem !important;
     }
+    
+    
     #LOGOMAIN
     {
         width: 65vw;
@@ -323,9 +328,7 @@
         max-width: 60px;
         min-width: 60px;
     }
-    /* #MAIN{
-        margin-top: 27px;
-    } */
+    
     #MAINVYTAJTE{
         text-align: center;
     }
@@ -343,3 +346,51 @@
     }
 } 
 
+
+
+/* MIN */
+
+
+/* @media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }
+
+@media (min-width: 1400px) { ... } */
+
+
+/* MAX */
+/* @media (max-width: 575.98px) { ... }
+
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 991.98px) { ... }
+
+@media (max-width: 1199.98px) { ... }
+
+@media (max-width: 1399.98px) { ... } */
+
+
+/* THE WEY OUT */
+@media (max-width: 767.98px) { 
+    
+    .dropdown-menu.show{
+        display: none !important;
+    }
+
+
+}
+
+
+
+
+
+@media (min-width: 768px) { 
+    .navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+}

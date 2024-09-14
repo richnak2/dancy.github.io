@@ -28,82 +28,66 @@
 <body class="bg-dark">
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-5">
-        
-      <a class="navbar-brand" href="#">
-        <img id='LOGOMAIN' onclick="openLocation('main')" src="images/LOGO/logo1biele.png" alt="Brand Name">
-      </a>
-      <button id="navbarClicktotogleof" class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top px-5" aria-label="Eleventh navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id='LOGOMAIN' onclick="openLocation('main')" src="images/LOGO/logo1biele.png" alt="Brand Name">
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+         aria-controls="myNavbar" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="myNavbar" >
+          <ul class="navbar-nav mr-auto ">
+            <!-- mb-2 mb-lg-0 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#HISTORY" onclick="openLocation('onas')">O nás</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#COTANCUJEME" onclick="openLocation('onas')"> Čo tancujeme</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#TRENERYKONKRETNEMAINHOLDER" onclick="openLocation('onas')"> Tréneri</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#COTANCUJEME" onclick="openLocation('onas')">ponuka</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#COTANCUJEME" onclick="openLocation('onas'); openPonukaBig('BABYDANCY')"> BABY DANCY</a></li>
+                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('MINIDANCY')"> MINI DANCY </a></li>
+                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('GYMNASTIKA')"> GYMNASTIKA </a></li>
+                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('TEAMKIDS')"> TEAM KIDS </a></li>
+                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('TEAMTEENS')"> TEAM TEENS </a></li>
+                <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('MOMMYSHAPER')"> MOMMY SHAPER </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " data-bs-toggle="dropdown" href="#"
+                onclick="openLocation('treningi');selectGroup('all','ALL')">Treningy</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("all",this)'>ALL</a>
+                </li>
+                <li><a class="dropdown-item" href="#"
+                    onclick='openLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("kids",this)'>Kids</a>
+                </li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("mini",this)'>Mini
+                    Dancy</a></li>
+                <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("hiphop",this)'>HIP
+                    HOP</a></li>
+                <li><a class="dropdown-item" href="#"
+                    onclick='openLocation("treningi");selectGroup("gymnastika",this)'>Gymnastika</a>
+                </li>
   
-
-          <li class="nav-item dropdown">
-            <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
-            <a class="nav-link " data-bs-toggle="dropdown" href="#HISTORY" onclick="openLocation('onas')">O nás</a>
-            <!-- data-bs-toggle="dropdown" -->
-            <ul class="dropdown-menu">
-              <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onasHistoria')">O nás</a></li> -->
-              <li>
-                <a class="dropdown-item" href="#COTANCUJEME" onclick="openLocation('onas')"> Čo tancujeme</a>
-                <!-- onclick="openLocation('onasCoTancujem')" -->
-              </li>
-              <li>
-                <a class="dropdown-item" href="#TRENERYKONKRETNEMAINHOLDER" onclick="openLocation('onas')"> Tréneri</a>
-                <!-- onclick="openLocation('onasTrenery');selectGroup('DanielaHill','ALL')" -->
-              </li>
-              <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onasTreningy')"> treningy </a></li> -->
-              <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onasUdalosty')"> udalosty </a></li> -->
-              <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onas2Percenta')"> 2% s dany </a></li> -->
-              <!-- <li><a class="dropdown-item" href="#" onclick="openLocation('onasPartneri')"> partneri</a></li> -->
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
-            <a class="nav-link " data-bs-toggle="dropdown" href="#COTANCUJEME" onclick="openLocation('onas')">ponuka</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#COTANCUJEME" onclick="openLocation('onas'); openPonukaBig('BABYDANCY')"> BABY DANCY</a></li>
-              <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('MINIDANCY')"> MINI DANCY </a></li>
-              <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('GYMNASTIKA')"> GYMNASTIKA </a></li>
-              <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('TEAMKIDS')"> TEAM KIDS </a></li>
-              <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('TEAMTEENS')"> TEAM TEENS </a></li>
-              <li><a class="dropdown-item" href="#COTANCUJEME"  onclick="openLocation('onas'); openPonukaBig('MOMMYSHAPER')"> MOMMY SHAPER </a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <!-- <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a> -->
-            <a class="nav-link " data-bs-toggle="dropdown" href="#"
-              onclick="openLocation('treningi');selectGroup('all','ALL')">Treningy</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("all",this)'>ALL</a>
-              </li>
-              <li><a class="dropdown-item" href="#"
-                  onclick='openLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
-              <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("kids",this)'>Kids</a>
-              </li>
-              <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("mini",this)'>Mini
-                  Dancy</a></li>
-              <li><a class="dropdown-item" href="#" onclick='openLocation("treningi");selectGroup("hiphop",this)'>HIP
-                  HOP</a></li>
-              <li><a class="dropdown-item" href="#"
-                  onclick='openLocation("treningi");selectGroup("gymnastika",this)'>Gymnastika</a>
-              </li>
-
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="openLocation('kontakt')">kontakt </a>
-          </li>
-
-        </ul>
-        <!-- <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="openLocation('kontakt')">kontakt </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -115,15 +99,66 @@
 
 
       <div id="MAINPAGEHED" class="text-white  bg-dark">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarouselMobile" class="carousel slide" data-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            <button type="button" data-bs-target="#myCarouselMobile" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
           </div>
           
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" >
+              <img class="first-slide img-fluid mx-auto" src="images/SCROLING/konkurzMobile.jpg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
+                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" >
+              <img class="second-slide img-fluid mx-auto" src="images/SCROLING/mumyshaperMobile.jpg" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
+                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev" href="#myCarouselMobile" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" href="#myCarouselMobile" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselMobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarouselMobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+        </div>
+
+
+        <div id="myCarouselOther" class="carousel slide" data-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarouselOther" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarouselOther" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#myCarouselOther" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active" >
               <img class="first-slide img-fluid mx-auto" src="images/SCROLING/konkurz2.jpg" alt="First slide">
               <div class="container">
                 <div class="carousel-caption text-left">
@@ -145,8 +180,8 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img class="third-slide img-fluid mx-auto" src="images/SCROLING/mumyshaper.jpg" alt="Third slide">
+            <div class="carousel-item" >
+              <img class="third-slide img-fluid mx-auto" src="images/SCROLING/mumyshaper2.jpg" alt="Third slide">
               <div class="container">
                 <div class="carousel-caption text-right">
                   <h1>One more for good measure.</h1>
@@ -157,15 +192,68 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <!-- <button class="carousel-control-prev" href="#myCarouselOther" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          </button>
+          <button class="carousel-control-next" href="#myCarouselOther" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </a>
+          </button> -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselOther" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarouselOther" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+
         </div>
+
+<!-- 
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="images/SCROLING/konkurz2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/SCROLING/konkurz2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/SCROLING/konkurz2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+
+        
 
         
 
@@ -1192,7 +1280,7 @@
   <script type="text/javascript" src="JS/jquery-3.2.1.slim.min.js.download"></script>
   <script type="text/javascript" src="JS/bootstrap.min.js"></script>
   <script type="text/javascript" src="JS/holder.js"></script>
-  <script type="text/javascript" src="JS/MYjs.js"></script>
+  <script type="text/javascript" src="JS/MYjs.js" defer></script>
 
 </body>
 
