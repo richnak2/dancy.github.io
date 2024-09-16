@@ -26,7 +26,7 @@
 </head>
 
 <body class="bg-dark">
-
+  <div id="TOPFIXSCROLL" ></div>
   <header>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top px-5" aria-label="Eleventh navbar example">
       <div class="container-fluid">
@@ -42,10 +42,10 @@
           <ul class="navbar-nav mr-auto ">
             <!-- mb-2 mb-lg-0 -->
             <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" onclick="openToThisLocation('onas','HISTORY')">O nás</a>
+              <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" onclick="openToThisLocation('onas','TOPFIXSCROLL')">O nás</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME')"> Čo tancujeme</a>
+                  <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME')"> Čo trénujeme</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','TRENERYKONKRETNEMAINHOLDER')"> Tréneri</a>
@@ -53,7 +53,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="#" onclick="openToThisLocation('onas','COTANCUJEME')">ponuka</a>
+              <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME')">Ponuka</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('BABYDANCY')"> BABY DANCY</a></li>
                 <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('MINIDANCY')"> MINI DANCY </a></li>
@@ -64,27 +64,18 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link " data-bs-toggle="dropdown" href="#"
-                onclick="openToThisLocation('treningi');selectGroup('all','ALL')">Treningy</a>
+              <a class="nav-link " data-bs-toggle="dropdown" href="javascript:void(0);"
+                onclick="openToThisLocation('treningi','TOPFIXSCROLL')">Rozvrh</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("all",this)'>ALL</a>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('RUZINOV','TOPFIXSCROLL')">Ružinov</a>
                 </li>
-                <li><a class="dropdown-item" href="#"
-                    onclick='openToThisLocation("treningi");selectGroup("teens",this)'>Teens</a></li>
-                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("kids",this)'>Kids</a>
-                </li>
-                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("mini",this)'>Mini
-                    Dancy</a></li>
-                <li><a class="dropdown-item" href="#" onclick='openToThisLocation("treningi");selectGroup("hiphop",this)'>HIP
-                    HOP</a></li>
-                <li><a class="dropdown-item" href="#"
-                    onclick='openToThisLocation("treningi");selectGroup("gymnastika",this)'>Gymnastika</a>
-                </li>
-  
+                <li><a class="dropdown-item" href="javascript:void(0);"
+                    onclick="openToThisLocation('MALINOVO','TOPFIXSCROLL')">Malinovo</a></li>
+                
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" onclick="openToThisLocation('kontakt')">kontakt </a>
+              <a class="nav-link" href="javascript:void(0);" onclick="openToThisLocation('kontakt')">Kontakt </a>
             </li>
           </ul>
         </div>
@@ -111,7 +102,7 @@
                   <h1>Example headline.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
                     eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Sign up today</a></p>
                 </div>
               </div>
             </div>
@@ -122,7 +113,7 @@
                   <h1>Another example headline.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
                     eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Learn more</a></p>
                 </div>
               </div>
             </div>
@@ -155,7 +146,7 @@
                   <h1>Example headline.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
                     eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Sign up today</a></p>
                 </div>
               </div>
             </div>
@@ -166,7 +157,7 @@
                   <h1>Another example headline.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
                     eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Learn more</a></p>
                 </div>
               </div>
             </div>
@@ -177,7 +168,7 @@
                   <h1>One more for good measure.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
                     eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Browse gallery</a></p>
                 </div>
               </div>
             </div>
@@ -195,7 +186,7 @@
 
         </div>
 
-        <div class="col-md-12 p-5">
+        <div class="p-5 pb-0">
           <h1 class="display-4 font-italic">VITAJTE!</h1>
           <p class="lead my-3">Ak rád/rada tancuješ, alebo premýšľaš, že by si to chcel/a skúsiť, si na správnej
             adrese!</p>
@@ -206,7 +197,7 @@
       </div>
 
 
-      <div id="ALLCONTENT" class="text-white  bg-dark">
+      <div id="ALLCONTENT" class="text-white  bg-dark pb-5">
         <!-- row  p-3 p-md-5-->
 
 
@@ -215,10 +206,10 @@
         </div>
 
 
-        <div id="ONAS" class="px-0 pb-5 imagesinsection d-none">
+        <div id="ONAS" class="px-0  imagesinsection d-none">
           <!-- <p class="mt-5"></p> -->
           <!-- <p id="HISTORY" class="mt-1"></p> -->
-          <div id="HISTORY" class="px-0 imagesinsection navigateTO">
+          <div id="HISTORY" class="px-0 imagesinsection">
             <div class="continer">
               
             <h1 class="display-4 text-center font-italic pb-5">O nás</h1>
@@ -245,7 +236,7 @@
           <div id="COTANCUJEME" class=" px-0 navigateTO">
             
             <div class="container">
-              <h1 class="display-4 font-italic text-center pb-5">Čo tancujeme?</h1>
+              <h1 class="display-4 font-italic text-center pb-5">Čo trénujeme?</h1>
               <div class="row">
 
                 <!-- POZOOR NEMAZZZZZ !!!!! -->
@@ -265,7 +256,7 @@
                       <p class="card-text">Tanečno pohybová príprava pre deti od 2 do 4 rokov.</p>
                       
                       <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('A')">viac</a></small>
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('A')">viac</a></small>
                       </div>
                       
                     </div>
@@ -293,7 +284,7 @@
                         Počas 45 minútovej tanečnej hodiny sa detičky pomocou ľahkých tanečných variácii a prvkov na obľúbené pesničky a riekanky stretnú s riadený pohybom, prostredníctvom pohybových hier zlepšia svoju koordináciu a potrénujú sústredenie.
                       </p> -->
                       <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('BABYDANCY')">viac</a></small>
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('BABYDANCY')">viac</a></small>
                       </div>
                       <p class="d-none">
                         Počas 45 minútovej tanečnej hodiny sa detičky pomocou ľahkých tanečných variácii a prvkov na obľúbené pesničky a riekanky stretnú s riadený pohybom, prostredníctvom pohybových hier zlepšia svoju koordináciu a potrénujú sústredenie.
@@ -331,7 +322,7 @@
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div> -->
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('MINIDANCY')">viac</a></small>                    </div>
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('MINIDANCY')">viac</a></small>                    </div>
                       <p class="d-none">
                         Čo na tréning so sebou?
                         -baletný / gymnastický dres či iný obtiahnutý úbor (tričko a legíny)
@@ -369,7 +360,7 @@
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div> -->
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('GYMNASTIKA')">viac</a></small>                    </div>
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('GYMNASTIKA')">viac</a></small>                    </div>
                       <p class="d-none">
                         Na hodinách gymnastiky sa zameriavame na základy športovej gymnastiky.
                         Deti sa postupne učia prvky ako kotúľ vpred, kotúľ vzad, stojka, mostík, či premet vbok, premet
@@ -411,7 +402,7 @@
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div> -->
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('TEAMKIDS')">viac</a></small>                    </div>
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('TEAMKIDS')">viac</a></small>                    </div>
                       <p class="d-none">
                         KIDS MONKEYS
                         Tanečná príprava s prvkami show dance, jazz dance a contemporary, z ktorých postupne vznikajú
@@ -477,7 +468,7 @@
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div> -->
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('TEAMTEENS')">viac</a></small>                    </div>
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('TEAMTEENS')">viac</a></small>                    </div>
                       <p class="d-none">
                         V teame Teens sa tanečníci súťažne venujú tanečným štýlom show dance, jazz dance a contemporary.
                         Tréningy sú zamerané na zdokonaľovanie tanečných zručností, umeleckého prejavu a objavovanie
@@ -511,7 +502,7 @@
                                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                           <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                         </div> -->
-                        <small class="text-muted"><a href="#" onclick="openPonukaBig('MOMMYSHAPER')">viac</a></small>                  
+                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('MOMMYSHAPER')">viac</a></small>                  
                         </div>
                       <p class="d-none">
                         Milé maminy,
@@ -763,7 +754,7 @@
                   <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/danka.jpg" alt="Generic placeholder image">
                 
                   <div class="align-items-center">
-                    <h3><a href="#" onclick="openPonukaBig('INPROGRESS')">Daniela Hill</a></h3><small class="text-light">
+                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Daniela Hill</a></h3><small class="text-light">
                       vedúca TŠ DANCY, trénerka BABY a MINI DANCY
                     </small>
                   </div>
@@ -774,7 +765,7 @@
                   <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/barbora.jpg" alt="Generic placeholder image">
 
                   <div class="align-items-center">
-                    <h3><a href="#" onclick="openPonukaBig('INPROGRESS')">Barbora Stenová</a></h3><small class="text-light">
+                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Barbora Stenová</a></h3><small class="text-light">
                        trénerka tanečných skupín
                     </small>
                   </div>
@@ -787,7 +778,7 @@
 
                 
                   <div class="align-items-center">
-                    <h3><a href="#" onclick="openPonukaBig('INPROGRESS')">Sabína Košibová</a></h3><small class="text-light">
+                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Sabína Košibová</a></h3><small class="text-light">
                       trénerka tanečných skupín
                     </small>
                   </div>
@@ -798,7 +789,7 @@
                   <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/DanicaTakacova.jpg" alt="Generic placeholder image">
 
                   <div class="align-items-center">
-                    <h3><a href="#" onclick="openPonukaBig('INPROGRESS')">Danica Takáčová</a></h3><small class="text-light">
+                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Danica Takáčová</a></h3><small class="text-light">
                       trénerka Mommy shaper
                     </small>
                   </div>
@@ -810,7 +801,7 @@
 
                 
                   <div class="align-items-center">
-                    <h3><a href="#" onclick="openPonukaBig('INPROGRESS')">Andrea Marčeková</a></h3><small class="text-light">
+                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Andrea Marčeková</a></h3><small class="text-light">
                       trénerka baletu
                     </small>
                   </div>
@@ -822,7 +813,7 @@
 
                 
                   <div class="align-items-center">
-                    <h3><a href="#" onclick="openPonukaBig('INPROGRESS')">Laura Čangelová</a></h3><small class="text-light">
+                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Laura Čangelová</a></h3><small class="text-light">
                       rénerka gymnastiky
                     </small>
                   </div>
@@ -835,167 +826,152 @@
         </div>
 
         <div id="TRENINGYHODINI" class="d-none">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <h1 id="NAZOVGRUPY" class="display-4 font-italic">ALL</h1>
 
             <div class="allselected all">
-              <img src="images/TRENINGY/all.png">
+              <img class="img-fluid" src="images/TRENINGY/all.png">
             </div>
             <div class="allselected teens d-none">
-              <img src="images/TRENINGY/teens.png">
+              <img class="img-fluid" src="images/TRENINGY/teens.png">
             </div>
             <div class="allselected kids d-none">
-              <img src="images/TRENINGY/kids.png">
+              <img class="img-fluid" src="images/TRENINGY/kids.png">
             </div>
             <div class="allselected mini d-none">
-              <img src="images/TRENINGY/mini.png">
+              <img class="img-fluid" src="images/TRENINGY/mini.png">
             </div>
             <div class="allselected hiphop d-none">
-              <img src="images/TRENINGY/hiphop.png">
+              <img class="img-fluid" src="images/TRENINGY/hiphop.png">
             </div>
             <div class="allselected gymnastika d-none">
-              <img src="images/TRENINGY/gymnastika.png">
+              <img class="img-fluid" src="images/TRENINGY/gymnastika.png">
             </div>
 
-            <!-- <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  group?
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a id="all" class="dropdown-item selectedtraining">ALL</a>
-
-                  <a id="teens" class="dropdown-item selectedtraining">Teens</a>
-                  <a id="kids" class="dropdown-item selectedtraining">Kids</a>
-                  <a id="minidancy" class="dropdown-item selectedtraining">Mini Dancy</a>
-                  <a id="hiphop" class="dropdown-item selectedtraining">HIP HOP</a>
-                  <a id="gymnastika" class="dropdown-item selectedtraining">Gymnastika</a>
-                 
-                </div>
-                <h1 id="NAZOVGRUPY" class="display-4 font-italic">Nazov grupy</h1>
-
-                <div>
-                  <img src="images/TRENINGY/all.png">
-                  <img src="images/TRENINGY/teens.png">
-                  <img src="images/TRENINGY/kids.png">
-                  <img src="images/TRENINGY/mini.png">
-                  <img src="images/TRENINGY/hiphop.png">
-                  <img src="images/TRENINGY/gymnastika.png">
-                </div>
-              </div> -->
 
 
+          </div> -->
 
-          </div>
+          <div id="ROZVRHHODIN" class="">
+            <!-- col-md-9 -->
 
-          <div id="ROZVRHHODIN" class="col-md-9">
 
+            <div class="text-center" id="RUZINOV">
+              <h1>RUZINOV</h1>
 
-            <!-- <table class="table align-middle table-bordered">
-                  <thead>
-                      <tr>
-                          <th class="text-center align-middle"></th>
-                          <th class="text-center align-middle">BALANCE DOM</th>
-                          <th class="text-center align-middle">ZŠ MEDZILABORECKÁ</th>
-                          <th class="text-center align-middle" colspan="2">ZŠ DRIEŇOVÁ</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                              <p >veľká</p>
-                          </td>
-                          <td class="text-center align-middle ">
-                              <p >modrá</p>
-                          </td>
-                      </tr>
-                      <tr class="teens kids minidancy allselected">
-                          <td class="text-center align-middle " rowspan="2">PONDELOK</td>
-                          <td class="text-center align-middle ">
-                              <p class="minidancy allselected">MINI DANCY<br>16:00 - 16:45<br>3 - 4 roční</p>
-                          </td>
-                          <td class="text-center align-middle">
-                              <p class="teens allselected">TEENS<br>16:00 - 18:00</p>
-                          </td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                              <p class="kids allselected">KIDS A<br>16:00 - 17:30</p>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td class="text-center align-middle">
-                              <p class="minidancy allselected">MINI DANCY<br>16:45 - 17:30<br>5 - 6 roční</p>
-                          </td>
-                          <td class="text-center align-middle">
-                              <p class="teens allselected">TEENS<br>18:00 - 19:00<br>individuálne choreo</p>
-                          </td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                      </tr>
-                      <tr class="hiphop allselected">
-                          <td class="text-center align-middle" rowspan="2">UTOROK</td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                              <p class="gymnastika allselected">GYMNASTIKA<br>16:00 - 17:00<br>7 - 11 roční</p>
-                          </td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                      </tr>
-                      <tr class="hiphop allselected">
-                          <td class="text-center align-middle">
-                              <p class="hiphop allselected">HIP HOP<br>17:00 - 18:00<br>6 - 12 roční</p>
-                          </td>
-                          <td class="text-center align-middle">
-                              <p class="gymnastika allselected">GYMNASTIKA<br>17:00 - 18:00<br>4 - 7 roční</p>
-                          </td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                      </tr>
-                      <tr class="teens kids allselected">
-                          <td class="text-center align-middle" rowspan="2">STREDA</td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle" rowspan="2">
-                              <p class="teens allselected">TEENS<br>16:00 - 19:00<br>skupiny</p>
-                          </td>                   
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                              <p class="kids allselected">KIDS B<br>16:00 - 17:30</p>
-                          </td>
-                      </tr>
-                      <tr class="teens kids hiphop allselected">
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle"></td>
-                      </tr>
-                      <tr class="teens kids  minidancy hiphop allselected">
-                          <td class="text-center align-middle" rowspan="2">ŠTVRTOK</td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                              <p class="kids allselected">KIDS A+B<br>16:00 - 17:30</p>
-                          </td>
-                          <td class="text-center align-middle">
-                              <p class="teens allselected">TEENS<br>16:00 - 17:00</p>
-                          </td>
-                          <td class="text-center align-middle">
-                              <p class="minidancy allselected">MINI DANCY<br>16:00 - 16.45<br>5 - 6 roční</p>
-                          </td>
-                      </tr>
-                      <tr class="kids  minidancy hiphop allselected">
-                          <td class="text-center align-middle">
-                              <p class="hiphop allselected">HIP HOP<br>17:00 - 18:00<br>6 - 12 roční</p>
-                          </td>
-                          <td class="text-center align-middle">
-                              <p class="kids allselected">KIDS A<br>17:30 - 19.00</p>
-                          </td>
-                          <td class="text-center align-middle"></td>
-                          <td class="text-center align-middle">
-                              <p class="minidancy allselected">MINI DANCY<br>16:45 - 17:30<br>3 - 4 roční</p>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table> -->
+              <!-- container my-4 -->
+              <div class="table-responsive" id="tableRUZINOV">
+                  <table class="table table-bordered text-center">
+                      <thead class="thead-light">
+                          <tr>
+                              <th></th>
+                              <th>ZŠ MEDZILABA</th>
+                              <th>ZŠ DRIEŇOVÁ</th>
+                              <th>BALANCE DOM</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>PONDELOK</td>
+                              <td>
+                                  <div class="purple">KIDS C<br>16:00 - 17:00</div>
+                                  <div class="blue mt-2">TEENS<br>17:00 - 19:00</div>
+                              </td>
+                              <td>
+                                  <div class="yellow">KIDS A<br>malá<br>16:00 - 17:30</div>
+                              </td>
+                              <td>
+                                  <div class="pink">MINI<br>16:00 - 16:45</div>
+                                  <div class="pink mt-2">MINI<br>16:45 - 17:30</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>UTOROK</td>
+                              <td>
+                                  <div class="green">GYMNASTIKA<br>6-8 a 8-12<br>16:00 - 17:00</div>
+                                  <div class="green mt-2">GYMNASTIKA<br>4-6<br>17:00 - 18:00</div>
+                              </td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td>STREDA</td>
+                              <td>
+                                  <div class="purple">KIDS A<br>individuálna hodina<br>16:00 - 17:00</div>
+                                  <div class="purple mt-2">KIDS A<br>17:00 - 18:00</div>
+                                  <div class="blue mt-2">TEENS<br>18:00 - 19:00</div>
+                              </td>
+                              <td>
+                                  <div class="orange">KIDS B<br>malá<br>16:00 - 17:30</div>
+                              </td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td>ŠTVRTOK</td>
+                              <td>
+                                  <div class="purple">KIDS A+B<br>16:00 - 17:30</div>
+                                  <div class="orange mt-2">KIDS B<br>17:30 - 18:30</div>
+
+                              </td>
+                              <td>
+                                  <div class="blue">TEENS<br>16:00 - 18:00</div>
+                                  <div class="pink mt-2">MINI<br>malá<br>16:00 - 16:45</div>
+                                  <div class="pink mt-2">MINI<br>malá<br>16:45 - 17:30</div>
+                              </td>
+                              <td>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+            <div class=" text-center" id="MALINOVO">
+              <h1>MALINOVO</h1>
+              <!-- container my-4 -->
+              <div class="table-responsive" id="tableRUZINOV">
+                  <table class="table table-bordered text-center">
+                      <thead class="thead-light">
+                        <tr>
+                          <th></th>
+                          <th>STUDIOSPOT</th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <th>UTOROK</th>
+                          <th>ŠTVRTOK</th>
+                          <th>PIATOK</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>
+                              <div class="blue">BABY DANCY<br>2-4 roky<br>10:00 - 10:45</div>
+                            </td>
+                            <td>
+                              <div class="green">MOMMY SHAPER <br>10:00 - 11:00</div>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
+                            </td>
+                            <td></td>
+                            <td>
+                              <div class="pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="orange">KIDS MONKEYS <br>6-10 rokov<br>17:00 - 18:00</div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -1039,7 +1015,7 @@
         <div id="KONTAKT" class=" px-0 imagesinsection d-none">
           <h1 class="display-4 font-italic">KONTAKT</h1>
           <div class="row">
-            <div id="KONTAKTLEFT" class="col-md-4">
+            <div id="KONTAKTLEFT" class="col-lg-4 col-sm-6 mb-6">
               <p class="font-italic">Tanečné štúdio Dancy<br>
                 Vajnorská 44<br>
                 831 03 Bratislava</p>
@@ -1048,7 +1024,7 @@
               <p><strong>telefón: </strong>0903 838 651</p>
 
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8 col-sm-6 mb-6">
               <!-- <div class="container mt-5">
                 <div class="row justify-content-center">
                   <div class="col-lg-6 col-md-8 col-sm-10">
@@ -1085,41 +1061,37 @@
 
         <div id="MAPY" class="d-none">
           <div class="row d-flex justify-content-sm-center flex-wrap  px-0 w100 text-center">
-            <!-- <div class="col-md-3 mb-4"> -->
               <div class="col-lg-3 col-sm-6 mb-4">
                 
               <div class="container">
-                <h5 class="display-6 font-italic wrapText"><a href="#">ZŠ MEDZILABORECKÁ</a></h5>
+                <h5 class="display-6 font-italic wrapText"><a href="javascript:void(0);">ZŠ MEDZILABORECKÁ</a></h5>
                 <iframe id="ZSMEDZILABORECKA"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <!-- <div class="col-md-3 mb-4"> -->
               <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="container">
-                <h5 class="display-6 font-italic wrapText"><a href="#">ZŠ DRIEŇOVÁ</a></h5>
+                <h5 class="display-6 font-italic wrapText"><a href="javascript:void(0);">ZŠ DRIEŇOVÁ</a></h5>
                 <iframe id="ZSDRIENOVA"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <!-- <div class="col-md-3 mb-4"> -->
               <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="container">
-                <h5 class="display-6 font-italic wrapText"><a href="#">BALANCE DOM</a></h5>
+                <h5 class="display-6 font-italic wrapText"><a href="javascript:void(0);">BALANCE DOM</a></h5>
                 <iframe id="BALANCEDOM"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
-            <!-- <div class="col-md-3 mb-4"> -->
               <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="container">
-                <h5 class="display-6 font-italic wrapText"><a href="#">STUDIO SPOT</a></h5>
+                <h5 class="display-6 font-italic wrapText"><a href="javascript:void(0);">STUDIO SPOT</a></h5>
                 <iframe id="STUDIOSPOT"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.0153113575536!2d17.289630265744453!3d48.148214850037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c85253bb1cf65%3A0xebc4ee847e653d09!2sBB%20Studio%20Malinovo!5e0!3m2!1ssk!2ssk!4v1724953833976!5m2!1ssk!2ssk"
                   width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
@@ -1131,11 +1103,11 @@
 
 
 
-          <div id="sidebar">
+          <!-- <div id="sidebar">
             <div id="HOTSIDENAWBARCOONAS" class="col-md-3  px-0 w100 text-center d-none position-fixed">
               <h3 class="display-4 font-italic">Čo o nás</h3>
               <p class="lead my-3"><a href='#HISTORY'>O nás</a></p>
-              <p class="lead my-3"><a href='#COTANCUJEME'>Čo tancujeme?</a></p>
+              <p class="lead my-3"><a href='#COTANCUJEME'>Čo trénujeme?</a></p>
               <p class="lead my-3"><a href='#TRENERYKONKRETNEMAINHOLDER'>Tréneri</a></p>
             </div>
           </div>
@@ -1143,21 +1115,21 @@
 
           <div id="HOTSIDENAWBARPONUKA" class="col-md-3  px-0 w100 text-center d-none">
             <h3 class="display-4 font-italic">Ponuka</h3>
-            <p class="lead my-3"><a href='#'>promenady</a></p>
-            <p class="lead my-3"><a href='#'>b</a></p>
-            <p class="lead my-3"><a href='#'>c</a></p>
-            <p class="lead my-3"><a href='#'>d</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);">promenady</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);">b</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);">c</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);">d</a></p>
           </div>
 
           <div id="HOTSIDENAWBARTRENINGI" class="col-md-3  px-0 w100 text-center d-none">
             <h3 class="display-4 font-italic">Treningy</h3>
-            <p class="lead my-3"><a href='#' onclick='selectGroup("all",this)'>ALL</a></p>
-            <p class="lead my-3"><a href='#' onclick='selectGroup("teens",this)'>Teens</a></p>
-            <p class="lead my-3"><a href='#' onclick='selectGroup("kids",this)'>Kids</a></p>
-            <p class="lead my-3"><a href='#' onclick='selectGroup("mini",this)'>Mini Dancy</a></p>
-            <p class="lead my-3"><a href='#' onclick='selectGroup("hiphop",this)'>HIP HOP</a></p>
-            <p class="lead my-3"><a href='#' onclick='selectGroup("gymnastika",this)'>Gymnastika</a></p>
-          </div>
+            <p class="lead my-3"><a href="javascript:void(0);" onclick='selectGroup("all",this)'>ALL</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);" onclick='selectGroup("teens",this)'>Teens</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);" onclick='selectGroup("kids",this)'>Kids</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);" onclick='selectGroup("mini",this)'>Mini Dancy</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);" onclick='selectGroup("hiphop",this)'>HIP HOP</a></p>
+            <p class="lead my-3"><a href="javascript:void(0);" onclick='selectGroup("gymnastika",this)'>Gymnastika</a></p>
+          </div> -->
         </div>
       </div>
 
@@ -1201,7 +1173,7 @@
   <script type="text/javascript" src="JS/popper.min.js.download"></script>
   <script type="text/javascript" src="JS/jquery-3.2.1.slim.min.js.download"></script>
   <script type="text/javascript" src="JS/bootstrap.min.js"></script>
-  <script type="text/javascript" src="JS/holder.js"></script>
+  <!-- <script type="text/javascript" src="JS/holder.js"></script> -->
   <script type="text/javascript" src="JS/MYjs.js" defer></script>
 
 </body>

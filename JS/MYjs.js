@@ -44,7 +44,7 @@
 // carousel.to('2')
 
 
-const NazovGrupy = document.getElementById('NAZOVGRUPY')
+// const NazovGrupy = document.getElementById('NAZOVGRUPY')
 
 // let dropdownItems = document.querySelectorAll('.selectedtraining');    
 // for (let i = 0; i < dropdownItems.length; i++) {
@@ -52,26 +52,26 @@ const NazovGrupy = document.getElementById('NAZOVGRUPY')
 //     // dropdownItems[i].removeAttribute('href');
 // }
 
-function selectGroup(id, selfelement){
-    NazovGrupy.innerHTML = selfelement.innerHTML ? selfelement.innerHTML : selfelement;
-    let alltrainings = document.querySelectorAll('.allselected');
+// function selectGroup(id, selfelement){
+//     NazovGrupy.innerHTML = selfelement.innerHTML ? selfelement.innerHTML : selfelement;
+//     let alltrainings = document.querySelectorAll('.allselected');
     
-    alltrainings.forEach(elment => {
-        // console.log(elment.classList.contains(id))
-        if (elment.classList.contains(id)) {
-            elment.classList.remove("d-none")
-        }else{
-            elment.classList.add("d-none")
-        }
-    });
+//     alltrainings.forEach(elment => {
+//         // console.log(elment.classList.contains(id))
+//         if (elment.classList.contains(id)) {
+//             elment.classList.remove("d-none")
+//         }else{
+//             elment.classList.add("d-none")
+//         }
+//     });
         
    
-}
+// }
 
 
 const dict = {
     "main" : ["MAINPAGEHED", "MAINPAGE"],
-    "onas" : ["ONAS", "HOTSIDENAWBARCOONAS"],
+    "onas" : ["ONAS", ], // "HOTSIDENAWBARCOONAS"
     // "onasHistoria" : ["HISTORY", "HOTSIDENAWBARCOONAS"],
     // "onasCoTancujem" : ["COTANCUJEME", "HOTSIDENAWBARCOONAS"],
     // "onasTrenery" : [ "TRENERYKONKRETNEMAINHOLDER", "HOTSIDENAWBARCOONAS"],
@@ -79,8 +79,10 @@ const dict = {
     // "onasUdalosty" : [ "HOTSIDENAWBARCOONAS"],
     // "onas2Percenta" : ["2PDANE", "HOTSIDENAWBARCOONAS"],
     // "onasPartneri" : ["PARTNERI", "HOTSIDENAWBARCOONAS"],
-    "ponuka" : ["PONUKA", "HOTSIDENAWBARPONUKA"],
-    "treningi" : ["TRENINGYHODINI",  "HOTSIDENAWBARTRENINGI"], 
+    //"ponuka" : ["PONUKA", ], // "HOTSIDENAWBARPONUKA"
+    "treningi" : ["TRENINGYHODINI", "RUZINOV" , "MALINOVO"  ], 
+    "RUZINOV": ["TRENINGYHODINI","RUZINOV"],
+    "MALINOVO": ["TRENINGYHODINI","MALINOVO"],
     "kontakt" : ["KONTAKT","MAPY"], //"HOTSIDENAWBARKONTAKT"
     // "galeria" : ["ALBUMFOTO"],
     // "galeriafoto" : ["ALBUMFOTO"],
@@ -89,7 +91,7 @@ const dict = {
     
 }
 
-const listOfNotValidTargets = ["onas","treningi","ponuka"] // 
+const listOfNotValidTargets = ["onas","treningi"] // ,"ponuka"
 
 const navbarCOLAPS = document.getElementById('myNavbar')
 const collapseElement = document.getElementsByClassName('dropdown-menu')
