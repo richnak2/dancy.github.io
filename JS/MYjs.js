@@ -70,7 +70,7 @@
 
 
 const dict = {
-    "main" : ["MAINPAGEHED", "MAINPAGE"],
+    "main" : ["MAINPAGEHED"],//, "MAINPAGE"
     "onas" : ["ONAS", ], // "HOTSIDENAWBARCOONAS"
     // "onasHistoria" : ["HISTORY", "HOTSIDENAWBARCOONAS"],
     // "onasCoTancujem" : ["COTANCUJEME", "HOTSIDENAWBARCOONAS"],
