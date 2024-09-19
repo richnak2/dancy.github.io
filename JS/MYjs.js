@@ -19,7 +19,12 @@ function openToThisLocation(targetLocation,scrollTo){
     }
     showHide(targetLocation)
     if (scrollTo) {
-        document.getElementById(scrollTo).scrollIntoView({ behavior: 'smooth' });
+        if (scrollTo === 'TOPFIXSCROLL') {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll directly to the top
+        }else{
+            document.getElementById(scrollTo).scrollIntoView({ behavior: 'smooth' });        
+
+        }
     }
 }
 
