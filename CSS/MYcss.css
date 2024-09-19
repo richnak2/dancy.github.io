@@ -177,9 +177,7 @@ body {
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     border-radius: 10px;
-
-    /* z-index: 10; Ensure it overlays the image */
-  }
+}
   
 
 
@@ -270,63 +268,25 @@ body {
     text-overflow: ellipsis;
 }
   
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-    /* .dropdown-menu{
-        display: none;
-    } */
-    /* #navNormalView{
-        display: none;
-    } */
-
-    
-    .text-muted{
-        display: none;
-    }
-}
 
 
 
 
-@media only screen and (max-width: 450px) {
-    .navbar{
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
-    }
-    
-    
-    #LOGOMAIN
-    {
-        width: 65vw;
-    }
-    #FOOTER p{
-        text-align: left;
-        padding-left: 75px;
-        margin-bottom: 0px;
-    }
-    #LOGOFOOTER{
-        max-width: 60px;
-        min-width: 60px;
-    }
-    
-    #MAINVYTAJTE{
-        text-align: center;
-    }
-    #HOTSIDENAWBARCOONAS{
-        font-size: 1.5rem;
-    }
-}
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     #MAINVYTAJTE{
         text-align: center;
     }
     #HOTSIDENAWBARCOONAS{
         font-size: 2rem;
     }
-} 
+}  */
+
+
+/* 
+.portfolio-link{
+    display: none;
+} */
 
 
 
@@ -357,13 +317,53 @@ body {
 
 
 /* THE WEY OUT */
+
+
+@media only screen and (max-width: 575.98px) {
+    #LOGOMAIN
+    {
+        width: 60vw;
+    }
+    #FOOTER p{
+        text-align: left;
+        padding-left: 75px;
+        margin-bottom: 0px;
+    }
+    #LOGOFOOTER{
+        max-width: 60px;
+        min-width: 60px;
+    }
+    
+    #MAINVYTAJTE{
+        text-align: center;
+    }
+    #HOTSIDENAWBARCOONAS{
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 767.98px) { 
+    .navbar{
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
     
     .dropdown-menu.show{
         display: none !important;
     }
 
+    #MAINVYTAJTE{
+        text-align: center;
+    }
+    #HOTSIDENAWBARCOONAS{
+        font-size: 2rem;
+    }
+    
 
+
+    .portfolio-hover{
+        display: none !important;
+    }
 }
 
 
@@ -375,6 +375,17 @@ body {
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    
+    .text-muted{
+        display: none;
+    }
+
+    .portfolio-hover{
+        display: flex !important;
+    }
 }
 
 
