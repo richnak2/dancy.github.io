@@ -15,7 +15,9 @@ body {
     height: auto;
 } */
 
-
+.liCloseUp{
+    list-style-type: circle;
+}
 
 
 .portfolio{
