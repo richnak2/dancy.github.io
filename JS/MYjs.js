@@ -1,9 +1,7 @@
 const dict = {
     "main" : ["MAINPAGEHED"],
     "onas" : ["ONAS"], 
-    "treningi" : ["TRENINGYHODINI", "RUZINOV", "MALINOVO"], 
-    "RUZINOV": ["TRENINGYHODINI", "RUZINOV"],
-    "MALINOVO": ["TRENINGYHODINI", "MALINOVO"],
+    "treningi" : ["TRENINGYHODINI"], 
     "kontakt" : ["KONTAKT", "MAPY"],   
 }
 
