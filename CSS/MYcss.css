@@ -30,31 +30,13 @@ body {
 }
 
 .card-img-top {
-    /* width: 100%; */
-    /* height: auto; */
-    /* max-height: 400px; */
-    /* object-fit: cover; */
-
     /* POKUSSS */
-    /* aspect-ratio: 16 / 9; 
-    min-width: 320px;
-    min-height: 180px; */
-
-     /* POKUSSS */
-     aspect-ratio: 4 / 3; 
-     min-width: 160px;
-     min-height: 120px;
-     border-radius: 10px 10px 0 0;
-
+    aspect-ratio: 3 / 2; 
+    /* min-width: 160px;
+    min-height: 120px; */
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
-
-/* Fallback for older browsers that don't support aspect-ratio */
-.card-img-top::before {
-    content: "";
-    display: block;
-    padding-top: 75%; 
-}
-
 
 
 .dropdown-item:hover{
