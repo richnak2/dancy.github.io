@@ -217,8 +217,7 @@
           <div id="COTANCUJEME" class=" px-0 navigateTO">
             
             <div class="container">
-              <h1 class="display-4 font-italic text-center pb-5">Čo trénujeme? velkost obrazkov rovnaka + velkost carticiek tiez rovnaka + #FLUIDDIVFIXED treba nastavit na wisku aby to bolo vidno logo + oprav bodky + vimisliet ako by sa optimalnejsie mohlo zobrazovat fotka alebo prostredie okolo fotky closeUP</h1>
-              <h2>do karticiek pridat tlacitko kedy trenujeme odkaz na rozvrh a tlacidlo na prihlasenie - vona stranka kde sa budu informacie o prihlaseni aj pocas rovnaka, centrovanie texu na dlzu  napr40znakov na riadok closeUP</h2>
+              <h1 class="display-4 font-italic text-center pb-5">Čo trénujeme?</h1>
               <div class="row">
 
                 <!-- POZOOR NEMAZZZZZ !!!!! -->
@@ -381,15 +380,42 @@
             </div>
           </div>
 
-          <div id="FLUIDDIVFIXED"  class="modal d-none"  tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-content text-center">
+
+          
+
+
+          <!-- <div id="FLUIDDIVFIXED" class="modal d-none" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" style="display: block;" aria-modal="true" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="min-height: 1500px" id="BABYDANCY">
+                  <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text the modal, we use an inline style set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+          <div id="FLUIDDIVFIXED" class="modal d-none"  tabindex="-1" role="dialog" aria-modal="true">
+            <div class="modal-content text-center"> 
+              <!-- id="FLUIDDIVFIXED"  -->
+              <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
               <div class="close-modal" data-bs-dismiss="modal"><img src="images/SVG/close.svg" alt="Close modal" onclick="closePonukaBig()">
               </div>
               <div class="continer text-dark">
+                
                 <div class="modal-body d-none" id="BABYDANCY">
                   <img class="img-fluid mx-auto d-block col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/PONUKA/BABY DANCY.jpg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6"> 
+                     <!-- POZOR offset-md-3 col-md-6 TOTOT JE NOVE MOZNO VSADE  -->
                     <h2 class="card-title font-weight-bold">BABY DANCY</h2>
                     <p class="card-text">
                       Tanečno pohybová príprava pre deti od 2 do 4 rokov.
@@ -406,12 +432,18 @@
                   
 
                   </div>
+                  
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-baby_blue" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
+                  </div>
                 </div>
 
                 <div class="modal-body d-none" id="MINIDANCY">
                   <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/PONUKA/MINI DANCY.jpg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6">
                     <h2 class="card-title font-weight-bold">MINI DANCY</h2>
                     <p class="card-text">
                       Tanečno pohybová príprava pre deti od 3 do 6 rokov.
@@ -427,12 +459,17 @@
                       <li class="liCloseUp">Rodičov nie, tých necháme v šatni 🙂</li>
                     </ul>
                   </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-pink" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
+                  </div>
                 </div>
 
                 <div class="modal-body d-none" id="GYMNASTIKA">
                   <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/PONUKA/GYMNASTIKA.jpg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6">
                     <h2 class="card-title font-weight-bold">GYMNASTIKA</h2>
                     <p class="card-text">Všeobecné základy gymnastiky, kondičné hry a ľahká akrobacia pre deti od 4
                       do 11 rokov.</p>
@@ -454,6 +491,12 @@
                         <li class="liCloseUp">Rodičov nie, tých necháme v šatni 🙂</li>
                       </ul>
                   </div>
+                  
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-green" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
+                  </div>
                 </div>
 
 
@@ -461,7 +504,7 @@
                 <div class="modal-body d-none" id="TEAMKIDS">
                   <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/PONUKA/TEAM KIDS.jpg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6">
                     <h2 class="card-title font-weight-bold">TEAM KIDS</h2>
                     <p class="card-text">Tanečný súbor pre deti od 6 do 12 rokov</p>
                     <h4 class="font-weight-bold">KIDS MONKEYS</h4>
@@ -473,6 +516,11 @@
                     <ul>
                       <li class="liCloseUp">Tréningy: 1x60 minútová hodina do týždňa</li>
                     </ul>
+                    
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg mt-3 mb-3 btn-outline-variable btn-outline-lila" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    </div>
+
                     <h4 class="font-weight-bold">KIDS COOKIES</h4>
                     <p class="card-text">
                       Tanečná a gymnastická príprava zahŕňa jeden 60-minútový tanečný tréning s prvkami show dance, jazz
@@ -485,6 +533,10 @@
                     <ul>
                       <li class="liCloseUp">Tréningy: 2x60 minútová hodina do týždňa - tanec+gymnastika</li>
                     </ul>
+                    
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg mt-3 mb-3 btn-outline-variable btn-outline-purple" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    </div>
 
                     <h4 class="font-weight-bold">KIDS BUBBLES</h4>
                     <p class="card-text">
@@ -498,6 +550,9 @@
                     <ul>
                       <li class="liCloseUp">Tréningy: 2x do týždňa</li>
                     </ul>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg mt-3 mb-3 btn-outline-variable btn-outline-orange" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    </div>
                     <h4 class="font-weight-bold">KIDS ALLSTARS</h4>
                     <p class="card-text">
                       V teame KIDS ALLSTARS tanečníci už majú základné tanečné skúsenosti a sú pripravené na ďalšie
@@ -510,13 +565,19 @@
                       <li class="liCloseUp">Tréningy: 3x do týždňa</li>
                     </ul>
                   </div>
+                  
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-yellow" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
+                  </div>
                 </div>
 
 
                 <div class="modal-body d-none" id="TEAMTEENS">
                   <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/PONUKA/TEAM TEENS.jpg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6">
                     <h2 class="card-title font-weight-bold">TEAM TEENS</h2>
                     <p class="card-text">
                       Tanečný súbor pre mládež od 12 do 20 rokov
@@ -532,6 +593,11 @@
                       <li class="liCloseUp">Tréningy: 3x do týždňa</li>
                     </ul>
                   </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-blue" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
+                  </div>
                 </div>
                 
 
@@ -539,7 +605,7 @@
                 <div class="modal-body d-none" id="MOMMYSHAPER">
                   <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/PONUKA/MOMMY SHAPER.jpg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6">
                     <h2 class="card-title font-weight-bold">MOMMY SHAPER</h2>
                     <p class="card-text">
                       hodiny formujúceho cvičenia pre mamičky, kde sú vítané aj vaše detičky.
@@ -559,29 +625,35 @@
                       aktivitách.
                     </p>
                   </div>
+                  
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-mumy_red" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
+                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
+                  </div>
                 </div>
 
 
                 <div class="modal-body d-none" id="INPROGRESS">
                   <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
                     aria-label="Placeholder: Thumbnail" src="images/LOGO/cele cierne.svg" alt="ponuka">
-                  <div class="card-body">
+                  <div class="card-body offset-md-3 col-md-6">
                     <h2 class="card-title font-weight-bold text-center">IN PROGRESS</h2>
                     <p class="card-text">
                       
                     </p>
                   </div>
+                  
+                  <div class="text-center">
+                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
+                  </div>
                 </div>
 
-                <div class="text-center">
-                  <button type="button" class="btn btn-lg mt-5" id="colorFullClose"onclick="closePonukaBig()">zavriet</button>
-                </div>
-
-
+                
               </div>
             </div>
-
-          </div>
+          <!-- </div> -->
+        </div>
 
 
           <!-- KONKRETNE TRENERKY  -->
@@ -692,41 +764,41 @@
                           <tr>
                               <td>PONDELOK</td>
                               <td>
-                                  <div class="purple">KIDS COOKIES<br>16:00 - 17:00</div>
-                                  <div class="blue mt-2">TEENS<br>17:00 - 19:00</div>
+                                  <div class="bg-purple">KIDS COOKIES<br>16:00 - 17:00</div>
+                                  <div class="bg-blue mt-2">TEENS<br>17:00 - 19:00</div>
                               </td>
                               <td>
-                                  <div class="yellow">KIDS ALLSTARS<br>malá<br>16:00 - 17:30</div>
+                                  <div class="bg-yellow">KIDS ALLSTARS<br>malá<br>16:00 - 17:30</div>
                               </td>
                               <td>
-                                  <div class="pink">MINI<br>16:00 - 16:45</div>
-                                  <div class="pink mt-2">MINI<br>16:45 - 17:30</div>
+                                  <div class="bg-pink">MINI<br>16:00 - 16:45</div>
+                                  <div class="bg-pink mt-2">MINI<br>16:45 - 17:30</div>
                               </td>
                               <td></td>
                           </tr>
                           <tr>
                               <td>UTOROK</td>
                               <td>
-                                  <div class="green">GYMNASTIKA<br>6-8 a 8-12<br>16:00 - 17:00</div>
-                                  <div class="green mt-2">GYMNASTIKA<br>4-6<br>17:00 - 18:00</div>
+                                  <div class="bg-green">GYMNASTIKA<br>6-8 a 8-12<br>16:00 - 17:00</div>
+                                  <div class="bg-green mt-2">GYMNASTIKA<br>4-6<br>17:00 - 18:00</div>
                               </td>
                               <td></td>
                               <td></td>
                               <td>
-                                <div class="baby_blue">BABY DANCY<br>2-4 roky<br>10:00 - 10:45</div>
-                                <div class="pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
-                                <div class="lila">KIDS MONKEYS<br>6-10 rokov<br>17:00 - 18:00</div>
+                                <div class="bg-baby_blue">BABY DANCY<br>2-4 roky<br>10:00 - 10:45</div>
+                                <div class="bg-pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
+                                <div class="bg-lila">KIDS MONKEYS<br>6-10 rokov<br>17:00 - 18:00</div>
                               </td>
                           </tr>
                           <tr>
                               <td>STREDA</td>
                               <td>
-                                  <div class="yellow">KIDS ALLSTARS<br>individuálna hodina<br>16:00 - 17:00</div>
-                                  <div class="yellow mt-2">KIDS ALLSTARS<br>17:00 - 18:00</div>
-                                  <div class="blue mt-2">TEENS<br>18:00 - 19:00</div>
+                                  <div class="bg-yellow">KIDS ALLSTARS<br>individuálna hodina<br>16:00 - 17:00</div>
+                                  <div class="bg-yellow mt-2">KIDS ALLSTARS<br>17:00 - 18:00</div>
+                                  <div class="bg-blue mt-2">TEENS<br>18:00 - 19:00</div>
                               </td>
                               <td>
-                                  <div class="orange">KIDS BUBBLES<br>malá<br>16:00 - 17:30</div>
+                                  <div class="bg-orange">KIDS BUBBLES<br>malá<br>16:00 - 17:30</div>
                               </td>
                               <td></td>
                               <td></td>
@@ -734,19 +806,19 @@
                           <tr>
                               <td>ŠTVRTOK</td>
                               <td>
-                                  <div class="yellow_plus_orange">KIDS ALLSTARS<br>KIDS BUBBLES<br>16:00 - 17:30</div>
-                                  <div class="orange mt-2">KIDS BUBBLES<br>17:30 - 18:30</div>
+                                  <div class="bg-yellow_plus_orange">KIDS ALLSTARS<br>KIDS BUBBLES<br>16:00 - 17:30</div>
+                                  <div class="bg-orange mt-2">KIDS BUBBLES<br>17:30 - 18:30</div>
 
                               </td>
                               <td>
-                                  <div class="blue">TEENS<br>16:00 - 18:00</div>
-                                  <div class="pink mt-2">MINI<br>malá<br>16:00 - 16:45</div>
-                                  <div class="pink mt-2">MINI<br>malá<br>16:45 - 17:30</div>
+                                  <div class="bg-blue">TEENS<br>16:00 - 18:00</div>
+                                  <div class="bg-pink mt-2">MINI<br>malá<br>16:00 - 16:45</div>
+                                  <div class="bg-pink mt-2">MINI<br>malá<br>16:45 - 17:30</div>
                               </td>
                               <td>
                               </td>
                               <td>
-                                <div class="mumy_red">MOMMY SHAPER <br>10:00 - 11:00</div>
+                                <div class="bg-mumy_red">MOMMY SHAPER <br>10:00 - 11:00</div>
                               </td>
                           </tr>
                           <tr>
@@ -758,7 +830,7 @@
                             <td>
                             </td>
                             <td>
-                              <div class="pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
+                              <div class="bg-pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
                             </td>
                         </tr>
 

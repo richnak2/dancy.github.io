@@ -1,3 +1,146 @@
+:root {
+    --purple: #d5b6fb;
+    --lila: #a7ffdf;
+    --blue: #a7ffdf;
+    --baby_blue: #bafbfb;
+    --yellow: #fbfdb6;
+    --pink: #fdb6ec;
+    --green: #d5fbb6;
+    --orange: #fbd8b6;
+    --mumy_red: #ffbebe;
+    --yellow_plus_orange: linear-gradient( rgba(251, 253, 182) 0%, rgb(251, 216, 182) 100%);}
+
+.btn-outline-variable {
+    --bs-btn-color: var(--btn-color, #000); 
+    --bs-btn-border-color: var(--btn-border-color, #000); 
+    --bs-btn-hover-color: #fff; 
+    --bs-btn-hover-bg: var(--btn-hover-bg, #000); 
+    --bs-btn-hover-border-color: var(--btn-hover-border-color, #000); 
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--btn-active-bg, #000);
+    --bs-btn-active-border-color: var(--btn-active-border-color, #000);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--btn-color, #000);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--btn-border-color, #000);
+    --bs-gradient: none;  
+}
+
+.btn-outline-variable:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-outline-variable:focus, .btn-outline-variable:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+}
+
+.btn-outline-baby_blue {
+    --btn-color: #000;
+    /* --btn-color: var(--baby_blue); */
+    --btn-border-color: var(--baby_blue);
+    --btn-hover-bg: var(--baby_blue);
+    --btn-hover-border-color: var(--baby_blue);
+}
+
+.btn-outline-pink {
+    --btn-color: #000;
+    --btn-border-color: var(--pink);
+    --btn-hover-bg: var(--pink);
+    --btn-hover-border-color: var(--pink);
+}
+
+.btn-outline-green {
+    --btn-color: #000;
+    --btn-border-color: var(--green);
+    --btn-hover-bg: var(--green);
+    --btn-hover-border-color: var(--green);
+}
+
+.btn-outline-mumy_red {
+    --btn-color: #000;
+    --btn-border-color: var(--mumy_red);
+    --btn-hover-bg: var(--mumy_red);
+    --btn-hover-border-color: var(--mumy_red);
+}
+
+
+.btn-outline-blue {
+    --btn-color: #000;
+    --btn-border-color: var(--blue);
+    --btn-hover-bg: var(--blue);
+    --btn-hover-border-color: var(--blue);
+}
+
+
+.btn-outline-lila {
+    --btn-color: #000;
+    --btn-border-color: var(--lila);
+    --btn-hover-bg: var(--lila);
+    --btn-hover-border-color: var(--lila);
+}
+
+.btn-outline-orange {
+    --btn-color: #000;
+    --btn-border-color: var(--orange);
+    --btn-hover-bg: var(--orange);
+    --btn-hover-border-color: var(--orange);
+}
+
+.btn-outline-yellow {
+    --btn-color: #000;
+    --btn-border-color: var(--yellow);
+    --btn-hover-bg: var(--yellow);
+    --btn-hover-border-color: var(--yellow);
+}
+
+.btn-outline-purple {
+    --btn-color: #000;
+    --btn-border-color: var(--purple);
+    --btn-hover-bg: var(--purple);
+    --btn-hover-border-color: var(--purple);
+}
+
+ 
+
+.bg-purple {
+    background: var(--purple)
+}
+.bg-lila {
+    background: var(--lila)
+}
+.bg-blue {
+    background: var(--blue)
+}
+.bg-baby_blue {
+    background: var(--baby_blue)
+}
+.bg-yellow {
+    background: var(--yellow)
+}
+.bg-pink {
+    background: var(--pink)
+}
+.bg-green {
+    background: var(--green)
+}
+.bg-orange {
+    background: var(--orange)
+}
+.bg-mumy_red {
+    background: var(--mumy_red)
+}
+.bg-yellow_plus_orange {
+    background: var(--yellow_plus_orange)
+}
+
+
+
+
 body {
     padding-top: 3rem;
 }
@@ -127,13 +270,13 @@ body {
 
 
 
-#colorFullClose{
+.colorFullClose{
     background: radial-gradient(circle, rgba(192, 63, 251, 0.5) 0%, rgba(252, 70, 107, 1) 100%);
     color: rgb(255, 255, 255);
 }
 
 
-#colorFullClose:hover{
+.colorFullClose:hover{
     background: radial-gradient(circle, rgba(252, 70, 107, 0.5) 0%, rgba(192, 63, 251, 1) 100%);
     color: rgb(0, 0, 0);
 }
@@ -198,17 +341,19 @@ body {
     /* BLOCK !!!!! show dont show */
     display: block; 
     margin: 2%;
-    overflow: auto;
+    overflow: scroll;
     max-width: 97%;
+    top: 75px;
+    padding-bottom: 120px;
 }
 
 #FLUIDDIVFIXED::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .modal-content {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    /* padding-top: 6rem;
+    padding-bottom: 6rem; */
 }
 
 
@@ -255,41 +400,38 @@ body {
 
 
 
-.purple {
-    background-color: #d5b6fb;
-}
-.lila {
-    background-color: #a7ffdf;
-}
-.blue {
-    background-color: #b6dafb;
-}
-.baby_blue {
-    background-color: #bafbfb;
-}
-.yellow {
-    background-color: #fbfdb6;
-}
-.pink {
-    background-color: #fdb6ec;
-}
-.green {
-    background-color: #d5fbb6;
-}
-.orange {
-    background-color: #fbd8b6;
-}
-.mumy_red {
-    background-color: #ffbebe;
-}
-.yellow_plus_orange {
-    background: linear-gradient( rgba(251, 253, 182) 0%, rgb(251, 216, 182) 100%);
-}
 
 .modal-content{
     background: linear-gradient( rgba(230,175,255,1) 0%, rgba(255,165,165,1) 34%, rgba(250,238,238,1) 64%);
 }
 
+
+
+/* 
+.btn-outline-success {
+    --bs-btn-color: #198754;
+    --bs-btn-border-color: #198754;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #198754;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+}
+
+.btn-outline-baby_blue{
+    background-color: #bafbfb;
+} */
+/* .btn-rozvrh:hover{
+    color: white;
+     background-color: transparent;
+} */
 
 
 
@@ -375,6 +517,13 @@ tbody{
 
 /* THE WEY OUT */
 
+@media (min-width: 1400px) { 
+    #FLUIDDIVFIXED{
+        top: 65px;
+    }
+ }
+
+
 
 @media only screen and (max-width: 575.98px) {
     #LOGOMAIN
@@ -396,6 +545,9 @@ tbody{
     }
     #HOTSIDENAWBARCOONAS{
         font-size: 1.5rem;
+    }
+    #FLUIDDIVFIXED{
+        top: 90px;
     }
 }
 

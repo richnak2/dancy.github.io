@@ -12,6 +12,7 @@ const collapseElement = document.getElementsByClassName('dropdown-menu')
 
 // NAVIGACIA
 function openToThisLocation(targetLocation,scrollTo){
+    closePonukaBig()
     if (window.matchMedia('(max-width: 768px)').matches ){
         navbarCOLAPS.classList.remove('show');
     }
