@@ -1,7 +1,7 @@
 :root {
     --purple: #d5b6fb;
     --lila: #a7ffdf;
-    --blue: #a7ffdf;
+    --blue: #b6dafb;
     --baby_blue: #bafbfb;
     --yellow: #fbfdb6;
     --pink: #fdb6ec;
@@ -213,9 +213,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* #ROZVRHHODIN{
-    min-width: 650px;
-} */
+
+#ROZVRHHODIN{
+    font-size: 1vw;
+}
 /* .navbar-toggler{
     margin-right: 1rem;
 } */
