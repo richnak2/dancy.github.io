@@ -192,8 +192,18 @@ body {
     font-family: 'Arial Black' , sans-serif;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 100000000;
 }
 
+
+.link-map {
+    font-size: 6.5vw;
+}
+
+.container-map{
+    min-width: 300px;
+    min-height: 300px;
+}
 
 #navbarCollapse{
     flex-direction: row-reverse;
@@ -352,10 +362,7 @@ body {
     display: none;
 }
 
-.modal-content {
-    /* padding-top: 6rem;
-    padding-bottom: 6rem; */
-}
+
 
 
 
@@ -438,56 +445,14 @@ body {
 
 
 td {
-    padding: 0; /* Remove padding inside <td> */
-    margin: 0;
-    height: 100%;
-}
-/* td div {
-    width: 100%;
-    height: 100%;
-    padding: 15px; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-/* td {
     padding: 0;
     margin: 0;
-}
-td div {
-    width: 100%;
     height: 100%;
-} */
+}
+
 tbody{
     vertical-align: revert;
 }
-
-
-/* #TOPFIXSCROLL{
-    position: fixed;
-    top: -200px;
-} */
-
-
-
-
-
-/* @media only screen and (max-width: 800px) {
-    #MAINVYTAJTE{
-        text-align: center;
-    }
-    #HOTSIDENAWBARCOONAS{
-        font-size: 2rem;
-    }
-}  */
-
-
-/* 
-.portfolio-link{
-    display: none;
-} */
-
 
 
 /* MIN */
@@ -526,33 +491,10 @@ tbody{
 
 
 
-@media only screen and (max-width: 575.98px) {
-    #LOGOMAIN
-    {
-        width: 60vw;
-    }
-    #FOOTER p{
-        text-align: left;
-        padding-left: 75px;
-        margin-bottom: 0px;
-    }
-    #LOGOFOOTER{
-        max-width: 60px;
-        min-width: 60px;
-    }
-    
-    #MAINVYTAJTE{
-        text-align: center;
-    }
-    #HOTSIDENAWBARCOONAS{
-        font-size: 1.5rem;
-    }
-    #FLUIDDIVFIXED{
-        top: 90px;
-    }
-}
 
-@media (max-width: 767.98px) { 
+
+
+ @media (max-width: 767.98px) { 
     .navbar{
         padding-right: 1rem !important;
         padding-left: 1rem !important;
@@ -569,10 +511,12 @@ tbody{
         font-size: 2rem;
     }
     
-
-
     .portfolio-hover{
         display: none !important;
+    }
+
+    .link-map {
+        font-size: 4vw;
     }
 }
 
@@ -596,12 +540,52 @@ tbody{
     .portfolio-hover{
         display: flex !important;
     }
+    .link-map {
+        font-size: 2vw;
+    }
 }
 
 
 
 
 
+
+
+@media (max-width: 575.98px) { 
+    /* //only screen and  */
+    #LOGOMAIN
+    {
+        width: 60vw;
+    }
+    #FOOTER p{
+        text-align: left;
+        padding-left: 75px;
+        margin-bottom: 0px;
+    }
+    #LOGOFOOTER{
+        max-width: 60px;
+        min-width: 60px;
+    }
+    
+    #MAINVYTAJTE{
+        text-align: center;
+    }
+    #HOTSIDENAWBARCOONAS{
+        font-size: 1.5rem;
+    }
+    #FLUIDDIVFIXED{
+        top: 90px;
+    }
+
+    .link-map {
+        font-size: 6.5vw;
+    }
+
+    #ALLCONTENT{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 
 
 
