@@ -415,6 +415,12 @@ body {
 
 
 
+iframe .gmnoprint{
+    bottom: 0px; 
+    right: 0px;
+}
+
+
 /* 
 .btn-outline-success {
     --bs-btn-color: #198754;
@@ -444,17 +450,18 @@ body {
 
 
 
-td {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
 
 tbody{
     vertical-align: revert;
 }
 
 
+td {
+    padding: 0;
+    /* // !important; */
+    margin: 0;
+    height: 100%;
+}
 /* MIN */
 
 
@@ -487,10 +494,28 @@ tbody{
     #FLUIDDIVFIXED{
         top: 65px;
     }
- }
+}
 
 
+ @media (min-width: 992px) { 
+    #ROZVRHHODIN {
+        font-size: 0.75vw;
+    }
+    #ROZVRHHODIN td{
+        padding: 0;
+    }
+  }
 
+ @media (max-width: 991.98px) {  
+    #ROZVRHHODIN {
+        font-size: 1.5vw;
+    }
+
+    #ROZVRHHODIN td{
+        padding: 0.25rem;
+    }
+    
+}
 
 
 
@@ -584,6 +609,11 @@ tbody{
     #ALLCONTENT{
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    #ROZVRHHODIN {
+        font-size: 2vw;
+        padding-top: 1rem;
     }
 }
 
