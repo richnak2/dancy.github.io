@@ -410,6 +410,13 @@ a:hover { color: var(--brand-2); }
 }
 .footer .btn img { vertical-align: -2px; }
 .footer > .container > img { height: 40px; width: auto; }
+/* Phone & email icons ship as solid-black SVGs. Force them white so they
+   show on the dark footer; invert to dark on hover, because .btn-outline-light
+   turns the button background white on hover. Facebook & Instagram are left
+   untouched. */
+.footer-ico { filter: brightness(0) invert(1); transition: filter .15s ease; }
+.footer .btn:hover .footer-ico,
+.footer .btn:focus .footer-ico { filter: brightness(0); }
 
 /* ---------- Schedule colour helpers ---------- */
 .bg-purple { background: var(--purple); }
