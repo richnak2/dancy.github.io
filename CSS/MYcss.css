@@ -192,8 +192,18 @@ body {
     font-family: 'Arial Black' , sans-serif;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 100000000;
 }
 
+
+.link-map {
+    font-size: 6.5vw;
+}
+
+.container-map{
+    min-width: 300px;
+    min-height: 300px;
+}
 
 #navbarCollapse{
     flex-direction: row-reverse;
@@ -352,10 +362,7 @@ body {
     display: none;
 }
 
-.modal-content {
-    /* padding-top: 6rem;
-    padding-bottom: 6rem; */
-}
+
 
 
 
@@ -408,6 +415,12 @@ body {
 
 
 
+iframe .gmnoprint{
+    bottom: 0px; 
+    right: 0px;
+}
+
+
 /* 
 .btn-outline-success {
     --bs-btn-color: #198754;
@@ -437,59 +450,18 @@ body {
 
 
 
-td {
-    padding: 0; /* Remove padding inside <td> */
-    margin: 0;
-    height: 100%;
-}
-/* td div {
-    width: 100%;
-    height: 100%;
-    padding: 15px; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-/* td {
-    padding: 0;
-    margin: 0;
-}
-td div {
-    width: 100%;
-    height: 100%;
-} */
+
 tbody{
     vertical-align: revert;
 }
 
 
-/* #TOPFIXSCROLL{
-    position: fixed;
-    top: -200px;
-} */
-
-
-
-
-
-/* @media only screen and (max-width: 800px) {
-    #MAINVYTAJTE{
-        text-align: center;
-    }
-    #HOTSIDENAWBARCOONAS{
-        font-size: 2rem;
-    }
-}  */
-
-
-/* 
-.portfolio-link{
-    display: none;
-} */
-
-
-
+td {
+    padding: 0;
+    /* // !important; */
+    margin: 0;
+    height: 100%;
+}
 /* MIN */
 
 
@@ -522,15 +494,90 @@ tbody{
     #FLUIDDIVFIXED{
         top: 65px;
     }
-    
-    #ROZVRHHODIN{
-        font-size: 1vw;
+}
+
+
+ @media (min-width: 992px) { 
+    #ROZVRHHODIN {
+        font-size: 0.75vw;
     }
- }
+    #ROZVRHHODIN td{
+        padding: 0;
+    }
+  }
+
+ @media (max-width: 991.98px) {  
+    #ROZVRHHODIN {
+        font-size: 1.5vw;
+    }
+
+    #ROZVRHHODIN td{
+        padding: 0.25rem;
+    }
+    
+}
 
 
 
-@media(max-width: 575.98px) {
+ @media (max-width: 767.98px) { 
+    .navbar{
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+    
+    .dropdown-menu.show{
+        display: none !important;
+    }
+
+    #MAINVYTAJTE{
+        text-align: center;
+    }
+    #HOTSIDENAWBARCOONAS{
+        font-size: 2rem;
+    }
+    
+    .portfolio-hover{
+        display: none !important;
+    }
+
+    .link-map {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) { 
+    .navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    
+    .text-muted{
+        display: none;
+    }
+
+    .portfolio-hover{
+        display: flex !important;
+    }
+    .link-map {
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    /* //only screen and  */
     #LOGOMAIN
     {
         width: 60vw;
@@ -555,65 +602,20 @@ tbody{
         top: 90px;
     }
 
-    .table>:not(caption)>*>*{
-        padding: 0;
+    .link-map {
+        font-size: 6.5vw;
+    }
+
+    #ALLCONTENT{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #ROZVRHHODIN {
+        font-size: 2vw;
+        padding-top: 1rem;
     }
 }
-
-@media (max-width: 767.98px) { 
-    .navbar{
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
-    }
-    
-    .dropdown-menu.show{
-        display: none !important;
-    }
-
-    #MAINVYTAJTE{
-        text-align: center;
-    }
-    #HOTSIDENAWBARCOONAS{
-        font-size: 2rem;
-    }
-    
-
-
-    .portfolio-hover{
-        display: none !important;
-    }
-}
-
-
-
-
-
-@media (min-width: 768px) { 
-    .navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-    
-    .text-muted{
-        display: none;
-    }
-
-    .portfolio-hover{
-        display: flex !important;
-    }
-    
-    #ROZVRHHODIN{
-        font-size: 1vw;
-    }
-}
-
-
-
-
-
 
 
 
