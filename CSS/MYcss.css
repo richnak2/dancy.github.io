@@ -215,7 +215,7 @@ body {
 }
 
 #ROZVRHHODIN{
-    font-size: 1vw;
+    font-size: 2.5vw;
 }
 /* .navbar-toggler{
     margin-right: 1rem;
@@ -522,11 +522,15 @@ tbody{
     #FLUIDDIVFIXED{
         top: 65px;
     }
+    
+    #ROZVRHHODIN{
+        font-size: 1vw;
+    }
  }
 
 
 
-@media only screen and (max-width: 575.98px) {
+@media(max-width: 575.98px) {
     #LOGOMAIN
     {
         width: 60vw;
@@ -549,6 +553,10 @@ tbody{
     }
     #FLUIDDIVFIXED{
         top: 90px;
+    }
+
+    .table>:not(caption)>*>*{
+        padding: 0;
     }
 }
 
@@ -595,6 +603,10 @@ tbody{
 
     .portfolio-hover{
         display: flex !important;
+    }
+    
+    #ROZVRHHODIN{
+        font-size: 1vw;
     }
 }
 
