@@ -1,64 +1,36 @@
-const dict = {
-    "main" : ["MAINPAGEHED"],
-    "onas" : ["ONAS"], 
-    "treningi" : ["TRENINGYHODINI"], 
-    "kontakt" : ["KONTAKT", "MAPY"],   
-}
+/* Tanečné štúdio DANCY – lightweight enhancements
+   (navigation, scrollspy). Modals & collapse are handled by Bootstrap. */
 
-const listOfNotValidTargets = ["onas","treningi"]
-const navbarCOLAPS = document.getElementById('myNavbar')
-const collapseElement = document.getElementsByClassName('dropdown-menu')
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar = document.getElementById('mainNav');
 
-
-// NAVIGACIA
-function openToThisLocation(targetLocation,scrollTo){
-    closePonukaBig()
-    if (window.matchMedia('(max-width: 768px)').matches ){
-        navbarCOLAPS.classList.remove('show');
-    }
-    showHide(targetLocation)
-    if (scrollTo) {
-        if (scrollTo === 'TOPFIXSCROLL') {
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll directly to the top
-        }else{
-            document.getElementById(scrollTo).scrollIntoView({ behavior: 'smooth' });        
-
+  // Close the mobile menu after tapping a nav link
+  if (navbar) {
+    navbar.querySelectorAll('.nav-link, .navbar-brand').forEach(function (link) {
+      link.addEventListener('click', function () {
+        const open = bootstrap.Collapse.getInstance(navbar);
+        if (open && navbar.classList.contains('show')) {
+          open.hide();
         }
-    }
-}
-
-function showHide(targetLocation){
-    hide();   
-    dict[targetLocation].forEach(targrtL => {
-        document.getElementById(targrtL).classList.remove("d-none")
+      });
     });
-}
+  }
 
-function hide(){
-    for (const key in dict) {
-        if (dict.hasOwnProperty(key)) {
-            dict[key].forEach(targrtL => {
-                document.getElementById(targrtL).classList.add("d-none")
-            });
-        }
-    }  
-}
+  // Highlight the active section in the navbar while scrolling
+  if (window.bootstrap && bootstrap.ScrollSpy) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#mainNav',
+      rootMargin: '0px 0px -55%',
+    });
+  }
 
-// PONUKA
-const zoomInPlusContiner = document.getElementById('FLUIDDIVFIXED')
-const zoomInPlusAll = [...document.getElementsByClassName('modal-body')]
-
-function openPonukaBig(sectionId){
-    zoomInPlusAll.forEach(elem => {
-        elem.classList.add("d-none")
-    })
-    zoomInPlusContiner.classList.remove("d-none")
-    const sectionZoomInPlus = document.getElementById(sectionId);
-    sectionZoomInPlus.classList.remove("d-none")
-}
-
-
-function closePonukaBig(){
-    zoomInPlusContiner.classList.add("d-none")
-    zoomInPlusAll.forEach(elem => elem.classList.add("d-none"))
-}
+  // Allow keyboard activation (Enter / Space) of the clickable offer cards
+  document.querySelectorAll('.offer-card[role="button"]').forEach(function (card) {
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+});

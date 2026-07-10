@@ -1,1006 +1,722 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Ondrej Richnák">
+  <!-- Primary SEO meta -->
+  <title>Tanečné štúdio DANCY Bratislava | Tanec a gymnastika pre deti a mládež</title>
+  <meta name="description"
+    content="Tanečné štúdio DANCY v Bratislave – tanec a gymnastika pre deti a mládež od 2 do 20 rokov. Show dance, jazz dance, contemporary, baby dancy, mini dancy aj mommy shaper. Príďte si k nám zatancovať!">
+  <meta name="keywords"
+    content="tanečné štúdio Bratislava, tanec pre deti Bratislava, gymnastika pre deti, show dance, jazz dance, contemporary, baby dancy, mini dancy, mommy shaper, DANCY">
+  <meta name="author" content="Tanečné štúdio DANCY">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://richnak2.github.io/dancy.github.io/">
+
+  <!-- Google Search Console -->
   <meta name="google-site-verification" content="ClcHUlOWw3pwXRndoLeyUsYaTibwQEoCBKbxSRv65M8" />
 
-  <title>Dancy original webside</title>
-  <link rel="shortcut icon" href="images/SVG/header.svg">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tanečné štúdio DANCY">
+  <meta property="og:title" content="Tanečné štúdio DANCY Bratislava | Tanec pre deti a mládež">
+  <meta property="og:description"
+    content="Tanec a gymnastika pre deti a mládež od 2 do 20 rokov v Bratislave. Show dance, jazz dance, contemporary a ďalšie. Príďte sa pozrieť na tréning!">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:url" content="https://richnak2.github.io/dancy.github.io/">
+  <meta property="og:image" content="https://richnak2.github.io/dancy.github.io/images/SCROLING/konkurz2.jpg">
+  <meta property="og:image:alt" content="Tanečníčky tanečného štúdia DANCY na javisku">
 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tanečné štúdio DANCY Bratislava">
+  <meta name="twitter:description" content="Tanec a gymnastika pre deti a mládež od 2 do 20 rokov v Bratislave.">
+  <meta name="twitter:image" content="https://richnak2.github.io/dancy.github.io/images/SCROLING/konkurz2.jpg">
+
+  <link rel="icon" href="images/SVG/header.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/LOGO/logo1cierne.png">
 
   <!-- Bootstrap core CSS -->
   <link href="CSS/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="CSS/carousel.css" rel="stylesheet">
-
+  <!-- Custom styles -->
   <link href="CSS/MYcss.css" rel="stylesheet">
-  <!-- <link href="CSS/portfolio.css" rel="stylesheet"> -->
 
+  <!-- Structured data: local dance school -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["SportsActivityLocation", "LocalBusiness"],
+    "name": "Tanečné štúdio DANCY",
+    "description": "Tanečné štúdio pre deti a mládež od 2 do 20 rokov v Bratislave. Show dance, jazz dance, modern dance, contemporary a gymnastika.",
+    "url": "https://richnak2.github.io/dancy.github.io/",
+    "logo": "https://richnak2.github.io/dancy.github.io/images/LOGO/logo1cierne.png",
+    "image": "https://richnak2.github.io/dancy.github.io/images/SCROLING/konkurz2.jpg",
+    "telephone": "+421903838651",
+    "email": "info@dancy.sk",
+    "foundingDate": "2010",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vajnorská 44",
+      "postalCode": "831 03",
+      "addressLocality": "Bratislava",
+      "addressCountry": "SK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.1608,
+      "longitude": 17.1551
+    },
+    "areaServed": "Bratislava",
+    "sameAs": [
+      "https://www.facebook.com/tanecnestudiodancy/",
+      "https://www.instagram.com/dancy_dancestudio/"
+    ]
+  }
+  </script>
 </head>
 
-<body class="bg-dark">
-  <!-- <div id="TOPFIXSCROLL"></div> -->
+<body>
+
+  <!-- ============ NAVBAR ============ -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top px-5" aria-label="Eleventh navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0);">
-          <img id='LOGOMAIN' onclick="openToThisLocation('main')" src="images/LOGO/cele biele.svg" alt="Brand Name">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" aria-label="Hlavná navigácia">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">
+          <img id="LOGOMAIN" src="images/LOGO/cele biele.svg" alt="Tanečné štúdio DANCY" height="34">
         </a>
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
-         aria-controls="myNavbar" aria-expanded="true" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Otvoriť menu">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="myNavbar" >
-          <ul class="navbar-nav mr-auto ">
-            <!-- mb-2 mb-lg-0 -->
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" onclick="openToThisLocation('onas','TOPFIXSCROLL')">O nás</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME')"> Čo trénujeme</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','TRENERYKONKRETNEMAINHOLDER')"> Tréneri</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME')">Ponuka</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('BABYDANCY')"> BABY DANCY</a></li>
-                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('MINIDANCY')"> MINI DANCY </a></li>
-                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('GYMNASTIKA')"> GYMNASTIKA </a></li>
-                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('TEAMKIDS')"> TEAM KIDS </a></li>
-                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('TEAMTEENS')"> TEAM TEENS </a></li>
-                <li><a class="dropdown-item" href="javascript:void(0);" onclick="openToThisLocation('onas','COTANCUJEME'); openPonukaBig('MOMMYSHAPER')"> MOMMY SHAPER </a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="javascript:void(0);" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">Rozvrh</a>
-              
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" onclick="openToThisLocation('kontakt','TOPFIXSCROLL')">Kontakt </a>
-            </li>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="#onas">O nás</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ponuka">Ponuka</a></li>
+            <li class="nav-item"><a class="nav-link" href="#treneri">Tréneri</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rozvrh">Rozvrh</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main role="main" id="MAIN">
-    <div id="MAINVYTAJTE">
+  <main>
 
-
-      <div id="MAINPAGEHED" class="text-white  bg-dark">
-        <div id="myCarouselMobile" class="carousel slide" data-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarouselMobile" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-          </div>
-          
-          <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <img class="first-slide img-fluid mx-auto" src="images/SCROLING/konkurzMobile.jpg" alt="First slide">
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Sign up today</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" >
-              <img class="second-slide img-fluid mx-auto" src="images/SCROLING/mumyshaperMobile.jpg" alt="Second slide">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselMobile" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarouselMobile" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          
-        </div>
-
-
-        <div id="myCarouselOther" class="carousel slide" data-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarouselOther" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarouselOther" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#myCarouselOther" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-          </div>
-          
-          <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <img class="first-slide img-fluid mx-auto" src="images/SCROLING/konkurz2.jpg" alt="First slide">
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Sign up today</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="second-slide img-fluid mx-auto" src="images/SCROLING/konkurz3.jpg" alt="Second slide">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" >
-              <img class="third-slide img-fluid mx-auto" src="images/SCROLING/mumyshaper2.jpg" alt="Third slide">
-              <div class="container">
-                <div class="carousel-caption text-right">
-                  <h1>One more for good measure.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="javascript:void(0);" role="button">Browse gallery</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselOther" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarouselOther" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-
-
-        </div>
-
-        
-
-        <div class="p-5 pb-0">
-          <h1 class="display-4 font-italic">VITAJTE!</h1>
-          <p class="lead my-3">Ak rád/rada tancuješ, alebo premýšľaš, že by si to chcel/a skúsiť, si na správnej
-            adrese!</p>
-          <p class="lead my-3">Pozývame Ťa do sveta DANCY, kde máš možnosť spoznať tanec bližšie, získať nových
-            priateľov, zabaviť sa na tréningoch, vytancovať sa na vystúpeniach a súťažiach!</p>
-          <p class="lead my-3">Ak ešte váhaš, príď sa pozrieť na náš tréning.</p>
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero d-flex align-items-center text-center text-white">
+      <div class="hero__overlay"></div>
+      <div class="container position-relative py-5">
+        <p class="hero__eyebrow mb-2">Tanečné štúdio · Bratislava · od roku 2010</p>
+        <h1 class="hero__title mb-3">Vitajte vo svete&nbsp;DANCY</h1>
+        <p class="hero__lead mx-auto mb-4">
+          Tanec a gymnastika pre deti a mládež od 2 do 20 rokov. Získaj nových priateľov,
+          zaži radosť z pohybu a vytancuj sa na vystúpeniach aj súťažiach.
+        </p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+          <a href="#ponuka" class="btn btn-brand btn-lg px-4">Naša ponuka</a>
+          <a href="#rozvrh" class="btn btn-outline-light btn-lg px-4">Rozvrh hodín</a>
         </div>
       </div>
+    </section>
 
-
-      <div id="ALLCONTENT" class="text-white  bg-dark pb-5">
-        <div id="ONAS" class="px-0  imagesinsection d-none">
-          <div id="HISTORY" class="px-0 imagesinsection">
-            <div class="continer">
-              <h1 class="display-4 text-center font-italic pb-5">O nás</h1>
-              <p class="lead my-3">
-                Naše tanečné štúdio DANCY sa už od septembra 2010 zameriava na výchovu a rozvoj detí a mládeže
-                vo veku od 2 do 20 rokov v tanečných štýloch show dance, jazz dance, modern dance a contemporary.
-              </p>
-              <p class="lead my-3">
-                Vytvárame láskave prostredie, kde sa mladí tanečníci môžu rozvíjať nielen po tanečno-umeleckej stránke,
-                ale aj osobnostne. Podporujeme ich v kreativite, disciplíne a v budovaní tímového ducha. Veríme,
-                že prostredníctvom tanca môžeme deťom vštepiť hodnoty, ktoré im budú prínosom v celom ich živote.
-                Našich zverencov pripravujeme na slovenské, či medzinárodné súťaže a vystúpenia, kde môžu s hrdosťou
-                ukázať
-                svoj talent a úsilie. Našim cieľom je, aby každý mladý tanečník od nás odchádzal nielen ako lepší
-                tanečník,
-                ale aj ako sebavedomý a zodpovedný mladý človek.
-              </p>
-            </div>
+    <!-- ============ O NÁS ============ -->
+    <section id="onas" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section__kicker">Kto sme</span>
+          <h2 class="section__title">O nás</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <p class="lead">
+              Naše tanečné štúdio <strong>DANCY</strong> sa už od septembra 2010 zameriava na výchovu a rozvoj
+              detí a mládeže vo veku od 2 do 20 rokov v tanečných štýloch show dance, jazz dance, modern dance
+              a contemporary.
+            </p>
+            <p>
+              Vytvárame láskavé prostredie, kde sa mladí tanečníci môžu rozvíjať nielen po tanečno-umeleckej
+              stránke, ale aj osobnostne. Podporujeme ich v kreativite, disciplíne a v budovaní tímového ducha.
+              Veríme, že prostredníctvom tanca môžeme deťom vštepiť hodnoty, ktoré im budú prínosom v celom
+              ich živote. Našich zverencov pripravujeme na slovenské aj medzinárodné súťaže a vystúpenia,
+              kde môžu s hrdosťou ukázať svoj talent a úsilie. Naším cieľom je, aby každý mladý tanečník od nás
+              odchádzal nielen ako lepší tanečník, ale aj ako sebavedomý a zodpovedný mladý človek.
+            </p>
           </div>
-
-          
-          <div id="COTANCUJEME" class=" px-0 navigateTO">
-            
-            <div class="container">
-              <h1 class="display-4 font-italic text-center pb-5">Čo trénujeme?</h1>
-              <div class="row">
-
-                <!-- POZOOR NEMAZZZZZ !!!!! -->
-                <!-- <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <a class="portfolio-link">
-                      <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                          <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg">
-                        </div>
-                      </div>
-                      <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                        aria-label="Placeholder: Thumbnail" src="images/PONUKA/ponuka1.jpg" alt="ponuka">
-                    </a>
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">BABY DANCY</h5>
-                      <p class="card-text">Tanečno pohybová príprava pre deti od 2 do 4 rokov.</p>
-                      
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('A')">viac</a></small>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div> -->
-
-                
-                
-
-
-                <!-- BABY DANCY -->
-                <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                        <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg" onclick="openPonukaBig('BABYDANCY')">
-                      </div>
-                    </div>
-                    <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                      aria-label="Placeholder: Thumbnail" src="images/PONUKA/BABY DANCY.jpg" alt="ponuka">
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">BABY DANCY</h5>
-                      <p class="card-text">Tanečno pohybová príprava pre deti od 2 do 4 rokov.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('BABYDANCY')">viac</a></small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- MINI DANCY -->
-                <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                        <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg" onclick="openPonukaBig('MINIDANCY')">
-                      </div>
-                    </div>
-                    <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                      aria-label="Placeholder: Thumbnail" src="images/PONUKA/MINI DANCY.jpg" alt="ponuka">
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">MINI DANCY</h5>
-                      <p class="card-text">Tanečno pohybová príprava pre deti od 3 do 6 rokov.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('MINIDANCY')">viac</a></small> 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--  GYMNASTIKA -->
-                <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                        <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg" onclick="openPonukaBig('GYMNASTIKA')">
-                      </div>
-                    </div>
-                    <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                      aria-label="Placeholder: Thumbnail" src="images/PONUKA/GYMNASTIKA.jpg" alt="ponuka">
-
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">GYMNASTIKA</h5>
-                      <p class="card-text">Všeobecné základy gymnastiky, kondičné hry a ľahká akrobacia pre deti od 4
-                        do 11 rokov.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('GYMNASTIKA')">viac</a></small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- TEAM KIDS -->
-                <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                        <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg" onclick="openPonukaBig('TEAMKIDS')">
-                      </div>
-                    </div>
-                    <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                      aria-label="Placeholder: Thumbnail" src="images/PONUKA/TEAM KIDS.jpg" alt="ponuka">
-
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">TEAM KIDS</h5>
-                      <p class="card-text">Tanečný súbor pre deti od 6 do 12 rokov</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('TEAMKIDS')">viac</a></small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- TEAM TEENS -->
-                <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                        <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg" onclick="openPonukaBig('TEAMTEENS')">
-                      </div>
-                    </div>
-                    <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                      aria-label="Placeholder: Thumbnail" src="images/PONUKA/TEAM TEENS.jpg" alt="ponuka">
-
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">TEAM TEENS</h5>
-                      <p class="card-text">
-                        Tanečný súbor pre mládež od 12 do 20 rokov
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('TEAMTEENS')">viac</a></small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- MOMMY SHAPER -->
-                <div class="portfolio col-lg-4 col-sm-6 mb-4">
-                  <div class="card mb-4 h-100">
-                    <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                        <img  class="fa-plus" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" src="images/SVG/plus.svg" onclick="openPonukaBig('MOMMYSHAPER')">
-                      </div>
-                    </div>
-                    <img class="bd-placeholder-img card-img-top" focusable="false" role="img"
-                      aria-label="Placeholder: Thumbnail" src="images/PONUKA/MOMMY SHAPER.jpg" alt="ponuka">
-
-                    <div class="card-body">
-                      <h5 class="card-title font-weight-bold">MOMMY SHAPER</h5>
-                      <p class="card-text">
-                        hodiny formujúceho cvičenia pre mamičky, kde sú vítané aj vaše detičky.
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <small class="text-muted"><a href="javascript:void(0);" onclick="openPonukaBig('MOMMYSHAPER')">viac</a></small>                  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          
-
-
-          <!-- <div id="FLUIDDIVFIXED" class="modal d-none" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" style="display: block;" aria-modal="true" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" style="min-height: 1500px" id="BABYDANCY">
-                  <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text the modal, we use an inline style set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-
-          <div id="FLUIDDIVFIXED" class="modal d-none"  tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-content text-center"> 
-              <!-- id="FLUIDDIVFIXED"  -->
-              <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
-              <div class="close-modal" data-bs-dismiss="modal"><img src="images/SVG/close.svg" alt="Close modal" onclick="closePonukaBig()">
-              </div>
-              <div class="continer text-dark">
-                
-                <div class="modal-body d-none" id="BABYDANCY">
-                  <img class="img-fluid mx-auto d-block col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/PONUKA/BABY DANCY.jpg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6"> 
-                     <!-- POZOR offset-md-3 col-md-6 TOTOT JE NOVE MOZNO VSADE  -->
-                    <h2 class="card-title font-weight-bold">BABY DANCY</h2>
-                    <p class="card-text">
-                      Tanečno pohybová príprava pre deti od 2 do 4 rokov.
-                      Počas 45 minútovej tanečnej hodiny sa detičky pomocou ľahkých tanečných variácii a prvkov na obľúbené pesničky a riekanky stretnú s riadený pohybom, prostredníctvom pohybových hier zlepšia svoju koordináciu a potrénujú sústredenie.
-                    </p>
-                    <h6 class="font-weight-bold">Čo na tréning so sebou?</h6>
-                    <ul>
-                      <li class="liCloseUp">Baletný / gymnastický dres či iný obtiahnutý úbor (tričko a legíny)</li>
-                      <li class="liCloseUp">Gymnastické/baletné cvičky s mäkkou podrážkou alebo ponožky</li>
-                      <li class="liCloseUp">Dievčatá prosíme stiahnuť vlasy gumičkou/ upnúť do drdola</li>
-                      <li class="liCloseUp">Fľašu s vodou</li>
-                      <li class="liCloseUp">Tancovať a cvičiť budú s nami aj rodičia 🙂</li>
-                    </ul>
-                  
-
-                  </div>
-                  
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-baby_blue" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
-                  </div>
-                </div>
-
-                <div class="modal-body d-none" id="MINIDANCY">
-                  <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/PONUKA/MINI DANCY.jpg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6">
-                    <h2 class="card-title font-weight-bold">MINI DANCY</h2>
-                    <p class="card-text">
-                      Tanečno pohybová príprava pre deti od 3 do 6 rokov.
-                      Počas 45 minútovej tanečnej hodiny deti tancujú krátke tančeky na obľúbené pesničky.  Pomocou pohybových hier rozvíjame koordináciu tela , orientáciu v priestore, posilňujeme svaly, učíme sa správnemu držaniu tela. 
-                      Na hodinách tanečnej sa však učíme aj disciplíne, práci v kolektíve a rozvíjame rytmus a hudobný sluch, ktorý deťom pomôže učiť sa cudzie jazyky. 
-                    </p>
-                    <h6 class="font-weight-bold">Čo na tréning so sebou?</h6>
-                    <ul>
-                      <li class="liCloseUp">Baletný / gymnastický dres či iný obtiahnutý úbor (tričko a legíny)</li>
-                      <li class="liCloseUp">Gymnastické/baletné cvičky s mäkkou podrážkou alebo ponožky</li>
-                      <li class="liCloseUp">Dievčatá prosíme stiahnuť vlasy gumičkou/ upnúť do drdola</li>
-                      <li class="liCloseUp">Fľašu s vodou</li>
-                      <li class="liCloseUp">Rodičov nie, tých necháme v šatni 🙂</li>
-                    </ul>
-                  </div>
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-pink" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
-                  </div>
-                </div>
-
-                <div class="modal-body d-none" id="GYMNASTIKA">
-                  <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/PONUKA/GYMNASTIKA.jpg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6">
-                    <h2 class="card-title font-weight-bold">GYMNASTIKA</h2>
-                    <p class="card-text">Všeobecné základy gymnastiky, kondičné hry a ľahká akrobacia pre deti od 4
-                      do 11 rokov.</p>
-                      <p class="card-text">
-                        Na hodinách gymnastiky sa zameriavame na základy športovej gymnastiky.
-                        Deti sa postupne učia prvky ako kotúľ vpred, kotúľ vzad, stojka, mostík, či premet vbok, premet
-                        vpred a vzad, rovnováha na kladine a rôzne kombinácie týchto prvkov.
-                        Pomocou rôznych cvičení a pohybových hier spevňujeme celkový korpus tela, čo pomáha správnemu
-                        držaniu tela.
-
-                        Deti sú rozdelené do viacerých skupín podľa výkonnosti a veku a trénujú 1x do týždňa (60 minút).
-                      </p>
-                      <h6 class="font-weight-bold">Čo na tréning so sebou?</h6>
-                      <ul>
-                        <li class="liCloseUp">Gymnastický dres či iný obtiahnutý úbor</li>
-                        <li class="liCloseUp">Gymnastické/baletné cvičky s mäkkou podrážkou alebo ponožky</li>
-                        <li class="liCloseUp">Dievčatá prosíme stiahnuť vlasy gumičkou/ upnúť do drdola</li>
-                        <li class="liCloseUp">Fľašu s vodou</li>
-                        <li class="liCloseUp">Rodičov nie, tých necháme v šatni 🙂</li>
-                      </ul>
-                  </div>
-                  
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-green" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
-                  </div>
-                </div>
-
-
-
-                <div class="modal-body d-none" id="TEAMKIDS">
-                  <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/PONUKA/TEAM KIDS.jpg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6">
-                    <h2 class="card-title font-weight-bold">TEAM KIDS</h2>
-                    <p class="card-text">Tanečný súbor pre deti od 6 do 12 rokov</p>
-                    <h4 class="font-weight-bold">KIDS MONKEYS</h4>
-                    <p class="card-text">
-                      Tanečná príprava s prvkami show dance, jazz dance a contemporary, z ktorých postupne vznikajú
-                      nápadité choreografie. Deti sa učia vyjadriť pohybom náladu či pocity, prostredníctvom tanca s
-                      rekvizitami (stuhy, kruh, lopta a iné) precvičia svoju koordináciu.
-                    </p>
-                    <ul>
-                      <li class="liCloseUp">Tréningy: 1x60 minútová hodina do týždňa</li>
-                    </ul>
-                    
-                    <div class="text-center">
-                      <button type="button" class="btn btn-lg mt-3 mb-3 btn-outline-variable btn-outline-lila" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    </div>
-
-                    <h4 class="font-weight-bold">KIDS COOKIES</h4>
-                    <p class="card-text">
-                      Tanečná a gymnastická príprava zahŕňa jeden 60-minútový tanečný tréning s prvkami show dance, jazz
-                      dance a contemporary, z ktorých postupne vznikajú nápadité choreografie a jeden 60-minútový
-                      gymnastický tréning. Deti sa na tanečnom tréningu učia vyjadriť pohybom náladu, či pocity
-                      prostredníctvom tanca a prácou s rekvizitami (stuhy, kruh, lopta a iné) si zlepšujú svoju
-                      koordináciu. Gymnastická časť zasa rozvíja ich pohybové schopnosti a flexibilitu, čím dopĺňa
-                      celkovú tanečno-pohybovú prípravu.
-                    </p>
-                    <ul>
-                      <li class="liCloseUp">Tréningy: 2x60 minútová hodina do týždňa - tanec+gymnastika</li>
-                    </ul>
-                    
-                    <div class="text-center">
-                      <button type="button" class="btn btn-lg mt-3 mb-3 btn-outline-variable btn-outline-purple" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    </div>
-
-                    <h4 class="font-weight-bold">KIDS BUBBLES</h4>
-                    <p class="card-text">
-                      V skupine KIDS BUBBLES sa menej skúsení tanečníci zoznamujú so základmi tanečných štýlov show
-                      dance, jazz dance a contemporary. Tréningy sú zamerané na rozvoj základných tanečných techník,
-                      držania a ohybnosti tela a budovanie sebavedomia na tanečnom parkete. Hoci sú súťaže pre nich ešte
-                      novinkou, tanečníci sa postupne učia, ako zvládať súťažné vystúpenia a rozvíjajú svoj zmysel pre
-                      tímovú spoluprácu. Tréneri ich podporujú v ich rastúcej láske k tancu a pripravujú ich na ďalšie
-                      kroky v ich tanečnej ceste.
-                    </p>
-                    <ul>
-                      <li class="liCloseUp">Tréningy: 2x do týždňa</li>
-                    </ul>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-lg mt-3 mb-3 btn-outline-variable btn-outline-orange" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    </div>
-                    <h4 class="font-weight-bold">KIDS ALLSTARS</h4>
-                    <p class="card-text">
-                      V teame KIDS ALLSTARS tanečníci už majú základné tanečné skúsenosti a sú pripravené na ďalšie
-                      tanečné výzvy. Tréningy sa zameriavajú na zdokonaľovanie techniky a umeleckého prejavu v štýloch
-                      show dance, jazz dance a contemporary. Tanečníci v tejto skupine už majú za sebou prvé úspechy na
-                      súťažiach a pracujú na náročnejších choreografiách, ktoré ich pripravujú na vyššiu úroveň súťaží a
-                      vystúpení.
-                    </p>
-                    <ul>
-                      <li class="liCloseUp">Tréningy: 3x do týždňa</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-yellow" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
-                  </div>
-                </div>
-
-
-                <div class="modal-body d-none" id="TEAMTEENS">
-                  <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/PONUKA/TEAM TEENS.jpg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6">
-                    <h2 class="card-title font-weight-bold">TEAM TEENS</h2>
-                    <p class="card-text">
-                      Tanečný súbor pre mládež od 12 do 20 rokov
-                    </p>
-                    <p class="card-text">
-                      V teame Teens sa tanečníci súťažne venujú tanečným štýlom show dance, jazz dance a contemporary.
-                      Tréningy sú zamerané na zdokonaľovanie tanečných zručností, umeleckého prejavu a objavovanie
-                      rôznych tanečných štýlov. Tanečníci sa sústreďujú na náročnejšie choreografie a prípravu na
-                      slovenské, či medzinárodné súťaže a rôzne vystúpenia. Tréneri rozvíjajú ich vášeň pre tanec a
-                      snažia sa ich pripraviť na ďalšie výzvy vo svojej tanečnej dráhe.
-                    </p>
-                    <ul>
-                      <li class="liCloseUp">Tréningy: 3x do týždňa</li>
-                    </ul>
-                  </div>
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-blue" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
-                  </div>
-                </div>
-                
-
-
-                <div class="modal-body d-none" id="MOMMYSHAPER">
-                  <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/PONUKA/MOMMY SHAPER.jpg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6">
-                    <h2 class="card-title font-weight-bold">MOMMY SHAPER</h2>
-                    <p class="card-text">
-                      hodiny formujúceho cvičenia pre mamičky, kde sú vítané aj vaše detičky.
-                    </p>
-                    <p class="card-text">
-                      Milé maminy,
-
-                      chcete sa dostať opäť do formy, no nemáte na to doma priestor, či vám nemá kto postrážiť dieťatko?<br>
-
-                      Máme ideálne riešenie! Vezmite so sebou Vaše dieťatko na cvičenie MOMMY SHAPER! S dieťatkom do
-                      10kg vás naučíme
-                      cvičiť
-                      ako s ideálnou záťažou, alebo si príďte oddýchnuť pri cvičení aj sama - s činkou, či vlastným
-                      telom.<br>
-                      Tie deti, ktorým sa cvičiť nebude chcieť, či staršie deti, sa môžu zabaviť pri rôznych hračkách,
-                      či iných
-                      aktivitách.
-                    </p>
-                  </div>
-                  
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-variable btn-outline-mumy_red" onclick="openToThisLocation('treningi','TOPFIXSCROLL')">rozvrh</button>
-                    <button type="button" class="btn btn-lg mt-5 mb-3 btn-outline-success" onclick="closePonukaBig()">prihlasit sa</button>
-                  </div>
-                </div>
-
-
-                <div class="modal-body d-none" id="INPROGRESS">
-                  <img class="img-fluid d-block mx-auto col-lg-4 col-md-6 col-sm-12 mb-4" focusable="false" role="img"
-                    aria-label="Placeholder: Thumbnail" src="images/LOGO/cele cierne.svg" alt="ponuka">
-                  <div class="card-body offset-md-3 col-md-6">
-                    <h2 class="card-title font-weight-bold text-center">IN PROGRESS</h2>
-                    <p class="card-text">
-                      
-                    </p>
-                  </div>
-                  
-                  <div class="text-center">
-                    <button type="button" class="btn btn-lg mt-5 mb-3 colorFullClose" onclick="closePonukaBig()">zavriet</button>
-                  </div>
-                </div>
-
-                
-              </div>
-            </div>
-          <!-- </div> -->
         </div>
 
-
-          <!-- KONKRETNE TRENERKY  -->
-          <div id="TRENERYKONKRETNEMAINHOLDER" class=" px-0 navigateTO">
-            <div class="container text-center">
-              <h1 class="display-4 font-italic  pb-5">Tréneri</h1>
-
-              <div class="row">
-
-                <!-- Daniela Hill -->
-                <div class="treneri col-lg-4">
-                  <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/danka.jpg" alt="Generic placeholder image">
-                
-                  <div class="align-items-center">
-                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Daniela Hill</a></h3><small class="text-light">
-                      vedúca TŠ DANCY, trénerka BABY a MINI DANCY
-                    </small>
-                  </div>
-                </div>
-
-                <!-- Barbora Stenová -->
-                <div class="treneri col-lg-4">
-                  <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/barbora.jpg" alt="Generic placeholder image">
-
-                  <div class="align-items-center">
-                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Barbora Stenová</a></h3><small class="text-light">
-                       trénerka a choreografka tanečných skupín
-                    </small>
-                  </div>
-                </div>
-
-
-                <!-- Sabína Košibová -->
-                <div class="treneri col-lg-4">
-                  <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/Sabi.jpg" alt="Generic placeholder image">
-
-                
-                  <div class="align-items-center">
-                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Sabína Košibová</a></h3><small class="text-light">
-                      trénerka a choreografka tanečných skupín
-                    </small>
-                  </div>
-                </div>
-
-                <!-- Danica Takáčová -->
-                <div class="treneri col-lg-4">
-                  <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/DanicaTakacova.jpg" alt="Generic placeholder image">
-
-                  <div class="align-items-center">
-                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Danica Takáčová</a></h3><small class="text-light">
-                      trénerka Mommy shaper
-                    </small>
-                  </div>
-                </div>
-
-                <!-- Andrea Marčeková -->
-                <div class="treneri col-lg-4">
-                  <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/AndreaMarkova.jpg" alt="Generic placeholder image">
-
-                
-                  <div class="align-items-center">
-                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Andrea Marčeková</a></h3><small class="text-light">
-                      trénerka baletu
-                    </small>
-                  </div>
-                </div>
-
-                <!-- Laura Čangelová -->
-                <div class="treneri col-lg-4">
-                  <img class="smallHeadTrainers img-thumbnail rounded-circle" src="images/TRAINERS/Small/LauraCangelova.jpg" alt="Generic placeholder image">
-
-                
-                  <div class="align-items-center">
-                    <h3><a href="javascript:void(0);" onclick="openPonukaBig('INPROGRESS')">Laura Čangelová</a></h3><small class="text-light">
-                      trénerka gymnastiky
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="row text-center g-4 mt-4">
+          <div class="col-6 col-lg-3">
+            <div class="stat"><span class="stat__num">2010</span><span class="stat__label">Od roku</span></div>
           </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat"><span class="stat__num">2–20</span><span class="stat__label">Rokov veku</span></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat"><span class="stat__num">4</span><span class="stat__label">Tréningové miesta</span></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat"><span class="stat__num">6+</span><span class="stat__label">Skupín a kurzov</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- ============ PONUKA / ČO TRÉNUJEME ============ -->
+    <section id="ponuka" class="section section--alt">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section__kicker">Čo trénujeme</span>
+          <h2 class="section__title">Naša ponuka</h2>
+          <p class="section__subtitle mx-auto">Vyber si skupinu podľa veku a chuti. Klikni na kartu pre viac informácií.</p>
         </div>
 
-        <div id="TRENINGYHODINI" class="d-none">
-         
-          <div id="ROZVRHHODIN" class="">
-            <!-- col-md-9 -->
+        <div class="row g-4">
 
-
-            <div class="text-center">
-              
-              <!-- container my-4 -->
-              <div class="table-responsive">
-                  <table class="table table-bordered text-center mt-3">
-                      <thead class="thead-light">
-                          <tr>
-                              <th></th>
-                              <th>ZŠ MEDZILABA</th>
-                              <th>ZŠ DRIEŇOVÁ</th>
-                              <th>BALANCE DOM</th>
-                              <th>STUDIOSPOT</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>PONDELOK</td>
-                              <td>
-                                  <div class="bg-purple">KIDS COOKIES<br>16:00 - 17:00</div>
-                                  <div class="bg-blue mt-2">TEENS<br>17:00 - 19:00</div>
-                              </td>
-                              <td>
-                                  <div class="bg-yellow">KIDS ALLSTARS<br>malá<br>16:00 - 17:30</div>
-                              </td>
-                              <td>
-                                  <div class="bg-pink">MINI<br>16:00 - 16:45</div>
-                                  <div class="bg-pink mt-2">MINI<br>16:45 - 17:30</div>
-                              </td>
-                              <td></td>
-                          </tr>
-                          <tr>
-                              <td>UTOROK</td>
-                              <td>
-                                  <div class="bg-green">GYMNASTIKA<br>6-8 a 8-12<br>16:00 - 17:00</div>
-                                  <div class="bg-green mt-2">GYMNASTIKA<br>4-6<br>17:00 - 18:00</div>
-                              </td>
-                              <td></td>
-                              <td></td>
-                              <td>
-                                <div class="bg-baby_blue">BABY DANCY<br>2-4 roky<br>10:00 - 10:45</div>
-                                <div class="bg-pink mt-2">MINI<br>3-6 roky<br>16:45 - 17:30</div>
-                                <div class="bg-lila mt-2">KIDS MONKEYS<br>6-10 rokov<br>17:00 - 18:00</div>
-                              </td>
-                          </tr>
-                          <tr>
-                              <td>STREDA</td>
-                              <td>
-                                  <div class="bg-yellow">KIDS ALLSTARS<br>individuálna hodina<br>16:00 - 17:00</div>
-                                  <div class="bg-yellow mt-2">KIDS ALLSTARS<br>17:00 - 18:00</div>
-                                  <div class="bg-blue mt-2">TEENS<br>18:00 - 19:00</div>
-                              </td>
-                              <td>
-                                  <div class="bg-orange">KIDS BUBBLES<br>malá<br>16:00 - 17:30</div>
-                              </td>
-                              <td></td>
-                              <td></td>
-                          </tr>
-                          <tr>
-                              <td>ŠTVRTOK</td>
-                              <td>
-                                  <div class="bg-yellow_plus_orange">KIDS ALLSTARS<br>KIDS BUBBLES<br>16:00 - 17:30</div>
-                                  <div class="bg-orange mt-2">KIDS BUBBLES<br>17:30 - 18:30</div>
-
-                              </td>
-                              <td>
-                                  <div class="bg-blue">TEENS<br>16:00 - 18:00</div>
-                                  <div class="bg-pink mt-2">MINI<br>malá<br>16:00 - 16:45</div>
-                                  <div class="bg-pink mt-2">MINI<br>malá<br>16:45 - 17:30</div>
-                              </td>
-                              <td>
-                              </td>
-                              <td>
-                                <div class="bg-mumy_red">MOMMY SHAPER <br>10:00 - 11:00</div>
-                              </td>
-                          </tr>
-                          <tr>
-                            <td>PIATOK</td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                              <div class="bg-pink">MINI<br>3-6 roky<br>16:45 - 17:30</div>
-                            </td>
-                        </tr>
-
-                      </tbody>
-                  </table>
+          <!-- BABY DANCY -->
+          <div class="col-sm-6 col-lg-4">
+            <article class="offer-card" data-bs-toggle="modal" data-bs-target="#modalBaby" role="button" tabindex="0"
+              aria-label="Zobraziť detail Baby Dancy">
+              <img class="offer-card__img" src="images/PONUKA/BABY DANCY.jpg"
+                alt="Baby Dancy – tanečná príprava pre deti od 2 do 4 rokov" loading="lazy">
+              <div class="offer-card__body">
+                <h3 class="offer-card__title">Baby Dancy</h3>
+                <p class="offer-card__age">2 – 4 roky</p>
+                <p class="offer-card__text">Tanečno-pohybová príprava pre najmenších.</p>
+                <span class="offer-card__more">Viac →</span>
               </div>
-            </div>
+            </article>
+          </div>
+
+          <!-- MINI DANCY -->
+          <div class="col-sm-6 col-lg-4">
+            <article class="offer-card" data-bs-toggle="modal" data-bs-target="#modalMini" role="button" tabindex="0"
+              aria-label="Zobraziť detail Mini Dancy">
+              <img class="offer-card__img" src="images/PONUKA/MINI DANCY.jpg"
+                alt="Mini Dancy – tanečná príprava pre deti od 3 do 6 rokov" loading="lazy">
+              <div class="offer-card__body">
+                <h3 class="offer-card__title">Mini Dancy</h3>
+                <p class="offer-card__age">3 – 6 rokov</p>
+                <p class="offer-card__text">Krátke tančeky, koordinácia a rytmus hravou formou.</p>
+                <span class="offer-card__more">Viac →</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- GYMNASTIKA -->
+          <div class="col-sm-6 col-lg-4">
+            <article class="offer-card" data-bs-toggle="modal" data-bs-target="#modalGym" role="button" tabindex="0"
+              aria-label="Zobraziť detail Gymnastika">
+              <img class="offer-card__img" src="images/PONUKA/GYMNASTIKA.jpg"
+                alt="Gymnastika – základy gymnastiky a akrobacie pre deti od 4 do 11 rokov" loading="lazy">
+              <div class="offer-card__body">
+                <h3 class="offer-card__title">Gymnastika</h3>
+                <p class="offer-card__age">4 – 11 rokov</p>
+                <p class="offer-card__text">Základy gymnastiky, kondičné hry a ľahká akrobacia.</p>
+                <span class="offer-card__more">Viac →</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- TEAM KIDS -->
+          <div class="col-sm-6 col-lg-4">
+            <article class="offer-card" data-bs-toggle="modal" data-bs-target="#modalKids" role="button" tabindex="0"
+              aria-label="Zobraziť detail Team Kids">
+              <img class="offer-card__img" src="images/PONUKA/TEAM KIDS.jpg"
+                alt="Team Kids – tanečný súbor pre deti od 6 do 12 rokov" loading="lazy">
+              <div class="offer-card__body">
+                <h3 class="offer-card__title">Team Kids</h3>
+                <p class="offer-card__age">6 – 12 rokov</p>
+                <p class="offer-card__text">Tanečný súbor: show dance, jazz dance a contemporary.</p>
+                <span class="offer-card__more">Viac →</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- TEAM TEENS -->
+          <div class="col-sm-6 col-lg-4">
+            <article class="offer-card" data-bs-toggle="modal" data-bs-target="#modalTeens" role="button" tabindex="0"
+              aria-label="Zobraziť detail Team Teens">
+              <img class="offer-card__img" src="images/PONUKA/TEAM TEENS.jpg"
+                alt="Team Teens – tanečný súbor pre mládež od 12 do 20 rokov" loading="lazy">
+              <div class="offer-card__body">
+                <h3 class="offer-card__title">Team Teens</h3>
+                <p class="offer-card__age">12 – 20 rokov</p>
+                <p class="offer-card__text">Súťažný súbor pre mládež, náročnejšie choreografie.</p>
+                <span class="offer-card__more">Viac →</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- MOMMY SHAPER -->
+          <div class="col-sm-6 col-lg-4">
+            <article class="offer-card" data-bs-toggle="modal" data-bs-target="#modalMommy" role="button" tabindex="0"
+              aria-label="Zobraziť detail Mommy Shaper">
+              <img class="offer-card__img" src="images/PONUKA/MOMMY SHAPER.jpg"
+                alt="Mommy Shaper – formujúce cvičenie pre mamičky s deťmi" loading="lazy">
+              <div class="offer-card__body">
+                <h3 class="offer-card__title">Mommy Shaper</h3>
+                <p class="offer-card__age">Pre mamičky</p>
+                <p class="offer-card__text">Formujúce cvičenie, kde sú vítané aj vaše detičky.</p>
+                <span class="offer-card__more">Viac →</span>
+              </div>
+            </article>
           </div>
 
         </div>
+      </div>
+    </section>
 
+    <!-- ============ TRÉNERI ============ -->
+    <section id="treneri" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section__kicker">Náš tím</span>
+          <h2 class="section__title">Tréneri</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
 
-        <div id="PONUKA" class=" px-0 imagesinsection d-none">
-          <h1 class="display-4 font-italic">PONUKA</h1>
-          <p class="lead my-3">Pripravujeme choreografie pre Vaše podujatia. V prípade záujmu o naše vystúpenie nás
-            môžete kontaktovať telefonicky alebo e-mailom.</p>
-          <div class="">
-            <div class="row">
-              <h3 class="display-6 font-italic">Pomáda</h3>
-              <div class="col-md-12">
-                <ul>
-                  <li>Veselá choreografia na hudbu z rovnomenného česko-slovenského muzikálu</li>
-                  <li>Počet tanečníkov: 4, 6 alebo 8</li>
-                  <li>Minutáž: 1:4</li>
-                </ul>
-              </div>
-
-            </div>
-            <div class="d-flex row">
-              <div class="col-md-4">
-                <img src="images/TRAINERS/Small/danka.jpg" alt="Generic placeholder image" width="200px">
-              </div>
-              <div class="col-md-4">
-                <img src="images/TRAINERS/Small/danka.jpg" alt="Generic placeholder image" width="200px">
-              </div>
-              <div class="col-md-4">
-                <img src="images/TRAINERS/Small/danka.jpg" alt="Generic placeholder image" width="200px">
-              </div>
-
-            </div>
-
+          <div class="col-6 col-md-4 col-lg-2">
+            <figure class="trainer">
+              <img class="trainer__img" src="images/TRAINERS/Small/danka.jpg" alt="Daniela Hill – vedúca štúdia DANCY" loading="lazy">
+              <figcaption><span class="trainer__name">Daniela Hill</span><span class="trainer__role">Vedúca TŠ DANCY, trénerka Baby a Mini Dancy</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <figure class="trainer">
+              <img class="trainer__img" src="images/TRAINERS/Small/barbora.jpg" alt="Barbora Stenová – trénerka a choreografka" loading="lazy">
+              <figcaption><span class="trainer__name">Barbora Stenová</span><span class="trainer__role">Trénerka a choreografka tanečných skupín</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <figure class="trainer">
+              <img class="trainer__img" src="images/TRAINERS/Small/Sabi.jpg" alt="Sabína Košibová – trénerka a choreografka" loading="lazy">
+              <figcaption><span class="trainer__name">Sabína Košibová</span><span class="trainer__role">Trénerka a choreografka tanečných skupín</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <figure class="trainer">
+              <img class="trainer__img" src="images/TRAINERS/Small/DanicaTakacova.jpg" alt="Danica Takáčová – trénerka Mommy Shaper" loading="lazy">
+              <figcaption><span class="trainer__name">Danica Takáčová</span><span class="trainer__role">Trénerka Mommy Shaper</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <figure class="trainer">
+              <img class="trainer__img" src="images/TRAINERS/Small/AndreaMarkova.jpg" alt="Andrea Marčeková – trénerka baletu" loading="lazy">
+              <figcaption><span class="trainer__name">Andrea Marčeková</span><span class="trainer__role">Trénerka baletu</span></figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <figure class="trainer">
+              <img class="trainer__img" src="images/TRAINERS/Small/LauraCangelova.jpg" alt="Laura Čangelová – trénerka gymnastiky" loading="lazy">
+              <figcaption><span class="trainer__name">Laura Čangelová</span><span class="trainer__role">Trénerka gymnastiky</span></figcaption>
+            </figure>
           </div>
 
+        </div>
+      </div>
+    </section>
 
-
+    <!-- ============ ROZVRH ============ -->
+    <section id="rozvrh" class="section section--alt">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section__kicker">Kedy a kde</span>
+          <h2 class="section__title">Rozvrh hodín</h2>
+          <p class="section__subtitle mx-auto d-lg-none">Tabuľku posuňte prstom do strán →</p>
         </div>
 
-        <div id="KONTAKT" class=" px-0 imagesinsection d-none">
-          <h1 class="display-4 font-italic">KONTAKT</h1>
-          <div class="row">
-            <div id="KONTAKTLEFT" class="col-lg-4 col-sm-6 mb-6">
-              <p class="font-italic">
-                Tanečné štúdio Dancy<br>
+        <div class="schedule table-responsive">
+          <table class="table schedule__table align-middle mb-0">
+            <thead>
+              <tr>
+                <th scope="col">Deň</th>
+                <th scope="col">ZŠ Medzilaborecká</th>
+                <th scope="col">ZŠ Drieňová</th>
+                <th scope="col">Balance Dom</th>
+                <th scope="col">Studio Spot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pondelok</th>
+                <td>
+                  <span class="slot bg-purple">Kids Cookies<br>16:00 – 17:00</span>
+                  <span class="slot bg-blue">Teens<br>17:00 – 19:00</span>
+                </td>
+                <td><span class="slot bg-yellow">Kids Allstars – malá<br>16:00 – 17:30</span></td>
+                <td>
+                  <span class="slot bg-pink">Mini<br>16:00 – 16:45</span>
+                  <span class="slot bg-pink">Mini<br>16:45 – 17:30</span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Utorok</th>
+                <td>
+                  <span class="slot bg-green">Gymnastika 6–8 a 8–12<br>16:00 – 17:00</span>
+                  <span class="slot bg-green">Gymnastika 4–6<br>17:00 – 18:00</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                  <span class="slot bg-baby_blue">Baby Dancy 2–4 r.<br>10:00 – 10:45</span>
+                  <span class="slot bg-pink">Mini 3–6 r.<br>16:45 – 17:30</span>
+                  <span class="slot bg-lila">Kids Monkeys 6–10 r.<br>17:00 – 18:00</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Streda</th>
+                <td>
+                  <span class="slot bg-yellow">Kids Allstars – individuálna<br>16:00 – 17:00</span>
+                  <span class="slot bg-yellow">Kids Allstars<br>17:00 – 18:00</span>
+                  <span class="slot bg-blue">Teens<br>18:00 – 19:00</span>
+                </td>
+                <td><span class="slot bg-orange">Kids Bubbles – malá<br>16:00 – 17:30</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Štvrtok</th>
+                <td>
+                  <span class="slot bg-yellow_plus_orange">Kids Allstars + Kids Bubbles<br>16:00 – 17:30</span>
+                  <span class="slot bg-orange">Kids Bubbles<br>17:30 – 18:30</span>
+                </td>
+                <td>
+                  <span class="slot bg-blue">Teens<br>16:00 – 18:00</span>
+                  <span class="slot bg-pink">Mini – malá<br>16:00 – 16:45</span>
+                  <span class="slot bg-pink">Mini – malá<br>16:45 – 17:30</span>
+                </td>
+                <td></td>
+                <td><span class="slot bg-mumy_red">Mommy Shaper<br>10:00 – 11:00</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Piatok</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="slot bg-pink">Mini 3–6 r.<br>16:45 – 17:30</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section id="kontakt" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section__kicker">Ozvite sa nám</span>
+          <h2 class="section__title">Kontakt</h2>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <address class="contact-info">
+              <p class="mb-4">
+                <strong>Tanečné štúdio DANCY</strong><br>
                 Vajnorská 44<br>
                 831 03 Bratislava
               </p>
-              <p><strong>email: </strong><a href="info@dancy.sk"> info@dancy.sk</a></p>
-              <p><strong>telefón: </strong>0903 838 651</p>
-              <p><strong>IČO: </strong>42181208</p>
-            </div>
-            <div class="col-lg-8 col-sm-6 mb-6">
-              <div class="card-body p-0 mb-4">
-                <h2 class="card-title text-left mb-4">Kontaktujte nás</h2>
-                <form>
-                  <div class="form-group mb-3">
-                    <label for="name" class="form-label"></label>
-                    <input type="text" class="form-control" id="name" placeholder="Meno" required>
-                  </div>
-                  <div class="form-group mb-3">
-                    <label for="email" class="form-label"></label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                  </div>
-                  <div class="form-group mb-4">
-                    <label for="message" class=""></label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Vaša správa" required></textarea>
-                  </div>
-                  <div class="d-grid">
-                    <button type="submit" class="btn btn-primary btn-block">Odoslať</button>
-                  </div>
-                </form>
+              <p class="mb-2"><span class="contact-info__label">E-mail:</span>
+                <a href="mailto:info@dancy.sk">info@dancy.sk</a></p>
+              <p class="mb-2"><span class="contact-info__label">Telefón:</span>
+                <a href="tel:+421903838651">0903 838 651</a></p>
+              <p class="mb-4"><span class="contact-info__label">IČO:</span> 42181208</p>
+              <div class="d-flex gap-2">
+                <a class="social-btn" href="https://www.facebook.com/tanecnestudiodancy/" target="_blank"
+                  rel="noopener" aria-label="Facebook">
+                  <img src="images/SVG/facebook.svg" alt="" width="20" height="20"></a>
+                <a class="social-btn" href="https://www.instagram.com/dancy_dancestudio/?hl=sk" target="_blank"
+                  rel="noopener" aria-label="Instagram">
+                  <img src="images/SVG/instagram.svg" alt="" width="20" height="20"></a>
               </div>
+            </address>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-card">
+              <h3 class="h5 mb-4">Kontaktujte nás</h3>
+              <!-- Statická stránka nemá server. Formulár otvorí e-mailového klienta (mailto).
+                   Pre priame odosielanie do schránky nahraďte action napr. Formspree adresou:
+                   action="https://formspree.io/f/VASE_ID" method="POST" a odstráňte enctype. -->
+              <form action="mailto:info@dancy.sk" method="POST" enctype="text/plain">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Meno</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Vaše meno" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="vas@email.sk" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Správa</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Vaša správa" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-brand w-100">Odoslať správu</button>
+              </form>
             </div>
           </div>
-          <h3 class="display-6 font-italic">Tréningy máme tu:</h3>
         </div>
 
-
-        <div id="MAPY" class="d-none">
-          <div class="row d-flex justify-content-sm-center flex-wrap  px-0 w100 text-center">
-              <div class="col-lg-3 col-sm-6 mb-4">
-              <div class="container container-map">
-                <h5 class="link-map"><a href="javascript:void(0);">ZŠ MEDZILABORECKÁ</a></h5>
-                <iframe id="ZSMEDZILABORECKA"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk"
-                  width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade" ></iframe>
-              </div>
+        <!-- Tréningové miesta / mapy -->
+        <h3 class="h4 text-center mt-5 mb-4">Tréningy nájdete tu</h3>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="map-card">
+              <h4 class="map-card__title">ZŠ Medzilaborecká</h4>
+              <iframe title="Mapa ZŠ Medzilaborecká"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.3763258860995!2d17.15514677631622!3d48.160827871246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed6f53d4da9%3A0x3bc1a294f25955a8!2zWsOha2xhZG7DoSDFoWtvbGE!5e0!3m2!1ssk!2ssk!4v1696495147041!5m2!1ssk!2ssk"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
-              <div class="col-lg-3 col-sm-6 mb-4">
-                <div class="container container-map">
-                  <h5 class="link-map"><a href="javascript:void(0);">ZŠ DRIEŇOVÁ</a></h5>
-                  <iframe id="ZSDRIENOVA"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" ></iframe>
-              </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="map-card">
+              <h4 class="map-card__title">ZŠ Drieňová</h4>
+              <iframe title="Mapa ZŠ Drieňová"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4051605670847!2d17.149235176316243!3d48.16027207124601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ed163bc279f%3A0xcf49678038eac15e!2zWsOha2xhZG7DoSDFoWtvbGEgUGF2bGEgTWFyY2VseWhv!5e0!3m2!1ssk!2ssk!4v1696495175727!5m2!1ssk!2ssk"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
-              <div class="col-lg-3 col-sm-6 mb-4">
-                <div class="container container-map">
-                  <h5 class="link-map"><a href="javascript:void(0);">BALANCE DOM</a></h5>
-                  <iframe id="BALANCEDOM"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" ></iframe>
-              </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="map-card">
+              <h4 class="map-card__title">Balance Dom</h4>
+              <iframe title="Mapa Balance Dom"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.9355360941502!2d17.160251267760874!3d48.15569119664188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8f2af31313db%3A0xe88a327e68c25cd9!2sBalance%20Dom!5e0!3m2!1ssk!2ssk!4v1696495233291!5m2!1ssk!2ssk"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
-              <div class="col-lg-3 col-sm-6 mb-4">
-                <div class="container container-map">
-                  <h5 class="link-map"><a href="javascript:void(0);">STUDIO SPOT</a></h5>
-                  <iframe id="STUDIOSPOT"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.0153113575536!2d17.289630265744453!3d48.148214850037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c85253bb1cf65%3A0xebc4ee847e653d09!2sBB%20Studio%20Malinovo!5e0!3m2!1ssk!2ssk!4v1724953833976!5m2!1ssk!2ssk"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" ></iframe>
-                </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="map-card">
+              <h4 class="map-card__title">Studio Spot</h4>
+              <iframe title="Mapa Studio Spot"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.0153113575536!2d17.289630265744453!3d48.148214850037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c85253bb1cf65%3A0xebc4ee847e653d09!2sBB%20Studio%20Malinovo!5e0!3m2!1ssk!2ssk!4v1724953833976!5m2!1ssk!2ssk"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
-
-      <footer id="FOOTER" class="text-center text-white  bg-dark">
-        <!-- text-lg-start -->
-        <section class="p-3 pt-0">
-
-          <div class="align-items-center">
-            <!-- <div class="p-3 "> -->
-            <span>Od roku 2010 <br> © Tanečné štúdio Dancy </span><br>
-
-
-
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" target=”_blank”
-              href='https://www.facebook.com/tanecnestudiodancy/' role="button">
-              <img src="images/SVG/phone2.svg"> 0903 838 651</a>
-
-            <!-- <a class="btn btn-outline-light btn-floating m-1" target=”_blank” href='https://www.facebook.com/tanecnestudiodancy/' role="button"><img src="images/SVG/email.svg"></a> -->
-            <a class="btn btn-outline-light btn-floating m-1" target=”_blank”
-              href='https://www.facebook.com/tanecnestudiodancy/' role="button">
-              <img src="images/SVG/email2.svg"> info@dancy.sk
-            </a>
-
-
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" target=”_blank”
-              href='https://www.facebook.com/tanecnestudiodancy/' role="button"><img src="images/SVG/facebook.svg"></a>
-
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" target=”_blank”
-              href='https://www.instagram.com/dancy_dancestudio/?hl=sk' role="button"><img
-                src="images/SVG/instagram.svg"></a>
-            <!-- </div> -->
-          </div>
-        </section>
-      </footer>
+    </section>
 
   </main>
 
-  <script type="text/javascript" src="JS/popper.min.js.download"></script>
-  <script type="text/javascript" src="JS/jquery-3.2.1.slim.min.js.download"></script>
-  <script type="text/javascript" src="JS/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="JS/holder.js"></script> -->
-  <script type="text/javascript" src="JS/MYjs.js" defer></script>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer text-center">
+    <div class="container">
+      <img src="images/LOGO/cele biele.svg" alt="Tanečné štúdio DANCY" height="40" class="mb-3">
+      <p class="mb-2">Od roku 2010 · © Tanečné štúdio DANCY</p>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+        <a class="btn btn-outline-light btn-sm" href="tel:+421903838651">
+          <img src="images/SVG/phone2.svg" alt="" width="16" height="16"> 0903 838 651</a>
+        <a class="btn btn-outline-light btn-sm" href="mailto:info@dancy.sk">
+          <img src="images/SVG/email2.svg" alt="" width="16" height="16"> info@dancy.sk</a>
+        <a class="btn btn-outline-light btn-sm" href="https://www.facebook.com/tanecnestudiodancy/" target="_blank" rel="noopener">
+          <img src="images/SVG/facebook.svg" alt="" width="16" height="16"> Facebook</a>
+        <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/dancy_dancestudio/?hl=sk" target="_blank" rel="noopener">
+          <img src="images/SVG/instagram.svg" alt="" width="16" height="16"> Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODALY / DETAILY PONUKY ============ -->
+
+  <!-- BABY DANCY -->
+  <div class="modal fade" id="modalBaby" tabindex="-1" aria-labelledby="modalBabyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="modalBabyLabel">Baby Dancy</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img" src="images/PONUKA/BABY DANCY.jpg" alt="Baby Dancy" loading="lazy">
+          <p class="text-muted mb-3">2 – 4 roky</p>
+          <p>Tanečno-pohybová príprava pre deti od 2 do 4 rokov. Počas 45-minútovej tanečnej hodiny sa detičky
+            pomocou ľahkých tanečných variácií a prvkov na obľúbené pesničky a riekanky stretnú s riadeným
+            pohybom, prostredníctvom pohybových hier zlepšia svoju koordináciu a potrénujú sústredenie.</p>
+          <h3 class="h6 mt-4">Čo si vziať na tréning?</h3>
+          <ul>
+            <li>Baletný / gymnastický dres či iný obtiahnutý úbor (tričko a legíny)</li>
+            <li>Gymnastické / baletné cvičky s mäkkou podrážkou alebo ponožky</li>
+            <li>Dievčatá prosíme stiahnuť vlasy gumičkou / upnúť do drdola</li>
+            <li>Fľašu s vodou</li>
+            <li>Tancovať a cvičiť budú s nami aj rodičia 🙂</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#rozvrh" class="btn btn-outline-secondary" data-bs-dismiss="modal">Rozvrh</a>
+          <a href="#kontakt" class="btn btn-brand" data-bs-dismiss="modal">Prihlásiť sa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MINI DANCY -->
+  <div class="modal fade" id="modalMini" tabindex="-1" aria-labelledby="modalMiniLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="modalMiniLabel">Mini Dancy</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img" src="images/PONUKA/MINI DANCY.jpg" alt="Mini Dancy" loading="lazy">
+          <p class="text-muted mb-3">3 – 6 rokov</p>
+          <p>Tanečno-pohybová príprava pre deti od 3 do 6 rokov. Počas 45-minútovej hodiny deti tancujú krátke
+            tančeky na obľúbené pesničky. Pomocou pohybových hier rozvíjame koordináciu tela, orientáciu
+            v priestore, posilňujeme svaly a učíme sa správnemu držaniu tela. Učíme sa aj disciplíne, práci
+            v kolektíve a rozvíjame rytmus a hudobný sluch, ktorý deťom pomôže učiť sa cudzie jazyky.</p>
+          <h3 class="h6 mt-4">Čo si vziať na tréning?</h3>
+          <ul>
+            <li>Baletný / gymnastický dres či iný obtiahnutý úbor (tričko a legíny)</li>
+            <li>Gymnastické / baletné cvičky s mäkkou podrážkou alebo ponožky</li>
+            <li>Dievčatá prosíme stiahnuť vlasy gumičkou / upnúť do drdola</li>
+            <li>Fľašu s vodou</li>
+            <li>Rodičov nie, tých necháme v šatni 🙂</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#rozvrh" class="btn btn-outline-secondary" data-bs-dismiss="modal">Rozvrh</a>
+          <a href="#kontakt" class="btn btn-brand" data-bs-dismiss="modal">Prihlásiť sa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GYMNASTIKA -->
+  <div class="modal fade" id="modalGym" tabindex="-1" aria-labelledby="modalGymLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="modalGymLabel">Gymnastika</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img" src="images/PONUKA/GYMNASTIKA.jpg" alt="Gymnastika" loading="lazy">
+          <p class="text-muted mb-3">4 – 11 rokov</p>
+          <p>Všeobecné základy gymnastiky, kondičné hry a ľahká akrobacia pre deti od 4 do 11 rokov.</p>
+          <p>Na hodinách gymnastiky sa zameriavame na základy športovej gymnastiky. Deti sa postupne učia prvky
+            ako kotúľ vpred, kotúľ vzad, stojka, mostík či premet vbok, premet vpred a vzad, rovnováha na kladine
+            a rôzne kombinácie týchto prvkov. Pomocou rôznych cvičení a pohybových hier spevňujeme celkový korpus
+            tela, čo pomáha správnemu držaniu tela. Deti sú rozdelené do skupín podľa výkonnosti a veku a trénujú
+            1× do týždňa (60 minút).</p>
+          <h3 class="h6 mt-4">Čo si vziať na tréning?</h3>
+          <ul>
+            <li>Gymnastický dres či iný obtiahnutý úbor</li>
+            <li>Gymnastické / baletné cvičky s mäkkou podrážkou alebo ponožky</li>
+            <li>Dievčatá prosíme stiahnuť vlasy gumičkou / upnúť do drdola</li>
+            <li>Fľašu s vodou</li>
+            <li>Rodičov nie, tých necháme v šatni 🙂</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#rozvrh" class="btn btn-outline-secondary" data-bs-dismiss="modal">Rozvrh</a>
+          <a href="#kontakt" class="btn btn-brand" data-bs-dismiss="modal">Prihlásiť sa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM KIDS -->
+  <div class="modal fade" id="modalKids" tabindex="-1" aria-labelledby="modalKidsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="modalKidsLabel">Team Kids</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img" src="images/PONUKA/TEAM KIDS.jpg" alt="Team Kids" loading="lazy">
+          <p class="text-muted mb-3">6 – 12 rokov</p>
+          <p>Tanečný súbor pre deti od 6 do 12 rokov, rozdelený podľa skúseností do niekoľkých skupín.</p>
+
+          <h3 class="h6 mt-4">Kids Monkeys</h3>
+          <p>Tanečná príprava s prvkami show dance, jazz dance a contemporary, z ktorých postupne vznikajú
+            nápadité choreografie. Deti sa učia vyjadriť pohybom náladu či pocity a prácou s rekvizitami
+            (stuhy, kruh, lopta a iné) precvičia svoju koordináciu. <em>Tréningy: 1× 60 min týždenne.</em></p>
+
+          <h3 class="h6 mt-4">Kids Cookies</h3>
+          <p>Kombinácia jedného 60-minútového tanečného tréningu (show dance, jazz dance, contemporary)
+            a jedného 60-minútového gymnastického tréningu, ktorý rozvíja pohybové schopnosti a flexibilitu.
+            <em>Tréningy: 2× 60 min týždenne – tanec + gymnastika.</em></p>
+
+          <h3 class="h6 mt-4">Kids Bubbles</h3>
+          <p>Menej skúsení tanečníci sa zoznamujú so základmi show dance, jazz dance a contemporary. Tréningy
+            sú zamerané na základnú techniku, držanie a ohybnosť tela a budovanie sebavedomia na parkete.
+            <em>Tréningy: 2× týždenne.</em></p>
+
+          <h3 class="h6 mt-4">Kids Allstars</h3>
+          <p>Tanečníci s predchádzajúcimi skúsenosťami pracujú na zdokonaľovaní techniky a umeleckého prejavu
+            a na náročnejších choreografiách pre vyššiu úroveň súťaží a vystúpení. <em>Tréningy: 3× týždenne.</em></p>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#rozvrh" class="btn btn-outline-secondary" data-bs-dismiss="modal">Rozvrh</a>
+          <a href="#kontakt" class="btn btn-brand" data-bs-dismiss="modal">Prihlásiť sa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM TEENS -->
+  <div class="modal fade" id="modalTeens" tabindex="-1" aria-labelledby="modalTeensLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="modalTeensLabel">Team Teens</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img" src="images/PONUKA/TEAM TEENS.jpg" alt="Team Teens" loading="lazy">
+          <p class="text-muted mb-3">12 – 20 rokov</p>
+          <p>Tanečný súbor pre mládež od 12 do 20 rokov. V teame Teens sa tanečníci súťažne venujú štýlom show
+            dance, jazz dance a contemporary. Tréningy sú zamerané na zdokonaľovanie tanečných zručností,
+            umeleckého prejavu a objavovanie rôznych tanečných štýlov. Tanečníci sa sústreďujú na náročnejšie
+            choreografie a prípravu na slovenské aj medzinárodné súťaže a vystúpenia.</p>
+          <ul><li>Tréningy: 3× do týždňa</li></ul>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#rozvrh" class="btn btn-outline-secondary" data-bs-dismiss="modal">Rozvrh</a>
+          <a href="#kontakt" class="btn btn-brand" data-bs-dismiss="modal">Prihlásiť sa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOMMY SHAPER -->
+  <div class="modal fade" id="modalMommy" tabindex="-1" aria-labelledby="modalMommyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="modalMommyLabel">Mommy Shaper</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-img" src="images/PONUKA/MOMMY SHAPER.jpg" alt="Mommy Shaper" loading="lazy">
+          <p class="text-muted mb-3">Pre mamičky</p>
+          <p>Hodiny formujúceho cvičenia pre mamičky, kde sú vítané aj vaše detičky.</p>
+          <p>Milé maminy, chcete sa dostať opäť do formy, no nemáte na to doma priestor či vám nemá kto postrážiť
+            dieťatko? Máme ideálne riešenie! Vezmite so sebou vaše dieťatko na cvičenie Mommy Shaper. S dieťatkom
+            do 10 kg vás naučíme cvičiť ako s ideálnou záťažou, alebo si príďte oddýchnuť pri cvičení aj samy –
+            s činkou či vlastným telom. Deti, ktorým sa cvičiť nebude chcieť, alebo staršie deti, sa môžu zabaviť
+            pri rôznych hračkách či iných aktivitách.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <a href="#rozvrh" class="btn btn-outline-secondary" data-bs-dismiss="modal">Rozvrh</a>
+          <a href="#kontakt" class="btn btn-brand" data-bs-dismiss="modal">Prihlásiť sa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="JS/bootstrap.bundle.min.js" defer></script>
+  <script src="JS/MYjs.js" defer></script>
 
 </body>
 
