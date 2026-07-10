@@ -16,7 +16,7 @@
   --mumy_red: #ffbebe;
   --yellow_plus_orange: linear-gradient(rgb(251, 253, 182) 0%, rgb(251, 216, 182) 100%);
 
-  /* Theme */
+  /* Theme (dark by default) */
   --bg: #111114;
   --bg-alt: #17171c;
   --surface: #ffffff;
@@ -25,6 +25,35 @@
   --brand-1: #e6afff;
   --brand-2: #ffa5a5;
   --brand-grad: linear-gradient(135deg, #e6afff 0%, #ffa5a5 100%);
+
+  /* Semantic surface / line tokens (themeable) */
+  --surface-soft: rgba(255, 255, 255, 0.04);
+  --surface-softer: rgba(255, 255, 255, 0.06);
+  --hairline: rgba(255, 255, 255, 0.08);
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-border: rgba(255, 255, 255, 0.12);
+  --card-border: transparent;
+
+  /* Tell the browser we support both schemes (native form controls,
+     scrollbars, etc. adapt automatically). */
+  color-scheme: light dark;
+}
+
+/* ---------- Light preference ---------- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f6f9;
+    --bg-alt: #efedf3;
+    --surface: #ffffff;
+    --text: #1b1b22;
+    --muted: #5f5f6b;
+    --surface-soft: rgba(0, 0, 0, 0.03);
+    --surface-softer: rgba(0, 0, 0, 0.05);
+    --hairline: rgba(0, 0, 0, 0.10);
+    --input-bg: #ffffff;
+    --input-border: rgba(0, 0, 0, 0.15);
+    --card-border: rgba(0, 0, 0, 0.08);
+  }
 }
 
 html {
@@ -181,8 +210,8 @@ a:hover { color: var(--brand-2); }
 /* ---------- Stats (O nás) ---------- */
 .stat {
   padding: 1.25rem .5rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: var(--surface-soft);
+  border: 1px solid var(--hairline);
   border-radius: 16px;
   height: 100%;
 }
@@ -209,10 +238,11 @@ a:hover { color: var(--brand-2); }
   height: 100%;
   background: var(--surface);
   color: #1a1a1a;
+  border: 1px solid var(--card-border);
   border-radius: 18px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .offer-card:hover,
@@ -283,34 +313,34 @@ a:hover { color: var(--brand-2); }
 /* ---------- Schedule ---------- */
 .schedule {
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--hairline);
 }
 .schedule__table {
   margin: 0;
   min-width: 720px;
   color: var(--text);
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--hairline);
 }
 .schedule__table thead th {
-  background: rgba(255, 255, 255, 0.06);
-  color: #fff;
+  background: var(--surface-softer);
+  color: var(--text);
   font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .03em;
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--hairline);
   vertical-align: middle;
   text-align: center;
 }
 .schedule__table tbody th {
-  background: rgba(255, 255, 255, 0.03);
-  color: #fff;
+  background: var(--surface-soft);
+  color: var(--text);
   font-weight: 700;
   white-space: nowrap;
   vertical-align: middle;
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--hairline);
 }
 .schedule__table td {
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--hairline);
   padding: .4rem;
   vertical-align: top;
 }
@@ -331,22 +361,22 @@ a:hover { color: var(--brand-2); }
 .contact-info { font-style: normal; font-size: 1.05rem; }
 .contact-info__label { color: var(--muted); display: inline-block; min-width: 4.5rem; }
 .contact-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface-soft);
+  border: 1px solid var(--hairline);
   border-radius: 18px;
   padding: 1.75rem;
 }
 .contact-card .form-control {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
 }
-.contact-card .form-control::placeholder { color: rgba(255, 255, 255, 0.45); }
+.contact-card .form-control::placeholder { color: var(--muted); opacity: .8; }
 .contact-card .form-control:focus {
-  background: rgba(255, 255, 255, 0.09);
+  background: var(--input-bg);
   border-color: var(--brand-1);
   box-shadow: 0 0 0 .2rem rgba(230, 175, 255, 0.2);
-  color: #fff;
+  color: var(--text);
 }
 .contact-card .form-label { color: var(--muted); font-size: .85rem; }
 
@@ -357,15 +387,17 @@ a:hover { color: var(--brand-2); }
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Fixed dark chip so the white Instagram glyph stays visible in both themes */
+  background: #17171c;
+  border: 1px solid rgba(255, 255, 255, 0.14);
   transition: background .2s ease, transform .2s ease;
 }
-.social-btn:hover { background: var(--brand-grad); transform: translateY(-2px); }
+.social-btn:hover { background: var(--brand-grad); border-color: transparent; transform: translateY(-2px); }
 
 /* ---------- Maps ---------- */
 .map-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface-soft);
+  border: 1px solid var(--hairline);
   border-radius: 14px;
   padding: .6rem;
   height: 100%;
@@ -404,7 +436,8 @@ a:hover { color: var(--brand-2); }
 /* ---------- Footer ---------- */
 .footer {
   background: #0c0c0f;
-  color: var(--muted);
+  /* Footer stays dark in both themes, so keep a fixed light muted colour */
+  color: #b8b8c0;
   padding: 2.5rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -435,6 +468,12 @@ a:hover { color: var(--brand-2); }
   .section { padding: 3rem 0; }
   .hero { min-height: 88vh; }
   .trainer__img { width: 108px; height: 108px; }
+}
+
+/* Light-mode component tweaks (tokens handle most of it) */
+@media (prefers-color-scheme: light) {
+  a { color: #a12bc9; }
+  a:hover { color: #c02b86; }
 }
 
 @media (prefers-reduced-motion: reduce) {
