@@ -378,9 +378,34 @@ a:hover { color: var(--brand-2); }
 }
 .slot:last-child { margin-bottom: 0; }
 
+/* Gradient ring highlighting a group's slots (triggered by the
+   "Rozvrh" button inside the offer modals via JS) */
+.slot--highlight {
+  position: relative;
+  z-index: 1;
+}
+.slot--highlight::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 14px;
+  padding: 4px;
+  background: var(--brand-grad);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: slot-pulse 1.2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes slot-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .35; }
+}
+
 /* ---------- Contact ---------- */
-.contact-info { font-style: normal; font-size: 1.05rem; }
-.contact-info__label { color: var(--muted); display: inline-block; min-width: 4.5rem; }
+.contact-info { font-style: normal; font-size: 1.80rem; }
+.contact-info__label { color: var(--muted); display: inline-block; min-width: 5.25rem; }
 .contact-card {
   background: var(--surface-soft);
   border: 1px solid var(--hairline);

@@ -4,8 +4,12 @@
     {
       "name": "static-site",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8420"],
-      "port": 8420
+      "runtimeArgs": [
+        "-c",
+        "import http.server, os; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=int(os.environ.get('PORT', '8766')))"
+      ],
+      "port": 8766,
+      "autoPort": true
     }
   ]
 }
