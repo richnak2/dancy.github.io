@@ -24,6 +24,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Novinky: poster click opens the lightbox carousel instead of a new tab
+  // (the href stays as a no-JS fallback)
+  const lightboxEl = document.getElementById('modalNovinky');
+  const carouselEl = document.getElementById('carouselNovinky');
+  if (lightboxEl && carouselEl && window.bootstrap) {
+    const carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl);
+    const lightbox = bootstrap.Modal.getOrCreateInstance(lightboxEl);
+
+    document.querySelectorAll('.news-card').forEach(function (card, index) {
+      card.addEventListener('click', function (e) {
+        e.preventDefault();
+        carousel.to(index);
+        lightbox.show();
+      });
+    });
+
+    // Arrow keys switch posters even when the carousel isn't focused
+    lightboxEl.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') carousel.prev();
+      if (e.key === 'ArrowRight') carousel.next();
+    });
+  }
+
   // Allow keyboard activation (Enter / Space) of the clickable offer cards
   document.querySelectorAll('.offer-card[role="button"]').forEach(function (card) {
     card.addEventListener('keydown', function (e) {
