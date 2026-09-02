@@ -55,11 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Highlight the active section in the navbar while scrolling
+  // Highlight the active section in the navbar while scrolling.
+  // threshold must include 0: sections are taller than the observed area
+  // (top 45 % of the viewport), so Bootstrap's default [0.1, …] would never
+  // fire and the highlight would get stuck on one link.
   if (window.bootstrap && bootstrap.ScrollSpy) {
     new bootstrap.ScrollSpy(document.body, {
       target: '#mainNav',
       rootMargin: '0px 0px -55%',
+      threshold: [0, 0.5, 1],
     });
   }
 

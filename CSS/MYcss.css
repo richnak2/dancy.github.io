@@ -86,7 +86,10 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  /* `clip` (nie `hidden`): hidden by prepol overflow-y na `auto` a Bootstrap
+     ScrollSpy by potom sledoval <body> namiesto okna – zvýraznenie v navigácii
+     by sa zaseklo. */
+  overflow-x: clip;
 }
 
 /* Keep Bootstrap's .lead in line with the 1.5rem default */
@@ -608,13 +611,15 @@ a:hover { color: var(--brand-2); }
   .trainer__img { width: 108px; height: 108px; }
 }
 
-/* Light-mode component tweaks (tokens handle most of it) */
+/* Light-mode component tweaks (tokens handle most of it).
+   :where() keeps the specificity at plain `a`, so .btn-brand /
+   .btn-outline-light (hero buttons) keep their own colours in both themes. */
 @media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) a { color: #a12bc9; }
-  :root:not([data-theme="dark"]) a:hover { color: #c02b86; }
+  :where(:root:not([data-theme="dark"])) a { color: #a12bc9; }
+  :where(:root:not([data-theme="dark"])) a:hover { color: #c02b86; }
 }
-:root[data-theme="light"] a { color: #a12bc9; }
-:root[data-theme="light"] a:hover { color: #c02b86; }
+:where(:root[data-theme="light"]) a { color: #a12bc9; }
+:where(:root[data-theme="light"]) a:hover { color: #c02b86; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
