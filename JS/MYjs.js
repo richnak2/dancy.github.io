@@ -4,6 +4,45 @@
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.getElementById('mainNav');
 
+  // Light / dark toggle: a forced choice (data-theme on <html>) wins over the
+  // system preference and is remembered in localStorage. The attribute is
+  // applied before first paint by the inline script in <head>.
+  const themeToggle = document.getElementById('themeToggle');
+  const THEME_COLORS = { dark: '#111114', light: '#f7f6f9' };
+
+  function syncThemeColorMeta() {
+    const forced = document.documentElement.getAttribute('data-theme');
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (meta) {
+      if (forced) {
+        meta.setAttribute('content', THEME_COLORS[forced]);
+      } else {
+        // Back to system: restore the per-scheme values from the media attr
+        meta.setAttribute(
+          'content',
+          meta.media.includes('dark') ? THEME_COLORS.dark : THEME_COLORS.light
+        );
+      }
+    });
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      const root = document.documentElement;
+      const current =
+        root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: light)').matches
+          ? 'light'
+          : 'dark');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try {
+        localStorage.setItem('theme', next);
+      } catch (e) {}
+      syncThemeColorMeta();
+    });
+  }
+  syncThemeColorMeta();
+
   // Close the mobile menu after tapping a nav link
   if (navbar) {
     navbar.querySelectorAll('.nav-link, .navbar-brand').forEach(function (link) {

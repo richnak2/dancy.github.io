@@ -39,9 +39,10 @@
   color-scheme: light dark;
 }
 
-/* ---------- Light preference ---------- */
+/* ---------- Light preference (system) ----------
+   Applies only while the visitor hasn't forced dark via the toggle. */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --bg: #f7f6f9;
     --bg-alt: #efedf3;
     --surface: #ffffff;
@@ -55,6 +56,23 @@
     --card-border: rgba(0, 0, 0, 0.08);
   }
 }
+
+/* ---------- Forced themes (navbar toggle) ---------- */
+:root[data-theme="light"] {
+  --bg: #f7f6f9;
+  --bg-alt: #efedf3;
+  --surface: #ffffff;
+  --text: #1b1b22;
+  --muted: #5f5f6b;
+  --surface-soft: rgba(0, 0, 0, 0.03);
+  --surface-softer: rgba(0, 0, 0, 0.05);
+  --hairline: rgba(0, 0, 0, 0.10);
+  --input-bg: #ffffff;
+  --input-border: rgba(0, 0, 0, 0.15);
+  --card-border: rgba(0, 0, 0, 0.08);
+  color-scheme: light;
+}
+:root[data-theme="dark"] { color-scheme: dark; }
 
 html {
   scroll-behavior: smooth;
@@ -116,6 +134,40 @@ a:hover { color: var(--brand-2); }
   .navbar .nav-link:hover::after,
   .navbar .nav-link.active::after { transform: scaleX(1); }
 }
+
+/* ---------- Theme toggle (light / dark) ---------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  /* The navbar stays dark in both themes, so the icon stays light */
+  color: rgba(255, 255, 255, 0.85);
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  transform: rotate(15deg);
+  outline: none;
+}
+/* Show the icon of the theme the click switches TO:
+   sun while dark, moon while light. */
+.theme-toggle__moon { display: none; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .theme-toggle__sun { display: none; }
+  :root:not([data-theme="dark"]) .theme-toggle__moon { display: block; }
+}
+:root[data-theme="light"] .theme-toggle__sun { display: none; }
+:root[data-theme="light"] .theme-toggle__moon { display: block; }
+:root[data-theme="dark"] .theme-toggle__sun { display: block; }
+:root[data-theme="dark"] .theme-toggle__moon { display: none; }
 
 /* ---------- Buttons ---------- */
 .btn-brand {
@@ -558,9 +610,11 @@ a:hover { color: var(--brand-2); }
 
 /* Light-mode component tweaks (tokens handle most of it) */
 @media (prefers-color-scheme: light) {
-  a { color: #a12bc9; }
-  a:hover { color: #c02b86; }
+  :root:not([data-theme="dark"]) a { color: #a12bc9; }
+  :root:not([data-theme="dark"]) a:hover { color: #c02b86; }
 }
+:root[data-theme="light"] a { color: #a12bc9; }
+:root[data-theme="light"] a:hover { color: #c02b86; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
