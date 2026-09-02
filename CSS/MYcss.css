@@ -342,10 +342,12 @@ a:hover { color: var(--brand-2); }
 .schedule__table {
   margin: 0;
   min-width: 720px;
+  table-layout: fixed;
   --bs-table-bg: rgba(255, 255, 255, 0.05);
   color: var(--text);
   border-color: var(--hairline);
 }
+.schedule__table thead th { width: 20%; }
 .schedule__table thead th {
   background: var(--surface-softer);
   color: var(--text);
@@ -362,6 +364,7 @@ a:hover { color: var(--brand-2); }
   font-weight: 700;
   white-space: nowrap;
   vertical-align: middle;
+  text-align: center;
   border-color: var(--hairline);
 }
 .schedule__table td {
