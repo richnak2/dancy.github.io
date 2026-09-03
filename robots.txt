@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://richnak2.github.io/dancy.github.io/sitemap.xml
+Sitemap: https://www.dancy.sk/sitemap.xml
