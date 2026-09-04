@@ -1,0 +1,36 @@
+# ---------------------------------------------------------------
+# dancy.sk
+# ---------------------------------------------------------------
+
+# Serve index.php for https://www.dancy.sk/  (keeps the canonical URL)
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Old /index.html links -> the canonical root URL
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # dancy.sk -> www.dancy.sk  (removes the duplicate Google sees)
+  # Loop-safe: the target host does not match the condition.
+  RewriteCond %{HTTP_HOST} !^www\.dancy\.sk$ [NC]
+  RewriteRule ^ https://www.dancy.sk%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # The page itself: always revalidate, so an upload shows up immediately.
+  <FilesMatch "\.(html|php)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # CSS/JS/fonts: cache hard - the ?v= timestamp busts them on change.
+  <FilesMatch "\.(css|js|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+
+  # Images/PDF: one day. Deliberately NOT a year, because a few URLs are
+  # unversioned (og:image, the url() inside CSS/MYcss.css).
+  <FilesMatch "\.(jpg|jpeg|png|webp|svg|gif|pdf)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>

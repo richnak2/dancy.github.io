@@ -1,3 +1,19 @@
+<?php
+// Page freshness, independent of mod_headers (which may not be loaded here).
+// Assets stay cacheable; only this HTML document is revalidated.
+header('Cache-Control: no-cache, must-revalidate');
+
+/**
+ * Cache-busting asset URL: appends the file's modification time as ?v=...
+ * Change a file -> its URL changes -> every visitor gets the new version.
+ */
+function v($path) {
+    $file = __DIR__ . '/' . ltrim($path, '/');
+    $ts = @filemtime($file);
+    if (!$ts) { return htmlspecialchars($path, ENT_QUOTES); }
+    return htmlspecialchars($path . '?v=' . $ts, ENT_QUOTES);
+}
+?>
 <!doctype html>
 <html lang="sk">
   <head>
@@ -71,8 +87,8 @@
       content="https://www.dancy.sk/images/SCROLING/konkurz2.jpg"
     />
 
-    <link rel="icon" href="images/SVG/header.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="images/LOGO/logo1cierne.png" />
+    <link rel="icon" href="<?= v('images/SVG/header.svg') ?>" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="<?= v('images/LOGO/logo1cierne.png') ?>" />
 
     <!-- Apply the saved light/dark choice before first paint (no flash) -->
     <script>
@@ -85,9 +101,9 @@
     </script>
 
     <!-- Bootstrap core CSS -->
-    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?= v('CSS/bootstrap.min.css') ?>" rel="stylesheet" />
     <!-- Custom styles -->
-    <link href="CSS/MYcss.css" rel="stylesheet" />
+    <link href="<?= v('CSS/MYcss.css') ?>" rel="stylesheet" />
 
     <!-- Structured data: local dance school -->
     <script type="application/ld+json">
@@ -135,7 +151,7 @@
           <a class="navbar-brand" href="#hero">
             <img
               id="LOGOMAIN"
-              src="images/LOGO/cele biele.svg"
+              src="<?= v('images/LOGO/cele biele.svg') ?>"
               alt="Tanečné štúdio DANCY"
               height="34"
             />
@@ -277,13 +293,13 @@
             <div class="col-6 col-lg-3">
               <a
                 class="news-card"
-                href="images/NOVINKY/ZAPIS.jpg"
+                href="<?= v('images/NOVINKY/ZAPIS.jpg') ?>"
                 target="_blank"
                 rel="noopener"
               >
                 <img
                   class="news-card__img"
-                  src="images/NOVINKY/ZAPIS.jpg"
+                  src="<?= v('images/NOVINKY/ZAPIS.jpg') ?>"
                   alt="Zápis na kurzy Mini Dancy a Kids Dancy – september až január 2026/2027"
                   loading="lazy"
                 />
@@ -292,13 +308,13 @@
             <div class="col-6 col-lg-3">
               <a
                 class="news-card"
-                href="images/NOVINKY/GYMNASTIKA.jpg"
+                href="<?= v('images/NOVINKY/GYMNASTIKA.jpg') ?>"
                 target="_blank"
                 rel="noopener"
               >
                 <img
                   class="news-card__img"
-                  src="images/NOVINKY/GYMNASTIKA.jpg"
+                  src="<?= v('images/NOVINKY/GYMNASTIKA.jpg') ?>"
                   alt="Zápis na kurz gymnastiky pre dievčatá a chlapcov od 3 do 12 rokov"
                   loading="lazy"
                 />
@@ -307,13 +323,13 @@
             <div class="col-6 col-lg-3">
               <a
                 class="news-card"
-                href="images/NOVINKY/konkurz_BA.jpg"
+                href="<?= v('images/NOVINKY/konkurz_BA.jpg') ?>"
                 target="_blank"
                 rel="noopener"
               >
                 <img
                   class="news-card__img"
-                  src="images/NOVINKY/konkurz_BA.jpg"
+                  src="<?= v('images/NOVINKY/konkurz_BA.jpg') ?>"
                   alt="Konkurz do súťažných tanečných skupín – 3. 9. ZŠ Pavla Marcelyho a 7. 9. ZŠ Medzilaborecká, Bratislava"
                   loading="lazy"
                 />
@@ -322,13 +338,13 @@
             <div class="col-6 col-lg-3">
               <a
                 class="news-card"
-                href="images/NOVINKY/konkurz_Malinovo.jpg"
+                href="<?= v('images/NOVINKY/konkurz_Malinovo.jpg') ?>"
                 target="_blank"
                 rel="noopener"
               >
                 <img
                   class="news-card__img"
-                  src="images/NOVINKY/konkurz_Malinovo.jpg"
+                  src="<?= v('images/NOVINKY/konkurz_Malinovo.jpg') ?>"
                   alt="Konkurz do tanečného štúdia DANCY – 4. 9. 2026, Studiospot Malinovo"
                   loading="lazy"
                 />
@@ -425,7 +441,7 @@
               >
                 <img
                   class="offer-card__img"
-                  src="images/PONUKA/BABY DANCY.jpg"
+                  src="<?= v('images/PONUKA/BABY DANCY.jpg') ?>"
                   alt="Baby Dancy – tanečná príprava pre deti od 2 do 4 rokov"
                   loading="lazy"
                 />
@@ -452,7 +468,7 @@
               >
                 <img
                   class="offer-card__img"
-                  src="images/PONUKA/MINI DANCY.jpg"
+                  src="<?= v('images/PONUKA/MINI DANCY.jpg') ?>"
                   alt="Mini Dancy – tanečná príprava pre deti od 3 do 6 rokov"
                   loading="lazy"
                 />
@@ -479,7 +495,7 @@
               >
                 <img
                   class="offer-card__img"
-                  src="images/PONUKA/KIDS DANCY.jpg"
+                  src="<?= v('images/PONUKA/KIDS DANCY.jpg') ?>"
                   alt="Kids Dancy – tanečná príprava pre deti od 6 do 8 rokov"
                   loading="lazy"
                 />
@@ -506,7 +522,7 @@
               >
                 <img
                   class="offer-card__img"
-                  src="images/PONUKA/GYMNASTIKA.jpg"
+                  src="<?= v('images/PONUKA/GYMNASTIKA.jpg') ?>"
                   alt="Gymnastika – základy gymnastiky a akrobacie pre deti od 3 do 12 rokov"
                   loading="lazy"
                 />
@@ -533,7 +549,7 @@
               >
                 <img
                   class="offer-card__img"
-                  src="images/PONUKA/TEAM KIDS.jpg"
+                  src="<?= v('images/PONUKA/TEAM KIDS.jpg') ?>"
                   alt="Team Kids – súťažný team pre deti od 6 do 12 rokov"
                   loading="lazy"
                 />
@@ -560,7 +576,7 @@
               >
                 <img
                   class="offer-card__img"
-                  src="images/PONUKA/TEAM TEENS.jpg"
+                  src="<?= v('images/PONUKA/TEAM TEENS.jpg') ?>"
                   alt="Team Teens – súťažný team pre mládež od 12 rokov"
                   loading="lazy"
                 />
@@ -590,7 +606,7 @@
               <figure class="trainer">
                 <img
                   class="trainer__img"
-                  src="images/TRAINERS/Small/danka.jpg"
+                  src="<?= v('images/TRAINERS/Small/danka.jpg') ?>"
                   alt="Daniela Hill – vedúca TŠ DANCY, trénerka a choreografka"
                   loading="lazy"
                 />
@@ -607,7 +623,7 @@
               <figure class="trainer">
                 <img
                   class="trainer__img"
-                  src="images/TRAINERS/Small/barbora.jpg"
+                  src="<?= v('images/TRAINERS/Small/barbora.jpg') ?>"
                   alt="Barbora Stenová – trénerka a choreografka"
                   loading="lazy"
                 />
@@ -623,7 +639,7 @@
               <figure class="trainer">
                 <img
                   class="trainer__img"
-                  src="images/TRAINERS/Small/Sabi.jpg"
+                  src="<?= v('images/TRAINERS/Small/Sabi.jpg') ?>"
                   alt="Sabína Košibová – trénerka a choreografka"
                   loading="lazy"
                 />
@@ -824,7 +840,7 @@
                     aria-label="Facebook"
                   >
                     <img
-                      src="images/SVG/facebook.svg"
+                      src="<?= v('images/SVG/facebook.svg') ?>"
                       alt=""
                       width="20"
                       height="20"
@@ -837,7 +853,7 @@
                     aria-label="Instagram"
                   >
                     <img
-                      src="images/SVG/instagram.svg"
+                      src="<?= v('images/SVG/instagram.svg') ?>"
                       alt=""
                       width="20"
                       height="20"
@@ -958,7 +974,7 @@
     <footer class="footer text-center">
       <div class="container">
         <img
-          src="images/LOGO/cele biele.svg"
+          src="<?= v('images/LOGO/cele biele.svg') ?>"
           alt="Tanečné štúdio DANCY"
           height="40"
           class="mb-3"
@@ -968,7 +984,7 @@
           <a class="btn btn-outline-light btn-sm" href="tel:+421903838651">
             <img
               class="footer-ico"
-              src="images/SVG/phone2.svg"
+              src="<?= v('images/SVG/phone2.svg') ?>"
               alt=""
               width="16"
               height="16"
@@ -978,7 +994,7 @@
           <a class="btn btn-outline-light btn-sm" href="mailto:info@dancy.sk">
             <img
               class="footer-ico"
-              src="images/SVG/email2.svg"
+              src="<?= v('images/SVG/email2.svg') ?>"
               alt=""
               width="16"
               height="16"
@@ -991,7 +1007,7 @@
             target="_blank"
             rel="noopener"
           >
-            <img src="images/SVG/facebook.svg" alt="" width="16" height="16" />
+            <img src="<?= v('images/SVG/facebook.svg') ?>" alt="" width="16" height="16" />
             Facebook</a
           >
           <a
@@ -1000,7 +1016,7 @@
             target="_blank"
             rel="noopener"
           >
-            <img src="images/SVG/instagram.svg" alt="" width="16" height="16" />
+            <img src="<?= v('images/SVG/instagram.svg') ?>" alt="" width="16" height="16" />
             Instagram</a
           >
         </div>
@@ -1033,7 +1049,7 @@
           <div class="modal-body">
             <img
               class="modal-img"
-              src="images/PONUKA/BABY DANCY.jpg"
+              src="<?= v('images/PONUKA/BABY DANCY.jpg') ?>"
               alt="Baby Dancy"
               loading="lazy"
             />
@@ -1104,7 +1120,7 @@
           <div class="modal-body">
             <img
               class="modal-img"
-              src="images/PONUKA/MINI DANCY.jpg"
+              src="<?= v('images/PONUKA/MINI DANCY.jpg') ?>"
               alt="Mini Dancy"
               loading="lazy"
             />
@@ -1177,7 +1193,7 @@
           <div class="modal-body">
             <img
               class="modal-img"
-              src="images/PONUKA/KIDS DANCY.jpg"
+              src="<?= v('images/PONUKA/KIDS DANCY.jpg') ?>"
               alt="Kids Dancy"
               loading="lazy"
             />
@@ -1237,7 +1253,7 @@
           <div class="modal-body">
             <img
               class="modal-img"
-              src="images/PONUKA/GYMNASTIKA.jpg"
+              src="<?= v('images/PONUKA/GYMNASTIKA.jpg') ?>"
               alt="Gymnastika"
               loading="lazy"
             />
@@ -1308,7 +1324,7 @@
           <div class="modal-body">
             <img
               class="modal-img"
-              src="images/PONUKA/TEAM KIDS.jpg"
+              src="<?= v('images/PONUKA/TEAM KIDS.jpg') ?>"
               alt="Team Kids"
               loading="lazy"
             />
@@ -1385,7 +1401,7 @@
           <div class="modal-body">
             <img
               class="modal-img"
-              src="images/PONUKA/TEAM TEENS.jpg"
+              src="<?= v('images/PONUKA/TEAM TEENS.jpg') ?>"
               alt="Team Teens"
               loading="lazy"
             />
@@ -1447,7 +1463,7 @@
               <div class="carousel-item active">
                 <img
                   class="lightbox__img"
-                  src="images/NOVINKY/ZAPIS.jpg"
+                  src="<?= v('images/NOVINKY/ZAPIS.jpg') ?>"
                   alt="Zápis na kurzy Mini Dancy a Kids Dancy – september až január 2026/2027"
                   loading="lazy"
                 />
@@ -1455,7 +1471,7 @@
               <div class="carousel-item">
                 <img
                   class="lightbox__img"
-                  src="images/NOVINKY/GYMNASTIKA.jpg"
+                  src="<?= v('images/NOVINKY/GYMNASTIKA.jpg') ?>"
                   alt="Zápis na kurz gymnastiky pre dievčatá a chlapcov od 3 do 12 rokov"
                   loading="lazy"
                 />
@@ -1463,7 +1479,7 @@
               <div class="carousel-item">
                 <img
                   class="lightbox__img"
-                  src="images/NOVINKY/konkurz_BA.jpg"
+                  src="<?= v('images/NOVINKY/konkurz_BA.jpg') ?>"
                   alt="Konkurz do súťažných tanečných skupín – 3. 9. ZŠ Pavla Marcelyho a 7. 9. ZŠ Medzilaborecká, Bratislava"
                   loading="lazy"
                 />
@@ -1471,7 +1487,7 @@
               <div class="carousel-item">
                 <img
                   class="lightbox__img"
-                  src="images/NOVINKY/konkurz_Malinovo.jpg"
+                  src="<?= v('images/NOVINKY/konkurz_Malinovo.jpg') ?>"
                   alt="Konkurz do tanečného štúdia DANCY – 4. 9. 2026, Studiospot Malinovo"
                   loading="lazy"
                 />
@@ -1507,7 +1523,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="JS/bootstrap.bundle.min.js" defer></script>
-    <script src="JS/MYjs.js" defer></script>
+    <script src="<?= v('JS/bootstrap.bundle.min.js') ?>" defer></script>
+    <script src="<?= v('JS/MYjs.js') ?>" defer></script>
   </body>
 </html>
